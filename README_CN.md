@@ -15,7 +15,7 @@ Silivid 是 [Veyra](https://github.com/Likely7/Veyra-NRVideo) 的分支。Veyra 
 
 - 三个静态库，包含不依赖 Windows 的代码。
 - 一个构建探针，用于链接这些库并检查 FFmpeg、Qt 版本和 QML 引擎。它不播放视频。
-- 一套包含 23 个条目的 CTest 测试：19 个测试程序、构建探针和 3 个清理步骤。
+- 一套包含 24 个条目的 CTest 测试：20 个测试程序、构建探针和 3 个清理步骤。
 
 ## macOS 上尚不存在的功能
 
@@ -45,7 +45,7 @@ ctest --preset macos-arm64-debug
 
 构建 Release 时，将 `debug` 替换为 `release`。输出位于 `build-macos/debug` 或 `build-macos/release`。构建不会生成应用程序。
 
-最近一次验证于 2026-11-23，环境为 macOS 27.2.1、Apple clang 21、CMake 4.5.1、Ninja 1.13.2、Qt 6.12.0 和 FFmpeg 9.0.2。两个预设的 23 项测试全部通过。详情和已知阻塞项见 [`docs/macos/PHASE1.md`](docs/macos/PHASE1.md)。
+最近一次验证于 2026-11-23，环境为 macOS 27.2.1、Apple clang 21、CMake 4.5.1、Ninja 1.13.2、Qt 6.12.0 和 FFmpeg 9.0.2。两个预设的 24 项测试全部通过。详情和已知阻塞项见 [`docs/macos/PHASE1.md`](docs/macos/PHASE1.md)。
 
 ## 路线图
 

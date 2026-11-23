@@ -15,7 +15,7 @@ Only the portable part of the code builds and runs on macOS, on the `macos/port`
 
 - Three static libraries with the code that does not depend on Windows.
 - A build probe that links those libraries and checks the FFmpeg and Qt versions and the QML engine. It does not play video.
-- A CTest suite of 23 entries: 19 test programs, the build probe and 3 cleanup steps.
+- A CTest suite of 24 entries: 20 test programs, the build probe and 3 cleanup steps.
 
 ## What does not exist yet on macOS
 
@@ -45,7 +45,7 @@ ctest --preset macos-arm64-debug
 
 For a Release build, replace `debug` with `release`. Output goes to `build-macos/debug` or `build-macos/release`. The build does not produce an app.
 
-Last verified on 2026-11-23 with macOS 27.2.1, Apple clang 21, CMake 4.5.1, Ninja 1.13.2, Qt 6.12.0 and FFmpeg 9.0.2. All 23 tests passed in both presets. Details and known blockers are in [`docs/macos/PHASE1.md`](docs/macos/PHASE1.md).
+Last verified on 2026-11-23 with macOS 27.2.1, Apple clang 21, CMake 4.5.1, Ninja 1.13.2, Qt 6.12.0 and FFmpeg 9.0.2. All 24 tests passed in both presets. Details and known blockers are in [`docs/macos/PHASE1.md`](docs/macos/PHASE1.md).
 
 ## Roadmap
 
