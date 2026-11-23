@@ -1380,13 +1380,31 @@ VPage {
                         }
                         ColumnLayout {
                             spacing: 4
-                            VH1 { text: "Veyra" }
+                            VH1 { text: "Silivid" }
                             Text {
                                 text: qsTr("版本 ") + veyra.version
                                 color: Theme.t2
                                 font.family: Theme.fontUi
                                 font.pixelSize: Theme.fsBody
                             }
+                        }
+                    }
+                    // Modified-version notice: keep the credit and the link to the original project.
+                    Text {
+                        objectName: "about-license-notice"
+                        Layout.fillWidth: true
+                        text: qsTr("Silivid 是 Veyra 的修改版本，依据 GPL-3.0 许可证发布。原项目：%1")
+                            .arg("<a href=\"https://github.com/Likely7/Veyra-NRVideo\">github.com/Likely7/Veyra-NRVideo</a>")
+                        textFormat: Text.StyledText
+                        wrapMode: Text.Wrap
+                        color: Theme.t2
+                        linkColor: Theme.accent
+                        font.family: Theme.fontUi
+                        font.pixelSize: Theme.fsSmall
+                        onLinkActivated: link => Qt.openUrlExternally(link)
+                        HoverHandler {
+                            enabled: parent.hoveredLink.length > 0
+                            cursorShape: Qt.PointingHandCursor
                         }
                     }
                     VGroup {

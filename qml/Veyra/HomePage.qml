@@ -149,7 +149,7 @@ VPage {
             Text {
                 Layout.alignment: Qt.AlignHCenter
                 visible: !Theme.dusk                    // the dusk wordmark says it
-                text: "Veyra NR Video"
+                text: "Silivid NR Video"
                 color: Theme.t1
                 font.family: Theme.fontUi
                 font.pixelSize: Theme.fsH1

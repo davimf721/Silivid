@@ -688,8 +688,8 @@ static int runApplication(int argc, char** argv, QString& restartProgram, QStrin
     };
     static NoKeyMenuFilter noKeyMenu;
     app.installNativeEventFilter(&noKeyMenu);
-    app.setApplicationName(QStringLiteral("Veyra"));
-    app.setOrganizationName(QStringLiteral("Veyra"));
+    app.setApplicationName(QStringLiteral("Silivid"));
+    app.setOrganizationName(QStringLiteral("Silivid"));
     veyra::log::info("app", "Veyra QML session started");
 
     engine::EngineController controller;
