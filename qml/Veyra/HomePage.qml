@@ -158,6 +158,7 @@ VPage {
             Item {
                 id: sponsorLine
                 objectName: "home-sponsor"
+                visible: false  // The original author's support pages are not Silivid channels.
                 Layout.alignment: Qt.AlignHCenter
                 implicitWidth: sponsorRow.implicitWidth
                 implicitHeight: sponsorRow.implicitHeight

@@ -172,7 +172,7 @@ QmlPlayerBridge::QmlPlayerBridge(engine::EngineController& engine, std::filesyst
 #endif
     // Before anything opens: the renderer reads the output choice at start().
     applyPreference(QStringLiteral("language"));
-    applyPreference(QStringLiteral("updateDownloadRoute"));
+    applyPreference(QStringLiteral("updatePrereleaseChannel"));
     applyPreference(QStringLiteral("audioDevice"));
     applyPreference(QStringLiteral("audioForceStereo"));
     applyPreference(QStringLiteral("magewellLowLatency"));
@@ -698,7 +698,7 @@ QmlPlayerBridge::QmlPlayerBridge(engine::EngineController& engine, std::filesyst
             if (!impl_->prefs.value(QStringLiteral("obsRivaTunerHintShown")).toBool()) {
                 impl_->prefs[QStringLiteral("obsRivaTunerHintShown")] = true;
                 (void)impl_->savePrefs();
-                emit notice(tr("检测到 OBS 游戏采集和小飞机（RTSS）同时注入 Veyra。两者默认的挂钩方式冲突，OBS 游戏采集可能抓不到画面（任何 D3D12 程序都一样）。"
+                emit notice(tr("检测到 OBS 游戏采集和小飞机（RTSS）同时注入 Silivid。两者默认的挂钩方式冲突，OBS 游戏采集可能抓不到画面（任何 D3D12 程序都一样）。"
                                "在 RTSS 里添加 veyra_qml_ui.exe，并在它的设置中勾选“Use Microsoft Detours API hooking”；或在 OBS 改用窗口采集（Windows 10 1903+）"), false);
             }
         }
@@ -725,7 +725,7 @@ QmlPlayerBridge::QmlPlayerBridge(engine::EngineController& engine, std::filesyst
         veyra::log::info("overlay-hooks", std::format("previous run: {} injected={}", kind.toStdString(), modules.toStdString()));
         if (advice.isEmpty()) return;
         const QString head = kind.startsWith(QStringLiteral("crash"))
-            ? tr("上次 Veyra 异常退出（崩溃在 %1）").arg(kind.mid(6).trimmed())
+            ? tr("上次 Silivid 异常退出（崩溃在 %1）").arg(kind.mid(6).trimmed())
             : tr("上次采集时显卡设备丢失");
         emit notice(head + QStringLiteral("；") + advice, true);
     });

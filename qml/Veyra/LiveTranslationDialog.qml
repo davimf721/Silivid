@@ -39,7 +39,7 @@ DialogLayer {
             label: qsTr("在画面上显示实时翻译")
             hintBelow: true
             hint: root.supported
-                ? qsTr("使用 Windows 实时字幕识别系统播放的声音，译文显示在 Veyra 预览画面内。")
+                ? qsTr("使用 Windows 实时字幕识别系统播放的声音，译文显示在 Silivid 预览画面内。")
                 : qsTr("实时翻译需要 Windows 11 22H2 或更新版本")
             VSwitch {
                 objectName: "live-translation-enabled"

@@ -904,7 +904,6 @@ public:
     // An overlay that 监控软件兼容 reacts to is running now: RTSS, NVIDIA's in-game overlay
     // or GamePP (gfx/PresentationHooks.h).
     Q_INVOKABLE bool presentationOverlayRunning() const;
-    Q_INVOKABLE void openFeedbackPage();
     Q_INVOKABLE void openReleasesPage();
     // 设置 → 赞助作者: opens the author's page for `id` (douyin, x, github,
     // youtube, kofi) in the browser. The addresses live here; any other id does nothing.

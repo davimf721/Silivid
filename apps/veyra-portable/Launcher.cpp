@@ -48,7 +48,7 @@ std::optional<DWORD> run(const fs::path& program, const std::vector<std::wstring
 }
 
 int showError(const wchar_t* message) {
-    MessageBoxW(nullptr, message, L"Veyra", MB_OK | MB_ICONERROR);
+    MessageBoxW(nullptr, message, L"Silivid", MB_OK | MB_ICONERROR);
     return 1;
 }
 } // namespace
@@ -61,14 +61,14 @@ int WINAPI wWinMain(HINSTANCE, HINSTANCE, PWSTR, int) {
     const auto versions = root / versionsFolder;
     if (packageFlavor(root).empty() || !plainPath(versions, true)
         || !plainPath(root / versionState, false))
-        return showError(L"便携包文件不完整，请重新解压。\nExtract the complete Veyra portable ZIP.");
+        return showError(L"便携包文件不完整，请重新解压。\nExtract the complete Silivid portable ZIP.");
 
     Handle lock{CreateFileW((root / L".veyra-running.lock").c_str(), GENERIC_READ | GENERIC_WRITE,
                             0, nullptr, OPEN_ALWAYS, FILE_FLAG_OPEN_REPARSE_POINT, nullptr)};
     if (lock.value == INVALID_HANDLE_VALUE) {
         if (GetLastError() == ERROR_SHARING_VIOLATION)
-            return showError(L"这份 Veyra 正在运行或更新。\nThis copy of Veyra is running or updating.");
-        return showError(L"无法写入便携目录。\nCopy Veyra to a writable folder.");
+            return showError(L"这份 Silivid 正在运行或更新。\nThis copy of Silivid is running or updating.");
+        return showError(L"无法写入便携目录。\nCopy Silivid to a writable folder.");
     }
 
     int count = 0;
@@ -81,7 +81,7 @@ int WINAPI wWinMain(HINSTANCE, HINSTANCE, PWSTR, int) {
     const bool manualRollback = initialArgs.size() == 1 && initialArgs.front() == L"--rollback";
     if (manualRollback) initialArgs.clear();
     auto state = installedVersions(root);
-    if (state.current.empty()) return showError(L"便携包版本记录损坏。\nInvalid Veyra version record.");
+    if (state.current.empty()) return showError(L"便携包版本记录损坏。\nInvalid Silivid version record.");
 
     auto rollback = [&] {
         if (state.previous.empty() || !plainPath(versions / state.previous, true)
@@ -105,7 +105,7 @@ int WINAPI wWinMain(HINSTANCE, HINSTANCE, PWSTR, int) {
         if (!result || (*result != 0 && *result != 42 && *result != applyExitCode
                         && *result != overlayRestartExitCode && GetTickCount64() - started < 15000)) {
             if (rollback()) continue;
-            if (!result) return showError(L"Veyra 无法启动。\nVeyra could not start.");
+            if (!result) return showError(L"Silivid 无法启动。\nSilivid could not start.");
             return static_cast<int>(*result);
         }
         if (*result == applyExitCode) {

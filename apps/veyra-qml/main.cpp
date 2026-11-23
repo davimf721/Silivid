@@ -1309,7 +1309,7 @@ int main(int argc, char** argv) {
     if (result != 42 || program.isEmpty()) return result;
     // Player, QML engine and QApplication have all been destroyed.
     if (QProcess::startDetached(program, arguments)) return 0;
-    MessageBoxW(nullptr, L"设置已保存，但自动重启失败。请重新打开软件。\nSettings saved. Automatic restart failed; please reopen Veyra.",
-                L"Veyra", MB_OK | MB_ICONERROR);
+    MessageBoxW(nullptr, L"设置已保存，但自动重启失败。请重新打开软件。\nSettings saved. Automatic restart failed; please reopen Silivid.",
+                L"Silivid", MB_OK | MB_ICONERROR);
     return 1;
 }

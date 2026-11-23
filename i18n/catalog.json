@@ -1002,7 +1002,7 @@
    "ru": "Максимально %2 × %1"
   },
   {
-   "zh": "%1 正在运行。它会同时挂接界面和视频两个画面，可能让 Veyra 卡死；开启兼容绘制需重启 Veyra，重启后界面改用软件绘制，它只作用在视频上。现在重启吗？当前播放或串流将停止。",
+   "zh": "%1 正在运行。它会同时挂接界面和视频两个画面，可能让 Silivid 卡死；开启兼容绘制需重启 Silivid，重启后界面改用软件绘制，它只作用在视频上。现在重启吗？当前播放或串流将停止。",
    "src": "qml/Main.qml",
    "zh-TW": "%1 正在執行。它會同時掛接介面和影片兩個畫面，可能讓 Silivid 卡死；啟用相容繪製需重新啟動 Silivid，重新啟動後介面改用軟體繪製，它只作用在影片上。現在重新啟動嗎？目前的播放或串流將停止。",
    "en": "%1 is running. It hooks both the interface and the video, which can freeze Silivid. Restart Silivid to enable compatible rendering: the interface is then drawn in software and %1 only affects the video. Restart now? Current playback or streaming will stop.",
@@ -1314,7 +1314,7 @@
    "ru": "2 элемента"
   },
   {
-   "zh": "2. 回到 Veyra，在“音频输入”选“Veyra 虚拟扬声器”，再连接采集。音频输出选真实耳机或音箱，即可使用音画同步。\n\n可选改名：在 Windows 声音的“播放”页打开 CABLE Input 的属性，在“常规”里改成“Veyra 采集音频”。",
+   "zh": "2. 回到 Silivid，在“音频输入”选“Silivid 虚拟扬声器”，再连接采集。音频输出选真实耳机或音箱，即可使用音画同步。\n\n可选改名：在 Windows 声音的“播放”页打开 CABLE Input 的属性，在“常规”里改成“Silivid 采集音频”。",
    "src": "qml/CaptureSourceDialog.qml",
    "zh-TW": "2. 回到 Silivid，在「音訊輸入」選「Silivid 虛擬揚聲器」，再連接擷取。音訊輸出選擇實際耳機或喇叭，即可使用音畫同步。\n\n可選改名：在 Windows 聲音的「播放」頁開啟 CABLE Input 的內容，在「一般」中改成「Silivid 擷取音訊」。",
    "en": "2. In Silivid, select Silivid virtual speaker under Audio input, then connect capture. Select real headphones or speakers as the audio output to use A/V sync.\n\nOptional: rename CABLE Input to Silivid capture audio in Windows Sound → Playback → Properties → General.",
@@ -2302,7 +2302,7 @@
    "ru": "Для DLSS, FSR и ANR генерации кадров и XeSS с оптическим источником движения потока: останавливает желе на краях символа, поэтому фон больше не тащится вдоль"
   },
   {
-   "zh": "DXGI 为显示器兼容方式，无鼠标指针；捕获显示器时不显示黄色边框，Veyra 自己也不会出现在截图和录屏里",
+   "zh": "DXGI 为显示器兼容方式，无鼠标指针；捕获显示器时不显示黄色边框，Silivid 自己也不会出现在截图和录屏里",
    "src": "qml/ScreenSourceDialog.qml",
    "zh-TW": "DXGI 為顯示器相容方式，無滑鼠指標；擷取顯示器時不顯示黃色邊框，Silivid 自己也不會出現在截圖和錄影裡",
    "en": "DXGI is the display-compatible mode, without the mouse pointer. A display capture shows no yellow border, and Silivid itself stays out of screenshots and recordings",
@@ -2690,19 +2690,6 @@
    "de": "GPU-Stufen · 1-s-Mittel",
    "pt-BR": "Etapas da GPU · média de 1 s",
    "ru": "Этапы GPU · среднее за 1 с"
-  },
-  {
-   "zh": "GitHub 直连",
-   "src": "qml/SettingsPage.qml",
-   "zh-TW": "GitHub 直連",
-   "en": "GitHub direct",
-   "ja": "GitHub に直接接続",
-   "ko": "GitHub 직접 연결",
-   "es": "GitHub directo",
-   "fr": "GitHub en direct",
-   "de": "GitHub direkt",
-   "pt-BR": "Acesso direto ao GitHub",
-   "ru": "GitHub напрямую"
   },
   {
    "zh": "HDMI 采集设备",
@@ -4239,19 +4226,6 @@
    "ru": "Посетите Patreon для обновления создателя или купите мне кофе за 5 долларов США."
   },
   {
-   "zh": "Patreon、微信与支付宝",
-   "src": "qml/SettingsPage.qml",
-   "zh-TW": "Patreon、微信與支付寶",
-   "en": "Patreon, WeChat and Alipay",
-   "ja": "Patreon・WeChat・Alipay",
-   "ko": "패트리온, 위챗, 알리페이",
-   "es": "Patreon, WeChat y Alipay",
-   "fr": "Patreon, WeChat et Alipay",
-   "de": "Patreon, WeChat und Alipay",
-   "pt-BR": "Patreon, WeChat e Alipay",
-   "ru": "Patreon, WeChat и Alipay"
-  },
-  {
    "zh": "Profile 5 的亮度信息在 RPU 里（不是 HDR10 元数据），推荐无法自动选档；下面的「跟随动态元数据」仍然可用",
    "src": "qml/ProDisplayPanel.qml",
    "zh-TW": "Profile 5 的亮度信息在 RPU 里（不是 HDR10 元數據），推薦無法自動選檔；下面的「跟隨動態元數據」仍然可用",
@@ -4551,6 +4525,19 @@
    "ru": "SMAA: более точные края, держит больше деталей"
   },
   {
+   "zh": "Silivid 已更新",
+   "src": "src/ui/PortableUpdate.cpp",
+   "zh-TW": "Silivid 已更新",
+   "en": "Silivid has been updated",
+   "ja": "Silivid を更新しました",
+   "ko": "Silivid가 업데이트되었습니다",
+   "es": "Silivid se ha actualizado",
+   "fr": "Silivid a été mis à jour",
+   "de": "Silivid wurde aktualisiert",
+   "pt-BR": "O Silivid foi atualizado",
+   "ru": "Silivid обновлён"
+  },
+  {
    "zh": "Silivid 是 Veyra 的修改版本，依据 GPL-3.0 许可证发布。原项目：%1",
    "src": "qml/SettingsPage.qml",
    "zh-TW": "Silivid 是 Veyra 的修改版本，依據 GPL-3.0 授權條款發布。原專案：%1",
@@ -4562,6 +4549,110 @@
    "de": "Silivid ist eine modifizierte Version von Veyra, veröffentlicht unter der GPL-3.0-Lizenz. Originalprojekt: %1",
    "pt-BR": "Silivid é uma versão modificada do Veyra, distribuída sob a licença GPL-3.0. Projeto original: %1",
    "ru": "Silivid — изменённая версия Veyra, распространяется по лицензии GPL-3.0. Исходный проект: %1"
+  },
+  {
+   "zh": "Silivid 本地诊断（复制前脱敏预览；不会上传）\n",
+   "src": "src/base/Log.cpp",
+   "zh-TW": "Silivid 本地診斷（複製前脫敏預覽；不會上傳）\n",
+   "en": "Silivid local diagnostics (redacted preview before copying; nothing is uploaded)\n",
+   "ja": "Silivid ローカル診断（コピー前に匿名化してプレビュー。アップロードはしません）\n",
+   "ko": "Silivid 로컬 진단 정보 (개인정보를 가린 내용을 복사 전에 확인할 수 있으며 자동 업로드하지 않습니다)\n",
+   "es": "Diagnóstico local Silivid (previsualización realizada antes de copiar; nada se carga)\n",
+   "fr": "Diagnostic local Silivid (prévisualisation abrégée avant la copie; rien n'est téléchargé)\n",
+   "de": "Lokale Silivid-Diagnose (Vorschau vor dem Kopieren redigiert; nichts wird hochgeladen)\n",
+   "pt-BR": "Diagnósticos locais do Silivid (previsão refeita antes de copiar; nada é carregado)\n",
+   "ru": "Местная диагностика Silivid (отредактированный предварительный просмотр перед копированием; ничего не загружается)\n"
+  },
+  {
+   "zh": "Silivid 虚拟扬声器",
+   "src": "qml/CaptureSourceDialog.qml",
+   "zh-TW": "Silivid 虛擬揚聲器",
+   "en": "Silivid Virtual Speaker",
+   "ja": "Silivid 仮想スピーカー",
+   "ko": "Silivid 가상 스피커",
+   "es": "Silivid Virtual Speaker",
+   "fr": "Silivid Virtual Speaker",
+   "de": "Silivid virtueller Sprecher",
+   "pt-BR": "Silivid Virtual Speaker",
+   "ru": "Виртуальный спикер Silivid"
+  },
+  {
+   "zh": "Silivid 虚拟扬声器 · %1",
+   "src": "src/ui/bridge/Capture.cpp",
+   "zh-TW": "Silivid 虛擬揚聲器 · %1",
+   "en": "Silivid Virtual Speaker · %1",
+   "ja": "Silivid 仮想スピーカー · %1",
+   "ko": "Silivid 가상 스피커 · %1",
+   "es": "Silivid Voz virtual · %1",
+   "fr": "Silivid Virtual Speaker · %1",
+   "de": "Virtueller Sprecher von Silivid · %1",
+   "pt-BR": "Silivid Palestra Virtual · %1",
+   "ru": "Виртуальный динамик Silivid · %1"
+  },
+  {
+   "zh": "Silivid 虚拟扬声器使用说明",
+   "src": "qml/CaptureSourceDialog.qml",
+   "zh-TW": "Silivid 虛擬揚聲器使用說明",
+   "en": "Silivid Virtual Speaker instructions",
+   "ja": "Silivid 仮想スピーカーの使い方",
+   "ko": "Silivid 가상 스피커 사용법",
+   "es": "Instrucciones del altavoz virtual de Silivid",
+   "fr": "Silivid Virtual Speaker instructions",
+   "de": "Silivid Virtual Speaker Anweisungen",
+   "pt-BR": "Instruções do Virtual Speaker Silivid",
+   "ru": "Инструкции виртуального спикера Silivid"
+  },
+  {
+   "zh": "Silivid 预设 (*.vpreset)",
+   "src": "src/ui/bridge/Preferences.cpp",
+   "zh-TW": "Silivid 預設 (*.vpreset)",
+   "en": "Silivid preset (*.vpreset)",
+   "ja": "Silivid プリセット (*.vpreset)",
+   "ko": "Silivid 프리셋(*.vpreset)",
+   "es": "Preset Silivid (*.vpreset)",
+   "fr": "Préréglage de Silivid (*.vpreset)",
+   "de": "Silivid preset (*.vpreset)",
+   "pt-BR": "Predefinição do Silivid (*.vpreset)",
+   "ru": "Silivid preset (*.vpreset)"
+  },
+  {
+   "zh": "Silivid 预设 (*.vpreset);;所有文件 (*)",
+   "src": "src/ui/bridge/Preferences.cpp",
+   "zh-TW": "Silivid 預設 (*.vpreset);;所有檔案 (*)",
+   "en": "Silivid preset (*.vpreset);;All files (*)",
+   "ja": "Silivid プリセット (*.vpreset);;すべてのファイル (*)",
+   "ko": "Silivid 프리셋(*.vpreset);;모든 파일(*)",
+   "es": "Preset Silivid (*.vpreset);;Todos los archivos (*)",
+   "fr": "Silivid preset (*.vpreset); Tous les fichiers (*)",
+   "de": "Silivid preset (*.vpreset);;Alle Dateien (*)",
+   "pt-BR": "Predefinição do Silivid (*.vpreset);; Todos os arquivos (*)",
+   "ru": "Silivid preset (*.vpreset); Все файлы (*)"
+  },
+  {
+   "zh": "Silivid 颜色预设 (*.vpcolor)",
+   "src": "src/ui/bridge/Colour.cpp",
+   "zh-TW": "Silivid 顏色預設 (*.vpcolor)",
+   "en": "Silivid color preset (*.vpcolor)",
+   "ja": "Silivid カラープリセット (*.vpcolor)",
+   "ko": "Silivid 색상 프리셋(*.vpcolor)",
+   "es": "Preset de color Silivid (*.vpcolor)",
+   "fr": "Préréglage de la couleur Silivid (*.vpcolor)",
+   "de": "Silivid-Farbvoreinstellung (*.vpcolor)",
+   "pt-BR": "Predefinição da cor do Silivid (*.vpcolor)",
+   "ru": "Предустановленный цвет Silivid (*.vpcolor)"
+  },
+  {
+   "zh": "Silivid 颜色预设 (*.vpcolor);;所有文件 (*.*)",
+   "src": "src/ui/bridge/Colour.cpp",
+   "zh-TW": "Silivid 顏色預設 (*.vpcolor);;所有檔案 (*.*)",
+   "en": "Silivid color preset (*.vpcolor);;All files (*.*)",
+   "ja": "Silivid カラープリセット (*.vpcolor);;すべてのファイル (*.*)",
+   "ko": "Silivid 색상 프리셋(*.vpcolor);;모든 파일(*.*)",
+   "es": "Preset de color Silivid (*.vpcolor);;Todos los archivos (*.*)",
+   "fr": "Préréglage de la couleur Silivid (*.vpcolor);;Tous les fichiers (*.*)",
+   "de": "Silivid Farbvoreinstellung (*.vpcolor);;Alle Dateien (*.*)",
+   "pt-BR": "Predefinição da cor do Silivid (*.vpcolor);; Todos os arquivos (*.*)",
+   "ru": "Предустановленный цвет Silivid (*.vpcolor); все файлы (*.*)"
   },
   {
    "zh": "Smooth Motion 开启方法",
@@ -4759,19 +4850,6 @@
    "ru": "Veyra получает уже отрисованное изображение, поэтому эффект от DLSS SR здесь ограничен. На GPU NVIDIA я предпочитаю **RTX Video Super Resolution · Стандарт · Среднее**. Картинка становится чётче при умеренной нагрузке."
   },
   {
-   "zh": "Veyra 已更新",
-   "src": "src/ui/PortableUpdate.cpp",
-   "zh-TW": "Silivid 已更新",
-   "en": "Silivid has been updated",
-   "ja": "Silivid を更新しました",
-   "ko": "Silivid가 업데이트되었습니다",
-   "es": "Silivid se ha actualizado",
-   "fr": "Silivid a été mis à jour",
-   "de": "Silivid wurde aktualisiert",
-   "pt-BR": "O Silivid foi atualizado",
-   "ru": "Silivid обновлён"
-  },
-  {
    "zh": "Veyra 开源免费，也需要你的支持",
    "src": "qml/SponsorPanel.qml",
    "zh-TW": "Veyra 開源免費，也需要你的支持",
@@ -4783,110 +4861,6 @@
    "de": "Veyra ist kostenlos und Open Source, und es läuft auf Ihre Unterstützung",
    "pt-BR": "Veyra é livre e de código aberto, e é executado em seu suporte",
    "ru": "Veyra является бесплатным и открытым исходным кодом, и он работает на вашей поддержке."
-  },
-  {
-   "zh": "Veyra 本地诊断（复制前脱敏预览；不会上传）\n",
-   "src": "src/base/Log.cpp",
-   "zh-TW": "Silivid 本地診斷（複製前脫敏預覽；不會上傳）\n",
-   "en": "Silivid local diagnostics (redacted preview before copying; nothing is uploaded)\n",
-   "ja": "Silivid ローカル診断（コピー前に匿名化してプレビュー。アップロードはしません）\n",
-   "ko": "Silivid 로컬 진단 정보 (개인정보를 가린 내용을 복사 전에 확인할 수 있으며 자동 업로드하지 않습니다)\n",
-   "es": "Diagnóstico local Silivid (previsualización realizada antes de copiar; nada se carga)\n",
-   "fr": "Diagnostic local Silivid (prévisualisation abrégée avant la copie; rien n'est téléchargé)\n",
-   "de": "Lokale Silivid-Diagnose (Vorschau vor dem Kopieren redigiert; nichts wird hochgeladen)\n",
-   "pt-BR": "Diagnósticos locais do Silivid (previsão refeita antes de copiar; nada é carregado)\n",
-   "ru": "Местная диагностика Silivid (отредактированный предварительный просмотр перед копированием; ничего не загружается)\n"
-  },
-  {
-   "zh": "Veyra 虚拟扬声器",
-   "src": "qml/CaptureSourceDialog.qml",
-   "zh-TW": "Silivid 虛擬揚聲器",
-   "en": "Silivid Virtual Speaker",
-   "ja": "Silivid 仮想スピーカー",
-   "ko": "Silivid 가상 스피커",
-   "es": "Silivid Virtual Speaker",
-   "fr": "Silivid Virtual Speaker",
-   "de": "Silivid virtueller Sprecher",
-   "pt-BR": "Silivid Virtual Speaker",
-   "ru": "Виртуальный спикер Silivid"
-  },
-  {
-   "zh": "Veyra 虚拟扬声器 · %1",
-   "src": "src/ui/bridge/Capture.cpp",
-   "zh-TW": "Silivid 虛擬揚聲器 · %1",
-   "en": "Silivid Virtual Speaker · %1",
-   "ja": "Silivid 仮想スピーカー · %1",
-   "ko": "Silivid 가상 스피커 · %1",
-   "es": "Silivid Voz virtual · %1",
-   "fr": "Silivid Virtual Speaker · %1",
-   "de": "Virtueller Sprecher von Silivid · %1",
-   "pt-BR": "Silivid Palestra Virtual · %1",
-   "ru": "Виртуальный динамик Silivid · %1"
-  },
-  {
-   "zh": "Veyra 虚拟扬声器使用说明",
-   "src": "qml/CaptureSourceDialog.qml",
-   "zh-TW": "Silivid 虛擬揚聲器使用說明",
-   "en": "Silivid Virtual Speaker instructions",
-   "ja": "Silivid 仮想スピーカーの使い方",
-   "ko": "Silivid 가상 스피커 사용법",
-   "es": "Instrucciones del altavoz virtual de Silivid",
-   "fr": "Silivid Virtual Speaker instructions",
-   "de": "Silivid Virtual Speaker Anweisungen",
-   "pt-BR": "Instruções do Virtual Speaker Silivid",
-   "ru": "Инструкции виртуального спикера Silivid"
-  },
-  {
-   "zh": "Veyra 预设 (*.vpreset)",
-   "src": "src/ui/bridge/Preferences.cpp",
-   "zh-TW": "Silivid 預設 (*.vpreset)",
-   "en": "Silivid preset (*.vpreset)",
-   "ja": "Silivid プリセット (*.vpreset)",
-   "ko": "Silivid 프리셋(*.vpreset)",
-   "es": "Preset Silivid (*.vpreset)",
-   "fr": "Préréglage de Silivid (*.vpreset)",
-   "de": "Silivid preset (*.vpreset)",
-   "pt-BR": "Predefinição do Silivid (*.vpreset)",
-   "ru": "Silivid preset (*.vpreset)"
-  },
-  {
-   "zh": "Veyra 预设 (*.vpreset);;所有文件 (*)",
-   "src": "src/ui/bridge/Preferences.cpp",
-   "zh-TW": "Silivid 預設 (*.vpreset);;所有檔案 (*)",
-   "en": "Silivid preset (*.vpreset);;All files (*)",
-   "ja": "Silivid プリセット (*.vpreset);;すべてのファイル (*)",
-   "ko": "Silivid 프리셋(*.vpreset);;모든 파일(*)",
-   "es": "Preset Silivid (*.vpreset);;Todos los archivos (*)",
-   "fr": "Silivid preset (*.vpreset); Tous les fichiers (*)",
-   "de": "Silivid preset (*.vpreset);;Alle Dateien (*)",
-   "pt-BR": "Predefinição do Silivid (*.vpreset);; Todos os arquivos (*)",
-   "ru": "Silivid preset (*.vpreset); Все файлы (*)"
-  },
-  {
-   "zh": "Veyra 颜色预设 (*.vpcolor)",
-   "src": "src/ui/bridge/Colour.cpp",
-   "zh-TW": "Silivid 顏色預設 (*.vpcolor)",
-   "en": "Silivid color preset (*.vpcolor)",
-   "ja": "Silivid カラープリセット (*.vpcolor)",
-   "ko": "Silivid 색상 프리셋(*.vpcolor)",
-   "es": "Preset de color Silivid (*.vpcolor)",
-   "fr": "Préréglage de la couleur Silivid (*.vpcolor)",
-   "de": "Silivid-Farbvoreinstellung (*.vpcolor)",
-   "pt-BR": "Predefinição da cor do Silivid (*.vpcolor)",
-   "ru": "Предустановленный цвет Silivid (*.vpcolor)"
-  },
-  {
-   "zh": "Veyra 颜色预设 (*.vpcolor);;所有文件 (*.*)",
-   "src": "src/ui/bridge/Colour.cpp",
-   "zh-TW": "Silivid 顏色預設 (*.vpcolor);;所有檔案 (*.*)",
-   "en": "Silivid color preset (*.vpcolor);;All files (*.*)",
-   "ja": "Silivid カラープリセット (*.vpcolor);;すべてのファイル (*.*)",
-   "ko": "Silivid 색상 프리셋(*.vpcolor);;모든 파일(*.*)",
-   "es": "Preset de color Silivid (*.vpcolor);;Todos los archivos (*.*)",
-   "fr": "Préréglage de la couleur Silivid (*.vpcolor);;Tous les fichiers (*.*)",
-   "de": "Silivid Farbvoreinstellung (*.vpcolor);;Alle Dateien (*.*)",
-   "pt-BR": "Predefinição da cor do Silivid (*.vpcolor);; Todos os arquivos (*.*)",
-   "ru": "Предустановленный цвет Silivid (*.vpcolor); все файлы (*.*)"
   },
   {
    "zh": "VobSub 需要同名 .idx 和 .sub 文件，请加载 .idx",
@@ -4993,7 +4967,7 @@
    "ru": "Загрузка движка GPU Windows ("
   },
   {
-   "zh": "Windows 不允许 Veyra 使用麦克风，请在 设置 → 隐私和安全性 → 麦克风 中允许桌面应用访问",
+   "zh": "Windows 不允许 Silivid 使用麦克风，请在 设置 → 隐私和安全性 → 麦克风 中允许桌面应用访问",
    "src": "src/engine/MicrophoneCapture.cpp",
    "zh-TW": "Windows 不允許 Silivid 使用麥克風，請在 設定 → 隱私權與安全性 → 麥克風 中允許桌面應用程式存取",
    "en": "Windows does not let Silivid use the microphone; allow desktop apps in Settings → Privacy & security → Microphone",
@@ -5708,7 +5682,7 @@
    "ru": "Последний"
   },
   {
-   "zh": "上次 Veyra 异常退出（崩溃在 %1）",
+   "zh": "上次 Silivid 异常退出（崩溃在 %1）",
    "src": "src/ui/QmlPlayerBridge.cpp",
    "zh-TW": "上次 Silivid 異常結束（當機於 %1）",
    "en": "Silivid closed unexpectedly last time (crash in %1)",
@@ -6007,19 +5981,6 @@
    "ru": "Загрузить модель"
   },
   {
-   "zh": "下载线路",
-   "src": "qml/SettingsPage.qml",
-   "zh-TW": "下載線路",
-   "en": "Download route",
-   "ja": "ダウンロード経路",
-   "ko": "다운로드 경로",
-   "es": "Ruta de descarga",
-   "fr": "Route de téléchargement",
-   "de": "Download-Verbindung",
-   "pt-BR": "Rota de download",
-   "ru": "Канал загрузки"
-  },
-  {
    "zh": "不使用 LUT",
    "src": "qml/ColourPanel.qml",
    "zh-TW": "不使用 LUT",
@@ -6111,7 +6072,7 @@
    "ru": "Это не 8-значный код сопряжения"
   },
   {
-   "zh": "不是 Veyra 预设文件",
+   "zh": "不是 Silivid 预设文件",
    "src": "src/engine/PresetLibrary.cpp",
    "zh-TW": "不是 Silivid 預設檔案",
    "en": "Not a Silivid preset file",
@@ -7190,19 +7151,6 @@
    "ru": "Двухпропускная кодировка"
   },
   {
-   "zh": "交流群",
-   "src": "qml/SettingsPage.qml",
-   "zh-TW": "交流群",
-   "en": "Community groups",
-   "ja": "コミュニティ",
-   "ko": "커뮤니티 그룹",
-   "es": "Grupos de la comunidad",
-   "fr": "Groupes de la communauté",
-   "de": "Community-Gruppen",
-   "pt-BR": "Grupos da comunidade",
-   "ru": "Группы сообщества"
-  },
-  {
    "zh": "亮",
    "src": "qml/ColourPanel.qml",
    "zh-TW": "亮",
@@ -7788,7 +7736,7 @@
    "ru": "Запас "
   },
   {
-   "zh": "使用 Windows 实时字幕识别系统播放的声音，译文显示在 Veyra 预览画面内。",
+   "zh": "使用 Windows 实时字幕识别系统播放的声音，译文显示在 Silivid 预览画面内。",
    "src": "qml/LiveTranslationDialog.qml",
    "zh-TW": "使用 Windows 即時字幕辨識系統播放的聲音，譯文顯示在 Silivid 預覽畫面內。",
    "en": "Windows Live Captions transcribes system audio. Translations appear in the Silivid preview.",
@@ -9323,7 +9271,7 @@
    "ru": "Внутренняя выборка; объем выпуска не изменился"
   },
   {
-   "zh": "再串流时建议打开：Veyra 不在前台也继续转发。打开后在这台电脑上用别的程序时，手柄也会操作 PS5",
+   "zh": "再串流时建议打开：Silivid 不在前台也继续转发。打开后在这台电脑上用别的程序时，手柄也会操作 PS5",
    "src": "qml/CaptureSourceDialog.qml",
    "zh-TW": "再串流時建議打開：Silivid 不在前景也繼續轉發。打開後在這台電腦上用別的程式時，手把也會操作 PS5",
    "en": "Recommended when re-streaming: input keeps going while Silivid is not in front. While on, the controller also drives the PS5 when you use other programs on this PC",
@@ -10129,19 +10077,6 @@
    "ru": "Обновить устройства"
   },
   {
-   "zh": "前往",
-   "src": "qml/SettingsPage.qml",
-   "zh-TW": "前往",
-   "en": "Go",
-   "ja": "開く",
-   "ko": "이동",
-   "es": "Vamos.",
-   "fr": "Allez.",
-   "de": "Go",
-   "pt-BR": "Vai.",
-   "ru": "Иди."
-  },
-  {
    "zh": "前往主页",
    "src": "qml/SponsorPanel.qml",
    "zh-TW": "前往主頁",
@@ -10545,7 +10480,7 @@
    "ru": "Instant replay is off: Settings → Playback → Мгновенная повторная игра"
   },
   {
-   "zh": "卸载 Veyra 虚拟扬声器",
+   "zh": "卸载 Silivid 虚拟扬声器",
    "src": "qml/CaptureSourceDialog.qml",
    "zh-TW": "解除安裝 Silivid 虛擬揚聲器",
    "en": "Uninstall Silivid Virtual Speaker",
@@ -11130,19 +11065,6 @@
    "ru": "Не используется при включении двойного SR; он возвращается, когда двойной SR выключен."
   },
   {
-   "zh": "反馈问题",
-   "src": "qml/SettingsPage.qml",
-   "zh-TW": "反饋問題",
-   "en": "Report a problem",
-   "ja": "問題を報告",
-   "ko": "문제 신고",
-   "es": "Informar de un problema",
-   "fr": "Signaler un problème",
-   "de": "Problem melden",
-   "pt-BR": "Relatar um problema",
-   "ru": "Сообщить о проблеме"
-  },
-  {
    "zh": "发现 {} 台 PS5。",
    "src": "src/ui/bridge/RemotePlay.cpp",
    "zh-TW": "發現 {} 台 PS5。",
@@ -11325,7 +11247,7 @@
    "ru": "Допуск изменений"
   },
   {
-   "zh": "另一个 Veyra 窗口正在下载模型",
+   "zh": "另一个 Silivid 窗口正在下载模型",
    "src": "src/ui/TranslationAssets.cpp",
    "zh-TW": "另一個 Silivid 視窗正在下載模型",
    "en": "Another Silivid window is downloading the model",
@@ -11338,7 +11260,7 @@
    "ru": "Модель загружается в другом окне Silivid"
   },
   {
-   "zh": "另一个Veyra实例已启用虚拟摄像机",
+   "zh": "另一个Silivid实例已启用虚拟摄像机",
    "src": "src/engine/VirtualCamera.cpp",
    "zh-TW": "另一個Silivid執行個體已啟用虛擬攝影機",
    "en": "Another Silivid instance is using the virtual camera.",
@@ -11791,6 +11713,19 @@
    "de": "Nehmen Sie auch ein Mikrofon auf; standardmäßig in den aufgenommenen Ton gemischt oder auf einer eigenen Spur",
    "pt-BR": "Gravar também um microfone; misturado ao som gravado por omissão, ou numa faixa própria",
    "ru": "Также записывайте микрофон; смешанный с записанным звуком по умолчанию или на собственной дорожке."
+  },
+  {
+   "zh": "同时提醒 alpha 和 beta 版本，这些版本可能不稳定",
+   "src": "qml/SettingsPage.qml",
+   "zh-TW": "同時提醒 alpha 和 beta 版本，這些版本可能不穩定",
+   "en": "Also notify about alpha and beta versions, which may be unstable",
+   "ja": "alpha 版と beta 版も通知します。これらの版は不安定な場合があります",
+   "ko": "alpha 및 beta 버전도 알립니다. 이 버전은 불안정할 수 있습니다",
+   "es": "Avisa también de las versiones alpha y beta, que pueden ser inestables",
+   "fr": "Signale aussi les versions alpha et bêta, qui peuvent être instables",
+   "de": "Benachrichtigt auch über Alpha- und Beta-Versionen, die instabil sein können",
+   "pt-BR": "Também avisa sobre versões alpha e beta, que podem ser instáveis",
+   "ru": "Также уведомлять о версиях alpha и beta, которые могут быть нестабильными"
   },
   {
    "zh": "同时显示原文",
@@ -12625,6 +12560,19 @@
    "ru": "ЦП обрабатывает субтитры на этом устройстве."
   },
   {
+   "zh": "在 GitHub 查看 Silivid 的说明和版本",
+   "src": "qml/SettingsPage.qml",
+   "zh-TW": "在 GitHub 查看 Silivid 的說明和版本",
+   "en": "View Silivid's documentation and releases on GitHub",
+   "ja": "GitHub で Silivid の説明とリリースを確認します",
+   "ko": "GitHub에서 Silivid 문서와 릴리스를 확인합니다",
+   "es": "Consulta la documentación y las versiones de Silivid en GitHub",
+   "fr": "Consulter la documentation et les versions de Silivid sur GitHub",
+   "de": "Dokumentation und Versionen von Silivid auf GitHub ansehen",
+   "pt-BR": "Veja a documentação e as versões do Silivid no GitHub",
+   "ru": "Документация и версии Silivid на GitHub"
+  },
+  {
    "zh": "在 PSNTools 网页获取 Account ID，再到 PS5 串流窗口填写并配对。",
    "src": "qml/SettingsPage.qml",
    "zh-TW": "在 PSNTools 網頁取得 Account ID，再到 PS5 串流視窗填入並配對。",
@@ -12638,7 +12586,7 @@
    "ru": "Установите номер своего аккаунта PSNTools, а затем введите его в PS5 окно потоковой передачи."
   },
   {
-   "zh": "在「NR 画面增强」里添加一层。Veyra 对已采集的画面使用实验性神经渲染，增强光照、材质和视觉细节。",
+   "zh": "在「NR 画面增强」里添加一层。Silivid 对已采集的画面使用实验性神经渲染，增强光照、材质和视觉细节。",
    "src": "qml/OnboardingGuide.qml",
    "zh-TW": "在「NR 畫面增強」新增一層。Silivid 對已擷取的畫面使用實驗性神經渲染，增強光照、材質和視覺細節。",
    "en": "Add a layer under NR enhancement. Silivid applies experimental neural rendering to the captured picture to enhance lighting, materials, and visual details.",
@@ -14263,7 +14211,7 @@
    "ru": "В пределах диапазона"
   },
   {
-   "zh": "安装 Veyra 虚拟扬声器",
+   "zh": "安装 Silivid 虚拟扬声器",
    "src": "qml/CaptureSourceDialog.qml",
    "zh-TW": "安裝 Silivid 虛擬揚聲器",
    "en": "Install Silivid Virtual Speaker",
@@ -17565,7 +17513,7 @@
    "ru": "Оценивается из того, что было написано, как только началось письмо"
   },
   {
-   "zh": "开始后 Veyra 在这块屏幕上全屏，键鼠和手柄直接操作屏幕上的程序；%1 调整画面，%2 退出",
+   "zh": "开始后 Silivid 在这块屏幕上全屏，键鼠和手柄直接操作屏幕上的程序；%1 调整画面，%2 退出",
    "src": "qml/ScreenSourceDialog.qml",
    "zh-TW": "開始後 Silivid 在此螢幕全螢幕顯示，鍵鼠與手把直接操作螢幕上的程式；%1 調整畫面，%2 退出",
    "en": "Silivid opens fullscreen on this display. Keyboard, mouse and controller operate its programs; %1 adjusts the picture and %2 exits.",
@@ -19565,19 +19513,6 @@
    "de": "Öffnen",
    "pt-BR": "Abrir",
    "ru": "Открыть"
-  },
-  {
-   "zh": "打开 GitHub Issues，诊断信息已自动复制",
-   "src": "qml/SettingsPage.qml",
-   "zh-TW": "開啟 GitHub Issues，診斷資訊已自動複製",
-   "en": "Opens GitHub Issues; diagnostics have been copied for you",
-   "ja": "GitHub Issues を開きます。診断情報は自動でコピーされています",
-   "ko": "GitHub 이슈 페이지를 엽니다. 진단 정보는 복사되었습니다.",
-   "es": "Abre GitHub Problemas; diagnósticos han sido copiados para usted",
-   "fr": "Ouvre GitHub Problèmes; diagnostics ont été copiés pour vous",
-   "de": "Offen GitHub Probleme; Diagnosen wurden für Sie kopiert",
-   "pt-BR": "Abre GitHub Problemas; diagnósticos foram copiados para você",
-   "ru": "Открытие GitHub Проблемы; диагностика была скопирована для вас"
   },
   {
    "zh": "打开 Windows 录制设置",
@@ -25002,7 +24937,7 @@
    "ru": "А. Dolby Было обнаружено видение RPU, но сигнализация совместимости базового слоя отсутствует, поэтому цвета не могут быть подтверждены; остановлено"
   },
   {
-   "zh": "检测到 OBS 游戏采集和小飞机（RTSS）同时注入 Veyra。两者默认的挂钩方式冲突，OBS 游戏采集可能抓不到画面（任何 D3D12 程序都一样）。在 RTSS 里添加 veyra_qml_ui.exe，并在它的设置中勾选“Use Microsoft Detours API hooking”；或在 OBS 改用窗口采集（Windows 10 1903+）",
+   "zh": "检测到 OBS 游戏采集和小飞机（RTSS）同时注入 Silivid。两者默认的挂钩方式冲突，OBS 游戏采集可能抓不到画面（任何 D3D12 程序都一样）。在 RTSS 里添加 veyra_qml_ui.exe，并在它的设置中勾选“Use Microsoft Detours API hooking”；或在 OBS 改用窗口采集（Windows 10 1903+）",
    "src": "src/ui/QmlPlayerBridge.cpp",
    "zh-TW": "偵測到 OBS 遊戲擷取和小飛機（RTSS）同時注入 Silivid。兩者預設的掛鉤方式衝突，OBS 遊戲擷取可能抓不到畫面（任何 D3D12 程式都一樣）。在 RTSS 中新增 veyra_qml_ui.exe，並在它的設定中勾選「Use Microsoft Detours API hooking」；或在 OBS 改用視窗擷取（Windows 10 1903+）",
    "en": "OBS game capture and RivaTuner (RTSS) are both injected into Silivid. Their default hooking conflicts, so OBS game capture may get no picture (true of any D3D12 program). Add veyra_qml_ui.exe in RTSS and tick \"Use Microsoft Detours API hooking\" in its settings, or use Window Capture in OBS (Windows 10 1903+)",
@@ -25028,7 +24963,7 @@
    "ru": "Обнаружена служба экранного оверлея RTSS"
   },
   {
-   "zh": "检测到 RTSS 屏显服务正在运行。开启兼容绘制需重启 Veyra，重启后 OSD 仅显示在视频上。现在重启吗？当前播放或串流将停止。",
+   "zh": "检测到 RTSS 屏显服务正在运行。开启兼容绘制需重启 Silivid，重启后 OSD 仅显示在视频上。现在重启吗？当前播放或串流将停止。",
    "src": "qml/Main.qml",
    "zh-TW": "偵測到 RTSS 螢幕顯示服務正在執行。啟用相容繪製需重新啟動 Silivid，重新啟動後 OSD 僅顯示在影片上。現在重新啟動嗎？目前的播放或串流將停止。",
    "en": "The RTSS on-screen display service is running. Restart Silivid to enable compatible rendering and show the OSD on the video only. Restart now? Current playback or streaming will stop.",
@@ -25041,7 +24976,7 @@
    "ru": "Служба отображения RTSS на экране запущена. Перезагрузите Silivid, чтобы включить совместимый рендеринг и показать OSD только на видео. Перезагрузите сейчас? Текущее воспроизведение или потоковая передача прекратится."
   },
   {
-   "zh": "检测到 RivaTuner（小飞机 OSD）注入了 Veyra。请把 设置 → 监控软件兼容 设为“自动”并在小飞机运行时重启 Veyra：界面改用兼容绘制，OSD 只显示在视频上",
+   "zh": "检测到 RivaTuner（小飞机 OSD）注入了 Silivid。请把 设置 → 监控软件兼容 设为“自动”并在小飞机运行时重启 Silivid：界面改用兼容绘制，OSD 只显示在视频上",
    "src": "src/ui/QmlPlayerBridge_p.h",
    "zh-TW": "偵測到 RivaTuner（小飛機 OSD）注入了 Silivid。請把 設定 → 監控軟體相容 設為「自動」，並在小飛機執行時重新啟動 Silivid：介面改用相容繪製，OSD 只顯示在影片上",
    "en": "RivaTuner (RTSS OSD) is injected into Silivid. Set Settings → Monitoring overlay compatibility to Auto and restart Silivid while RTSS is running: the interface uses compatible drawing and the OSD shows on the video only",
@@ -27147,7 +27082,7 @@
    "ru": "Прослушиватель клавиатуры в игровом режиме недоступен. Пропуск мыши был выпущен; оставьте полный экран и повторите."
   },
   {
-   "zh": "游戏模式需要窗口和 Veyra 在同一个虚拟桌面：请把窗口移到当前桌面，或关闭游戏模式后直接捕获",
+   "zh": "游戏模式需要窗口和 Silivid 在同一个虚拟桌面：请把窗口移到当前桌面，或关闭游戏模式后直接捕获",
    "src": "qml/ScreenSourceDialog.qml",
    "zh-TW": "遊戲模式需要視窗和 Silivid 在同一個虛擬桌面：請把視窗移到目前桌面，或關閉遊戲模式後直接擷取",
    "en": "Game mode needs the window on the same virtual desktop as Silivid: move the window to the current desktop, or turn game mode off and capture it directly",
@@ -28018,7 +27953,7 @@
    "ru": "Интерфейс перестал отвечать более чем на 3 с; остался игровой режим"
   },
   {
-   "zh": "界面始终用显卡绘制；小飞机 OSD 不在 Veyra 里显示；开着 NVIDIA 信息浮窗或游戏加加时可能卡死",
+   "zh": "界面始终用显卡绘制；小飞机 OSD 不在 Silivid 里显示；开着 NVIDIA 信息浮窗或游戏加加时可能卡死",
    "src": "qml/SettingsPage.qml",
    "zh-TW": "介面始終用顯示卡繪製；小飛機 OSD 不在 Silivid 中顯示；開著 NVIDIA 遊戲內覆疊或遊戲加加時可能卡死",
    "en": "The interface always draws on the GPU; the RTSS OSD is not shown in Silivid; with NVIDIA's in-game overlay or GamePP running, Silivid may freeze",
@@ -28967,7 +28902,7 @@
    "ru": "Окно меньше, чем урожаи, ожидая, когда его размер вернется."
   },
   {
-   "zh": "窗口已关闭或属于 Veyra",
+   "zh": "窗口已关闭或属于 Silivid",
    "src": "src/source/ScreenCaptureSource.cpp",
    "zh-TW": "視窗已關閉或屬於 Silivid",
    "en": "The window was closed or belongs to Silivid",
@@ -30343,19 +30278,6 @@
    "de": "Schönheit: Gesichtserkennung konnte nicht starten; Original-Gesichtswiederherstellung und Gesichtsbereich Schönheit werden nicht angewendet",
    "pt-BR": "Beleza: não foi possível iniciar a detecção facial; não se aplica a restauração facial original e a beleza da área facial",
    "ru": "Красота: обнаружение лица не началось; оригинальное восстановление лица и красота лица не применяются"
-  },
-  {
-   "zh": "群二维码在项目主页 README 里",
-   "src": "qml/SettingsPage.qml",
-   "zh-TW": "群組 QR 碼在專案主頁 README 裡",
-   "en": "The group QR codes are in the project README",
-   "ja": "グループの QR コードはプロジェクトの README にあります",
-   "ko": "그룹 QR 코드는 프로젝트 README에 있습니다.",
-   "es": "Los códigos del grupo QR están en el proyecto README",
-   "fr": "Les codes QR du groupe sont dans le projet README",
-   "de": "Die Gruppen-QR-Codes befinden sich im Projekt README",
-   "pt-BR": "Os códigos QR do grupo estão no projeto README",
-   "ru": "Группа QR-кодов находится в проекте README"
   },
   {
    "zh": "羽化像素",
@@ -32243,7 +32165,7 @@
    "ru": "Виртуальная регистрация камеры провалилась."
   },
   {
-   "zh": "虚拟摄像机组件不完整，请完整解压Veyra软件包",
+   "zh": "虚拟摄像机组件不完整，请完整解压Silivid软件包",
    "src": "src/engine/VirtualCamera.cpp",
    "zh-TW": "虛擬攝影機元件不完整，請完整解壓縮Silivid軟體套件",
    "en": "Virtual camera components are missing. Extract the complete Silivid package.",
@@ -33205,7 +33127,7 @@
    "ru": "Настройки не сработали и старые ресурсы не удалось восстановить; остановлено"
   },
   {
-   "zh": "设置已保存，但自动重启失败。请重新打开软件。\nSettings saved. Automatic restart failed; please reopen Veyra.",
+   "zh": "设置已保存，但自动重启失败。请重新打开软件。\nSettings saved. Automatic restart failed; please reopen Silivid.",
    "src": "apps/veyra-qml/main.cpp",
    "zh-TW": "設定已儲存，但自動重新啟動失敗。請重新開啟軟體。",
    "en": "Settings saved. Automatic restart failed; please reopen Silivid.",
@@ -33320,19 +33242,6 @@
    "de": "Diagnose kopiert",
    "pt-BR": "Diagnóstico copiado",
    "ru": "Диагностика скопирована"
-  },
-  {
-   "zh": "诊断信息已复制，可直接粘贴到反馈里",
-   "src": "src/ui/bridge/Preferences.cpp",
-   "zh-TW": "診斷資訊已複製，可直接貼上到反饋裡",
-   "en": "Diagnostics copied; paste them straight into your report",
-   "ja": "診断情報をコピーしました。そのまま報告に貼り付けられます",
-   "ko": "진단이 복사되었습니다. 보고서에 바로 붙여넣으세요.",
-   "es": "Diagnósticos copiados; pegarlos directamente en su informe",
-   "fr": "Diagnostic copié; collez-les directement dans votre rapport",
-   "de": "Diagnose kopiert; Fügen Sie sie direkt in Ihren Bericht ein",
-   "pt-BR": "Diagnósticos copiados; cole- os diretamente no seu relatório",
-   "ru": "Диагностика скопирована; вставьте их прямо в свой отчет"
   },
   {
    "zh": "该地址没有视频流",
@@ -36091,7 +36000,7 @@
    "ru": "В этом режиме пока нет пресетов."
   },
   {
-   "zh": "这个目标所在的显示器接在 %1 上，Veyra 在 %2 上处理：每帧画面都要由 Windows 在两块显卡之间复制，延迟更高。双显卡分工时，建议把显示器接到处理用的显卡上（笔记本可开独显直连）",
+   "zh": "这个目标所在的显示器接在 %1 上，Silivid 在 %2 上处理：每帧画面都要由 Windows 在两块显卡之间复制，延迟更高。双显卡分工时，建议把显示器接到处理用的显卡上（笔记本可开独显直连）",
    "src": "qml/ScreenSourceDialog.qml",
    "zh-TW": "這個目標所在的顯示器接在 %1 上，Silivid 在 %2 上處理：每格畫面都要由 Windows 在兩張顯示卡之間複製，延遲更高。雙顯示卡分工時，建議把顯示器接到處理用的顯示卡上（筆電可開啟獨顯直連）",
    "en": "The display this target is on is connected to %1, while Silivid processes on %2: Windows copies every frame between the two GPUs, which adds latency. When two GPUs share the work, connect the display to the processing GPU (on a laptop, turn on the discrete-GPU-only (MUX) mode)",
@@ -37950,19 +37859,6 @@
    "ru": "Клавиатура и мышь не захвачены · щелкните картинку для захвата"
   },
   {
-   "zh": "镜像失败时自动改用 GitHub 直连。",
-   "src": "qml/SettingsPage.qml",
-   "zh-TW": "鏡像失敗時自動改用 GitHub 直連。",
-   "en": "Silivid connects directly to GitHub if the mirror fails.",
-   "ja": "ミラーに接続できない場合は GitHub に直接接続します。",
-   "ko": "미러 사용에 실패하면 GitHub에 직접 연결합니다.",
-   "es": "Si falla el espejo, Silivid se conecta directamente a GitHub.",
-   "fr": "Si le miroir échoue, Silivid se connecte directement à GitHub.",
-   "de": "Wenn der Spiegelserver ausfällt, verbindet sich Silivid direkt mit GitHub.",
-   "pt-BR": "Se o espelho falhar, o Silivid se conecta diretamente ao GitHub.",
-   "ru": "При сбое зеркала Silivid подключится напрямую к GitHub."
-  },
-  {
    "zh": "长句自动缩小",
    "src": "qml/SubtitleSettingsDialog.qml",
    "zh-TW": "長句自動縮小",
@@ -38912,6 +38808,19 @@
    "ru": "Переключатель страниц"
   },
   {
+   "zh": "项目主页",
+   "src": "qml/SettingsPage.qml",
+   "zh-TW": "專案首頁",
+   "en": "Project page",
+   "ja": "プロジェクトページ",
+   "ko": "프로젝트 페이지",
+   "es": "Página del proyecto",
+   "fr": "Page du projet",
+   "de": "Projektseite",
+   "pt-BR": "Página do projeto",
+   "ru": "Страница проекта"
+  },
+  {
    "zh": "顺时针旋转 90°（已旋转 %1°）",
    "src": "qml/RotateButton.qml",
    "zh-TW": "順時針旋轉 90°（已旋轉 %1°）",
@@ -38936,6 +38845,19 @@
    "de": "Muss unter dem Maximum bleiben",
    "pt-BR": "Deve ficar abaixo do máximo",
    "ru": "Должно быть меньше максимума"
+  },
+  {
+   "zh": "预发布版本",
+   "src": "qml/SettingsPage.qml",
+   "zh-TW": "預發行版本",
+   "en": "Pre-release versions",
+   "ja": "プレリリース版",
+   "ko": "사전 출시 버전",
+   "es": "Versiones preliminares",
+   "fr": "Préversions",
+   "de": "Vorabversionen",
+   "pt-BR": "Versões de pré-lançamento",
+   "ru": "Предварительные версии"
   },
   {
    "zh": "预算 ",

@@ -1,4 +1,11 @@
 """Exercise a loopback-only portable build using two signed test release ZIPs."""
+import sys
+
+# Silivid only notifies about releases, so there is no flow here to exercise.
+# Exit non-zero: a disabled test must never be read as a passing one.
+sys.exit("DISABLED: the portable auto-update flow is disabled in Silivid; nothing was tested. "
+         "See docs/macos/UPDATES.md.")
+
 import argparse
 import base64
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer

@@ -33,7 +33,7 @@ PortableUpdate::PortableUpdate(const QString& version, QObject* parent)
         DeleteFileW(status.c_str());
         if (!result.empty()) QTimer::singleShot(0, this, [this, result] {
             qInfo().noquote() << "[portable-update-result]" << QString::fromStdString(result).trimmed();
-            if (result == "installed\n") emit notice(tr("Veyra 已更新"), false);
+            if (result == "installed\n") emit notice(tr("Silivid 已更新"), false);
             else if (result == "windows-blocked\n") emit notice(tr("Windows 已阻止本次更新，请查看保护历史"), true);
             else emit notice(tr("更新未完成，已打开可用版本"), true);
         });

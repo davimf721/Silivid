@@ -51,9 +51,8 @@ VPage {
         { id: "ps5",   label: qsTr("PS5 串流"), icon: "gamepad" },
         { id: "keys",  label: qsTr("快捷键"), icon: "zap" },
         { id: "comp",  label: qsTr("组件与许可"), icon: "box" },
-        { id: "about", label: qsTr("关于"), icon: "info" },
-        // The one entry with a coloured icon, so it can be found.
-        { id: "sponsor", label: qsTr("赞助作者"), icon: "heart", tint: "#FF6B81" }
+        // The original author's support pages are not Silivid channels: no entry here.
+        { id: "about", label: qsTr("关于"), icon: "info" }
     ]
 
     // --- nav ---------------------------------------------------------------
@@ -1127,7 +1126,7 @@ VPage {
                                       ? qsTr("监控兼容绘制已启用：OSD 只显示在视频上；部分阴影与模糊简化")
                                       : automatic
                                         ? qsTr("启动时检测到小飞机（RTSS）、NVIDIA 信息浮窗或游戏加加就改用软件绘制界面，它们只显示在视频上")
-                                        : qsTr("界面始终用显卡绘制；小飞机 OSD 不在 Veyra 里显示；开着 NVIDIA 信息浮窗或游戏加加时可能卡死")
+                                        : qsTr("界面始终用显卡绘制；小飞机 OSD 不在 Silivid 里显示；开着 NVIDIA 信息浮窗或游戏加加时可能卡死")
                             VSeg {
                                 objectName: "set-overlay-compat"
                                 options: [{ id: "auto", label: qsTr("自动") }, { id: "off", label: qsTr("关闭") }]
@@ -1409,18 +1408,16 @@ VPage {
                     }
                     VGroup {
                         VRow {
-                            label: qsTr("下载线路")
-                            hint: qsTr("镜像失败时自动改用 GitHub 直连。")
-                            VSelect {
-                                objectName: "set-update-download-route"
-                                options: [
-                                    { id: "github", label: qsTr("GitHub 直连") },
-                                    { id: "gh-proxy", label: "GH-Proxy · gh-proxy.com" },
-                                    { id: "ghfast", label: "GHFast · ghfast.top" }
-                                ]
-                                value: (options.find(option => option.id === veyra.preferences.updateDownloadRoute) || options[0]).label
-                                enabled: !veyra.updates.checking && !root.portableUpdate.downloading
-                                onPicked: id => veyra.setPreference("updateDownloadRoute", id)
+                            label: qsTr("预发布版本")
+                            hint: qsTr("同时提醒 alpha 和 beta 版本，这些版本可能不稳定")
+                            VSwitch {
+                                objectName: "set-update-prerelease"
+                                checked: veyra.preferences.updatePrereleaseChannel === true
+                                enabled: !veyra.updates.checking
+                                onToggled: checked => {
+                                    if (veyra.setPreference("updatePrereleaseChannel", checked))
+                                        veyra.updates.check(true)
+                                }
                             }
                         }
                         VRow {
@@ -1459,18 +1456,8 @@ VPage {
                             }
                         }
                         VRow {
-                            label: qsTr("反馈问题")
-                            hint: qsTr("打开 GitHub Issues，诊断信息已自动复制")
-                            VButton { text: qsTr("打开"); onClicked: veyra.openFeedbackPage() }
-                        }
-                        VRow {
-                            label: qsTr("赞助作者")
-                            hint: qsTr("Patreon、微信与支付宝")
-                            VButton { objectName: "about-sponsor"; text: qsTr("前往"); onClicked: root.section = "sponsor" }
-                        }
-                        VRow {
-                            label: qsTr("交流群")
-                            hint: qsTr("群二维码在项目主页 README 里")
+                            label: qsTr("项目主页")
+                            hint: qsTr("在 GitHub 查看 Silivid 的说明和版本")
                             VButton { text: qsTr("查看"); onClicked: veyra.openProjectPage() }
                         }
                         VRow {

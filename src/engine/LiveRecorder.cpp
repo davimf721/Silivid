@@ -823,9 +823,9 @@ struct LiveRecorder::Segment final : sink::RecordingAudioSink, MicrophoneSink {
             if(!track.open())return false;
             ++trackCount;return true;
         };
-        if(sound&&microphone&&!microphoneTrack)return add(&soundLane,&micLane,"Veyra sound + microphone");
-        if(sound&&!add(&soundLane,nullptr,"Veyra sound"))return false;
-        if(microphone&&!add(&micLane,nullptr,"Veyra microphone"))return false;
+        if(sound&&microphone&&!microphoneTrack)return add(&soundLane,&micLane,"Silivid sound + microphone");
+        if(sound&&!add(&soundLane,nullptr,"Silivid sound"))return false;
+        if(microphone&&!add(&micLane,nullptr,"Silivid microphone"))return false;
         return true;
     }
     void openSound(){

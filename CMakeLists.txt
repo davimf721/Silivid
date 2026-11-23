@@ -19,6 +19,8 @@ if(NOT VEYRA_DISPLAY_VERSION MATCHES "^${PROJECT_VERSION}")
   set(VEYRA_DISPLAY_VERSION "${PROJECT_VERSION}" CACHE STRING "Human-readable version string" FORCE)
 endif()
 
+include(cmake/SilividVersion.cmake)
+
 # macOS has its own target set; see cmake/VeyraMacOS.cmake.
 if(APPLE)
   include(cmake/VeyraMacOS.cmake)
@@ -1308,6 +1310,9 @@ if(VEYRA_BUILD_QML_UI AND Qt6_FOUND)
   target_link_libraries(veyra_startup_music_tests PRIVATE veyra_startup_music)
   set(VEYRA_UPDATE_PUBLIC_KEY "" CACHE STRING "Ed25519 release verification key as 64 lowercase hex digits")
   set(VEYRA_UPDATE_TEST_PORT "" CACHE STRING "Local HTTP update fixture port (test builds only)")
+  if(VEYRA_UPDATE_PUBLIC_KEY OR VEYRA_UPDATE_TEST_PORT)
+    message(FATAL_ERROR "Silivid only notifies about releases: the portable auto-update flow is disabled")
+  endif()
   string(LENGTH "${VEYRA_UPDATE_PUBLIC_KEY}" veyra_update_key_length)
   if(VEYRA_UPDATE_PUBLIC_KEY AND
      (NOT veyra_update_key_length EQUAL 64 OR NOT VEYRA_UPDATE_PUBLIC_KEY MATCHES "^[0-9a-f]+$"))
@@ -1343,9 +1348,10 @@ if(VEYRA_BUILD_QML_UI AND Qt6_FOUND)
   add_executable(veyra_update_worker apps/veyra-portable/UpdateWorker.cpp)
   target_compile_definitions(veyra_update_worker PRIVATE NOMINMAX WIN32_LEAN_AND_MEAN)
   target_link_libraries(veyra_update_worker PRIVATE veyra_portable_manifest ole32 uuid)
-  add_library(veyra_update_checker STATIC src/ui/UpdateChecker.cpp include/veyra/ui/UpdateChecker.h
-    src/ui/PortableUpdate.cpp include/veyra/ui/PortableUpdate.h)
+  add_library(veyra_update_checker STATIC src/base/SemVer.cpp src/ui/UpdateChecker.cpp include/veyra/ui/UpdateChecker.h
+    src/ui/PortableUpdateDisabled.cpp include/veyra/ui/PortableUpdate.h)
   set_target_properties(veyra_update_checker PROPERTIES AUTOMOC ON)
+  target_compile_definitions(veyra_update_checker PRIVATE VEYRA_SILIVID_VERSION="${SILIVID_VERSION}")
   target_compile_features(veyra_update_checker PUBLIC cxx_std_20)
   target_compile_options(veyra_update_checker PRIVATE /utf-8)
   target_include_directories(veyra_update_checker PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/include)
@@ -1469,7 +1475,8 @@ if(VEYRA_BUILD_QML_UI AND Qt6_FOUND)
   endif()
   # VEYRA_DISPLAY_VERSION is the human-readable version the app reports; it is
   # the same value the resource file uses, so the UI cannot drift from it.
-  target_compile_definitions(veyra_qml_bridge PRIVATE VEYRA_DISPLAY_VERSION="${VEYRA_DISPLAY_VERSION}")
+  # Silivid: the app and the update check report the product version.
+  target_compile_definitions(veyra_qml_bridge PRIVATE VEYRA_DISPLAY_VERSION="${SILIVID_VERSION}")
   # libass (ISC) + FreeType/FriBidi/HarfBuzz, static, for full ASS/SSA effect
   # subtitles. Local prebuilt tree only (vcpkg x64-windows-static-md); never in
   # source Git. Without it ASS tracks fall back to the built-in styled renderer.

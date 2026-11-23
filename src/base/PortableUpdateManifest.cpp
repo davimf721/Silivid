@@ -23,29 +23,6 @@ bool verify(const QByteArray& payload, const QByteArray& signature, const QByteA
             signature.size(), reinterpret_cast<const unsigned char*>(payload.constData()), payload.size()) == 1;
 }
 
-QString origin() {
-#ifdef VEYRA_UPDATE_TEST_PORT
-    return QStringLiteral("http://127.0.0.1:") + QString::number(VEYRA_UPDATE_TEST_PORT);
-#else
-    return QStringLiteral("https://github.com");
-#endif
-}
-
-QUrl routedUrl(const QString& official, DownloadRoute route) {
-    if (route == DownloadRoute::GitHub) return QUrl(official);
-#ifdef VEYRA_UPDATE_TEST_PORT
-    // Both routes stay on the same test server, with distinct paths.
-    const auto base = origin();
-    const auto prefix = route == DownloadRoute::GhProxy ? QStringLiteral("/mirror/gh-proxy")
-                                                       : QStringLiteral("/mirror/ghfast");
-    return QUrl(base + prefix + official.sliced(base.size()));
-#else
-    const auto base = route == DownloadRoute::GhProxy ? QStringLiteral("https://gh-proxy.com/")
-                                                     : QStringLiteral("https://ghfast.top/");
-    return QUrl(base + official);
-#endif
-}
-
 } // namespace
 
 QByteArray updatePublicKey() { return QByteArray::fromHex(QByteArrayLiteral(VEYRA_UPDATE_PUBLIC_KEY)); }
@@ -57,25 +34,10 @@ QString releaseVersion(const QString& displayVersion) {
 
 std::optional<DownloadRoute> parseDownloadRoute(const QString& name) {
     if (name == QLatin1String("github")) return DownloadRoute::GitHub;
-    if (name == QLatin1String("gh-proxy")) return DownloadRoute::GhProxy;
-    if (name == QLatin1String("ghfast")) return DownloadRoute::GhFast;
     return std::nullopt;
 }
 
-QUrl releaseApiUrl(DownloadRoute route) {
-    // GHFast only serves Release assets. Use the GitHub API on this route.
-    if (route == DownloadRoute::GhFast) route = DownloadRoute::GitHub;
-#ifdef VEYRA_UPDATE_TEST_PORT
-    return routedUrl(origin() + QStringLiteral("/repos/Likely7/Veyra-NRVideo/releases/latest"), route);
-#else
-    return routedUrl(QStringLiteral("https://api.github.com/repos/Likely7/Veyra-NRVideo/releases/latest"), route);
-#endif
-}
-
-QUrl assetUrl(const QString& version, const QString& asset, DownloadRoute route) {
-    return routedUrl(origin() + QStringLiteral("/Likely7/Veyra-NRVideo/releases/download/v")
-        + version + u'/' + asset, route);
-}
+QUrl assetUrl(const QString&, const QString&, DownloadRoute) { return {}; }
 
 bool allowedRedirect(const QUrl& url) {
     if (!url.isValid() || !url.userInfo().isEmpty() || url.hasFragment()) return false;

@@ -24,9 +24,10 @@ struct UpdatePackage {
 
 QByteArray updatePublicKey();
 QString releaseVersion(const QString& displayVersion);
-enum class DownloadRoute { GitHub, GhProxy, GhFast };
+// Silivid has no third-party mirrors; a saved mirror preference is no longer valid.
+enum class DownloadRoute { GitHub };
 std::optional<DownloadRoute> parseDownloadRoute(const QString& name);
-QUrl releaseApiUrl(DownloadRoute route = DownloadRoute::GitHub);
+// Always empty in Silivid: the portable download flow is disabled.
 QUrl assetUrl(const QString& version, const QString& asset, DownloadRoute route = DownloadRoute::GitHub);
 bool allowedRedirect(const QUrl& url);
 QString packageAssetName(const QString& version, const QString& flavor);

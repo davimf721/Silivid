@@ -126,8 +126,8 @@ QVariantList QmlPlayerBridge::readComponentList() const {
 }
 
 void QmlPlayerBridge::openProjectPage() {
-    // 关于 → 交流群: the group QR codes are kept current in the project README.
-    if (!QDesktopServices::openUrl(QUrl(QStringLiteral("https://github.com/Likely7/Veyra-NRVideo#readme"))))
+    // 关于 → 项目主页.
+    if (!QDesktopServices::openUrl(QUrl(QStringLiteral("https://github.com/davimf721/Silivid#readme"))))
         emit notice(tr("无法打开浏览器"), true);
 }
 
@@ -210,7 +210,7 @@ bool QmlPlayerBridge::setPreference(const QString& key, const QVariant& value) {
                                    "subtitleSecondLanguage", "audioForceStereo", "captureAudioMonitor", "holdCompare",
                                    "magewellLowLatency", "blackmagicNativeCapture", "captureShowAllFrameRates", "cinePillHidden", "exportStopsPlayback", "obsGameCapture", "autoResume", "fullscreenMemoryProtection", "prewarmEnhancement", "hdrFgCompatibility", "computeOnMonitorGpu", "deinterlace", "networkAutoReconnect",
                                    // 设置 → 外观 → 启动动画 / 启动音乐 / 剔除遮罩（2.1.9）
-                                   "introAnimation", "introMusic", "exclusionOverlay"};
+                                   "introAnimation", "introMusic", "exclusionOverlay", "updatePrereleaseChannel"};
     QVariant stored;
     if (ranges.contains(key)) {
         bool ok = false; const int n = value.toInt(&ok);
@@ -291,10 +291,6 @@ bool QmlPlayerBridge::setPreference(const QString& key, const QVariant& value) {
         stored = v;
     } else if (key == QLatin1String("rememberPosition") || key == QLatin1String("dockPinned")) {
         stored = value.toBool();
-    } else if (key == QLatin1String("updateDownloadRoute")) {
-        const auto name = value.toString();
-        if (!portable::parseDownloadRoute(name)) return false;
-        stored = name;
     } else if (key == QLatin1String("language")) {
         const QString v = value.toString();
         static const QStringList languages{"auto", "zh-CN", "zh-TW", "en", "ja", "ko", "es", "fr", "de", "pt-BR", "ru"};
@@ -326,9 +322,8 @@ bool QmlPlayerBridge::setPreference(const QString& key, const QVariant& value) {
     return true;
 }
 void QmlPlayerBridge::applyPreference(const QString& key) {
-    if (key == QLatin1String("updateDownloadRoute")) {
-        const auto route = portable::parseDownloadRoute(impl_->prefString("updateDownloadRoute"));
-        static_cast<UpdateChecker*>(updates_)->setDownloadRoute(route.value_or(portable::DownloadRoute::GitHub));
+    if (key == QLatin1String("updatePrereleaseChannel")) {
+        static_cast<UpdateChecker*>(updates_)->setPrereleaseChannel(impl_->prefBool("updatePrereleaseChannel", false));
         return;
     }
     if(key==QLatin1String("virtualCameraFps")&&virtualCameraEnabled())setVirtualCameraEnabled(true);
@@ -604,13 +599,8 @@ void QmlPlayerBridge::updateLiveCompanionCompat() {
 }
 
 int QmlPlayerBridge::uiScaleActive() const { return qApp ? qApp->property("veyraUiScale").toInt() : 0; }
-void QmlPlayerBridge::openFeedbackPage() {
-    copyDiagnostics();
-    QDesktopServices::openUrl(QUrl(QStringLiteral("https://github.com/Likely7/Veyra-NRVideo/issues")));
-    emit notice(tr("诊断信息已复制，可直接粘贴到反馈里"), false);
-}
 void QmlPlayerBridge::openReleasesPage() {
-    QDesktopServices::openUrl(QUrl(QStringLiteral("https://github.com/Likely7/Veyra-NRVideo/releases")));
+    QDesktopServices::openUrl(QUrl(QStringLiteral("https://github.com/davimf721/Silivid/releases")));
 }
 bool QmlPlayerBridge::openSponsorLink(const QString& id) {
     // The author's pages as the author gave them (2026-10-19); the page shows buttons,
@@ -972,7 +962,7 @@ QString QmlPlayerBridge::captureSignalText() const {
 
 void QmlPlayerBridge::importPresetDialog() {
     const QString path = QFileDialog::getOpenFileName(nullptr, tr("导入预设"), QString(),
-                                                      tr("Veyra 预设 (*.vpreset);;所有文件 (*)"));
+                                                      tr("Silivid 预设 (*.vpreset);;所有文件 (*)"));
     if (!path.isEmpty()) importPreset(path);
 }
 bool QmlPlayerBridge::importPreset(const QString& path) {
@@ -990,7 +980,7 @@ void QmlPlayerBridge::exportPresetDialog(int index) {
     if (index < 0 || size_t(index) >= entries.size()) return;
     const QString path = QFileDialog::getSaveFileName(nullptr, tr("导出预设"),
                                                       utf8Of(entries[size_t(index)].name) + QStringLiteral(".vpreset"),
-                                                      tr("Veyra 预设 (*.vpreset)"));
+                                                      tr("Silivid 预设 (*.vpreset)"));
     if (!path.isEmpty()) exportPreset(index, path);
 }
 bool QmlPlayerBridge::exportPreset(int index, const QString& path) {

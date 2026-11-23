@@ -177,7 +177,7 @@ struct VirtualCamera::State {
     bool setup(bool remove,std::wstring& why){
         std::lock_guard lock(control);pollSetupLocked();if(setupProcess){why=L"正在安装摄像机组件，请等待";return false;}
         const auto file=modules()/L"veyra-camera-setup.exe";std::error_code ec;
-        if(!std::filesystem::is_regular_file(file,ec)){why=L"虚拟摄像机组件不完整，请完整解压Veyra软件包";return false;}
+        if(!std::filesystem::is_regular_file(file,ec)){why=L"虚拟摄像机组件不完整，请完整解压Silivid软件包";return false;}
         SHELLEXECUTEINFOW launch{sizeof(launch)};launch.fMask=SEE_MASK_NOCLOSEPROCESS|SEE_MASK_FLAG_NO_UI;
         launch.lpVerb=L"runas";launch.lpFile=file.c_str();launch.lpParameters=remove?L"--uninstall":L"--install";launch.nShow=SW_HIDE;
         if(!ShellExecuteExW(&launch)){
@@ -298,12 +298,12 @@ bool VirtualCamera::start(uint32_t rate,std::wstring& error){
     const auto x64=directory/L"veyra-virtualcam64.dll",x86=directory/L"veyra-virtualcam32.dll";
     std::error_code ec;
     if(!std::filesystem::is_regular_file(x64,ec)||!std::filesystem::is_regular_file(x86,ec)){
-        error=L"虚拟摄像机组件不完整，请完整解压Veyra软件包";s.fail(error);return false;
+        error=L"虚拟摄像机组件不完整，请完整解压Silivid软件包";s.fail(error);return false;
     }
     SetLastError(0);HANDLE owner=CreateMutexW(nullptr,FALSE,L"Local\\VeyraVirtualCameraProducerV1");
     const DWORD last=GetLastError();
     if(!owner||last==ERROR_ALREADY_EXISTS){
-        if(owner)CloseHandle(owner);error=L"另一个Veyra实例已启用虚拟摄像机";s.fail(error);return false;
+        if(owner)CloseHandle(owner);error=L"另一个Silivid实例已启用虚拟摄像机";s.fail(error);return false;
     }
     s.pollSetupLocked();s.systemInstalled=machineRegistered();
     s.systemOutdated=s.systemInstalled.load()&&!machineCurrent();

@@ -37,7 +37,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_EXTENSIONS OFF)
 
 find_package(Threads REQUIRED)
-find_package(Qt6 6.8 REQUIRED COMPONENTS Core Gui Qml Quick)
+find_package(Qt6 6.8 REQUIRED COMPONENTS Core Gui Network Qml Quick Test)
 find_package(PkgConfig REQUIRED)
 pkg_check_modules(VEYRA_FFMPEG REQUIRED IMPORTED_TARGET
   libavcodec libavformat libavutil libswscale libswresample)
@@ -76,6 +76,18 @@ add_library(veyra_portable_qt STATIC
 set_target_properties(veyra_portable_qt PROPERTIES AUTOMOC ON)
 target_link_libraries(veyra_portable_qt PUBLIC veyra_portable Qt6::Core)
 
+# Release notification only. PortableUpdateDisabled replaces the Windows
+# downloader, so no download or install code is linked.
+add_library(veyra_update_checker STATIC
+  src/base/SemVer.cpp
+  src/ui/UpdateChecker.cpp include/veyra/ui/UpdateChecker.h
+  src/ui/PortableUpdateDisabled.cpp include/veyra/ui/PortableUpdate.h
+)
+set_target_properties(veyra_update_checker PROPERTIES AUTOMOC ON)
+target_compile_definitions(veyra_update_checker PRIVATE VEYRA_SILIVID_VERSION="${SILIVID_VERSION}")
+target_include_directories(veyra_update_checker PUBLIC "${CMAKE_CURRENT_SOURCE_DIR}/include")
+target_link_libraries(veyra_update_checker PUBLIC Qt6::Core Qt6::Gui Qt6::Network)
+
 # Links every portable object plus Qt and FFmpeg, so an unresolved symbol hidden
 # inside a static archive fails the build.
 add_executable(veyra_macos_build_probe tools/macos_build_probe/main.cpp)
@@ -83,10 +95,18 @@ target_link_libraries(veyra_macos_build_probe PRIVATE
   "$<LINK_LIBRARY:WHOLE_ARCHIVE,veyra_portable>"
   "$<LINK_LIBRARY:WHOLE_ARCHIVE,veyra_portable_media>"
   "$<LINK_LIBRARY:WHOLE_ARCHIVE,veyra_portable_qt>"
-  PkgConfig::VEYRA_FFMPEG Threads::Threads Qt6::Core Qt6::Qml)
+  "$<LINK_LIBRARY:WHOLE_ARCHIVE,veyra_update_checker>"
+  PkgConfig::VEYRA_FFMPEG Threads::Threads Qt6::Core Qt6::Gui Qt6::Network Qt6::Qml)
 
 enable_testing()
 add_test(NAME veyra_macos_build_probe COMMAND veyra_macos_build_probe)
+
+# Loopback only. The real API is reached solely through the manual --live option.
+add_executable(veyra_update_checker_tests tests/unit/UpdateCheckerTests.cpp)
+set_target_properties(veyra_update_checker_tests PROPERTIES AUTOMOC ON)
+target_link_libraries(veyra_update_checker_tests PRIVATE veyra_update_checker Qt6::Test)
+add_test(NAME veyra_update_checker_tests COMMAND veyra_update_checker_tests)
+set_tests_properties(veyra_update_checker_tests PROPERTIES TIMEOUT 120)
 
 set(VEYRA_MACOS_TESTS
   veyra_adaptive_fg_multiplier_tests tests/unit/AdaptiveFgMultiplierTests.cpp

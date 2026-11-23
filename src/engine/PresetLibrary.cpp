@@ -232,7 +232,7 @@ bool PresetLibrary::importFile(const std::filesystem::path& source, std::wstring
     std::vector<PresetEntry> loaded;
     std::wstring def, parseError;
     if (!parse(data, loaded, def, parseError) || loaded.empty()) {
-        error_ = parseError.empty() ? L"不是 Veyra 预设文件" : parseError;
+        error_ = parseError.empty() ? L"不是 Silivid 预设文件" : parseError;
         return false;
     }
     auto entry = loaded.front();

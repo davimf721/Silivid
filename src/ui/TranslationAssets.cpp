@@ -143,7 +143,7 @@ void TranslationAssets::download() {
     auto lock = std::make_unique<QLockFile>(dir.filePath(QStringLiteral("download.lock")));
     lock->setStaleLockTime(0);
     if (!lock->tryLock()) {
-        finish(tr("另一个 Veyra 窗口正在下载模型"));
+        finish(tr("另一个 Silivid 窗口正在下载模型"));
         return;
     }
     lock_ = std::move(lock);

@@ -39,7 +39,7 @@ Popup {
         { tab: "quality", target: "sr", title: qsTr("超分辨率在这里"),
           detail: qsTr("需要改变输出尺寸时，在「超分辨率」里选择算法和目标尺寸。") },
         { tab: "quality", target: "nr", title: qsTr("DLSS 5 神经渲染（NR）"),
-          detail: qsTr("在「NR 画面增强」里添加一层。Veyra 对已采集的画面使用实验性神经渲染，增强光照、材质和视觉细节。") },
+          detail: qsTr("在「NR 画面增强」里添加一层。Silivid 对已采集的画面使用实验性神经渲染，增强光照、材质和视觉细节。") },
         { tab: "quality", target: "hdr", title: qsTr("SDR 转 HDR 在这里"),
           detail: qsTr("想把 SDR 画面转换为 HDR，可以在支持的显卡和 HDR 显示器上试用 RTX Video HDR。") },
         { tab: "fg", target: "fg", title: qsTr("补帧在这里设置"),
