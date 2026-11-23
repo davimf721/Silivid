@@ -1,5 +1,9 @@
 ## 支持与反馈 / Support & feedback
 
+> 本页的社区、赞助和二维码均属于原项目 [Veyra](https://github.com/Likely7/Veyra-NRVideo) 及其作者，并非 Silivid 的渠道。
+>
+> The community, donation and QR code links on this page belong to the original [Veyra](https://github.com/Likely7/Veyra-NRVideo) project and its author. They are not Silivid channels.
+
 <p align="center">
   <a href="https://discord.gg/qetVZTRkC"><img src="https://img.shields.io/badge/Discord-Join%20Community-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Join Veyra on Discord" height="36"></a>
   &nbsp;&nbsp;

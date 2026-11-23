@@ -1,4 +1,8 @@
-# Veyra 开发文档
+# Silivid 开发文档
+
+> Silivid 是 [Veyra](https://github.com/Likely7/Veyra-NRVideo) 面向 Apple Silicon macOS 的修改版分支，目前没有可用版本。以下文档继承自 Veyra，描述的是原 Windows 软件的状态、路径和发行记录，不代表这些功能已在 macOS 上实现。
+>
+> Silivid is a modified fork of Veyra for macOS on Apple Silicon, with no usable version yet. The documents below are inherited from Veyra and describe the original Windows application.
 
 日常只从这些入口开始：
 
