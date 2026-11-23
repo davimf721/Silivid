@@ -26,6 +26,10 @@ Only the portable part of the code builds and runs on macOS, on the `macos/port`
 
 Most of the code is still inherited from Veyra and targets Windows, Direct3D 12 and NVIDIA or AMD GPUs. Documents marked as inherited describe that original application, not Silivid. No performance, image quality or hardware compatibility claims are made for macOS.
 
+## Updates
+
+Silivid has no working in-app updates, because there is no app yet. The planned update check only looks at `silivid-v<version>` releases of this repository, notifies you and opens the release page. It never downloads or installs anything. It has not run inside an app or read a real release.
+
 ## Build and test on macOS
 
 You need an Apple Silicon Mac, Xcode and [Homebrew](https://brew.sh) installed in `/opt/homebrew`.

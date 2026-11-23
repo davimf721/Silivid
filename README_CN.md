@@ -26,6 +26,10 @@ Silivid 是 [Veyra](https://github.com/Likely7/Veyra-NRVideo) 的分支。Veyra 
 
 大部分代码仍继承自 Veyra，其目标平台为 Windows、Direct3D 12 以及 NVIDIA 或 AMD 显卡。标记为继承的文档描述的是原软件，而不是 Silivid。现阶段不对 macOS 上的性能、画质或硬件兼容性作任何承诺。
 
+## 更新
+
+由于应用尚不存在，Silivid 目前没有可用的应用内更新。计划中的更新检查只读取本仓库 `silivid-v<版本>` 标签的发行版，发现新版本时提示并打开发行页面，绝不会下载或安装任何内容。它尚未在应用中运行，也尚未读取过真实的发行版。
+
 ## 在 macOS 上构建和测试
 
 需要 Apple Silicon Mac、Xcode，以及安装在 `/opt/homebrew` 的 [Homebrew](https://brew.sh)。
