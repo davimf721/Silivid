@@ -1,3 +1,8 @@
+<!-- silivid-inherited-notice -->
+> **Inherited Veyra document.** This file describes the original Veyra application for Windows. Its features, paths, builds and test results are not Silivid features on macOS. See the [current Silivid status](../README.md).
+>
+> **继承自 Veyra 的文档。** 本文描述原 Windows 版 Veyra，其中的功能、路径、构建和测试结果不代表 Silivid 在 macOS 上的功能。当前状态见 [Silivid 说明](../README.md)。
+
 # 日落配色与经典配色切换（2026-11-14，Claude）
 
 - **背景**：为迎接 GTA6，用户要求参考两张封面图（日落天空：靛蓝 → 淡紫 → 粉 → 桃橙，深紫阴影，白色霓虹字）做一套"高级不丑"的渐变新配色，并能在设置里切回现在的版本。

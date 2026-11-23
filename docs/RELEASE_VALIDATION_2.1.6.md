@@ -1,3 +1,8 @@
+<!-- silivid-inherited-notice -->
+> **Inherited Veyra document.** This file describes the original Veyra application for Windows. Its features, paths, builds and test results are not Silivid features on macOS. See the [current Silivid status](../README.md).
+>
+> **继承自 Veyra 的文档。** 本文描述原 Windows 版 Veyra，其中的功能、路径、构建和测试结果不代表 Silivid 在 macOS 上的功能。当前状态见 [Silivid 说明](../README.md)。
+
 # 2.1.6 测量范围与证据
 
 以下为已保存的本机研发验收，不是所有机器的性能保证，也不是每个数字都来自v2.1.5与v2.1.6两个公开包的直接A/B。最终产品源代码f46df7f，主程序bf27ebed5d81a79814441671e933c7a8ef6be584c784f75b8ec80493642c10f3，PE2.1.6.0；后续只改发行资料/公开载荷元数据，不用源码文档更新冒充新的性能测量。单Agent自审，没有独立Reviewer声明。

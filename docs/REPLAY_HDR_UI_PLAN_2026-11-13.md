@@ -1,3 +1,8 @@
+<!-- silivid-inherited-notice -->
+> **Inherited Veyra document.** This file describes the original Veyra application for Windows. Its features, paths, builds and test results are not Silivid features on macOS. See the [current Silivid status](../README.md).
+>
+> **继承自 Veyra 的文档。** 本文描述原 Windows 版 Veyra，其中的功能、路径、构建和测试结果不代表 Silivid 在 macOS 上的功能。当前状态见 [Silivid 说明](../README.md)。
+
 # 回放开关与HDR设置收纳
 
 用户要求：即时回放/F9开关放到录制按钮旁边，设置中截图的HDR亮度曲线/预设/元数据默认折叠。基线main2dcff36，分支codex/replay-controls-hdr-fold-20261113；复用当前干净源码路径和2.1.6构建，原脏树/依赖/用户配置保持。

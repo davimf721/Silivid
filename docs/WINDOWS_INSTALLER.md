@@ -1,3 +1,8 @@
+<!-- silivid-inherited-notice -->
+> **Inherited Veyra document.** This file describes the original Veyra application for Windows. Its features, paths, builds and test results are not Silivid features on macOS. See the [current Silivid status](../README.md).
+>
+> **继承自 Veyra 的文档。** 本文描述原 Windows 版 Veyra，其中的功能、路径、构建和测试结果不代表 Silivid 在 macOS 上的功能。当前状态见 [Silivid 说明](../README.md)。
+
 # Veyra Windows 安装包
 
 安装向导使用 Veyra 的日落背景、Logo 和图标。默认安装到当前用户的 %LOCALAPPDATA%\Programs\Veyra (NVIDIA) 或 Veyra (AMD)。可以浏览或输入其他本地目录。桌面快捷方式和完成时启动都是可选项。开始菜单包含 Veyra 和卸载入口，Windows「已安装的应用」也会显示对应版本。

@@ -1,3 +1,8 @@
+<!-- silivid-inherited-notice -->
+> **Inherited Veyra document.** This file describes the original Veyra application for Windows. Its features, paths, builds and test results are not Silivid features on macOS. See the [current Silivid status](../README.md).
+>
+> **继承自 Veyra 的文档。** 本文描述原 Windows 版 Veyra，其中的功能、路径、构建和测试结果不代表 Silivid 在 macOS 上的功能。当前状态见 [Silivid 说明](../README.md)。
+
 # ANR FG 本地实验
 
 用户明确要求开分支接入试效果，授权本地集成、构建与验证，不包含合并／推送／发布。分支codex/anr-fg-experiment-20261112，独立工作树worktrees/anr-fg-experiment-20261112，起点6e3747a，检查点checkpoint/pre-anr-fg-20261112。Claude的复审脏树和共享构建不改；本轮单Agent。

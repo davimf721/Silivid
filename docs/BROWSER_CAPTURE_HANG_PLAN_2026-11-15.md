@@ -1,3 +1,8 @@
+<!-- silivid-inherited-notice -->
+> **Inherited Veyra document.** This file describes the original Veyra application for Windows. Its features, paths, builds and test results are not Silivid features on macOS. See the [current Silivid status](../README.md).
+>
+> **继承自 Veyra 的文档。** 本文描述原 Windows 版 Veyra，其中的功能、路径、构建和测试结果不代表 Silivid 在 macOS 上的功能。当前状态见 [Silivid 说明](../README.md)。
+
 # 浏览器窗口捕获全屏挂起修复
 
 用户提供三份日志、三个2026-11-15挂起转储。独立codex/browser-capture-hang-20261115，基线main2f0e499；此前采集录音分支、Claude日落/AMD分支、主线与原正式包保留。

@@ -1,3 +1,8 @@
+<!-- silivid-inherited-notice -->
+> **Inherited Veyra document.** This file describes the original Veyra application for Windows. Its features, paths, builds and test results are not Silivid features on macOS. See the [current Silivid status](../README.md).
+>
+> **继承自 Veyra 的文档。** 本文描述原 Windows 版 Veyra，其中的功能、路径、构建和测试结果不代表 Silivid 在 macOS 上的功能。当前状态见 [Silivid 说明](../README.md)。
+
 # 八项 PR 的兼容整合与验证
 
 用户要求整合 #140、#136、#133、#127、#115、#99、#96、#75，并更新 GitHub main。本轮仍为 2.1.9 主线开发版本，不替换既有 Release 下载包。固定输入与授权见 [计划](PR_INTEGRATION_PLAN_2026-11-18.md)。

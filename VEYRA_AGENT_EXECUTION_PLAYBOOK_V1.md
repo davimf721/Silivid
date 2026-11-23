@@ -1,3 +1,8 @@
+<!-- silivid-inherited-notice -->
+> **Inherited Veyra document.** This file describes the original Veyra application for Windows. Its features, paths, builds and test results are not Silivid features on macOS. See the [current Silivid status](README.md).
+>
+> **继承自 Veyra 的文档。** 本文描述原 Windows 版 Veyra，其中的功能、路径、构建和测试结果不代表 Silivid 在 macOS 上的功能。当前状态见 [Silivid 说明](README.md)。
+
 # Veyra Launch V1 施工手册
 
 > 2026-09-10：本手册为历史参考。用户已废弃旧 Loop、控制哈希 preflight 与早期 Phase/R0–R12 强制执行顺序；不得按本文的旧入口阻塞当前修复。当前任务以最新用户指令、AGENTS.md、对应修复计划及 WORKLOG 为准。仍适用的 GPU、颜色、资源生命周期契约继续参考，测试单次不超过 300 秒。

@@ -25,7 +25,7 @@ Branch de trabalho: `macos/port`. A `main` fica limpa para acompanhar o upstream
 
 ## Fases
 
-1. Build: CMake configura e compila em macOS com os módulos Windows desligados.
+1. Build: CMake configura e compila em macOS com os módulos Windows desligados. Concluída para o código portável, veja [PHASE1.md](PHASE1.md).
 2. Núcleo: abstração de GPU e janela Metal exibindo vídeo decodificado.
 3. Reprodução: VideoToolbox, áudio, sincronização e cor (SDR/HDR).
 4. Aprimoramento: MetalFX e redução de ruído, com medição no M4.
@@ -37,5 +37,5 @@ Branch de trabalho: `macos/port`. A `main` fica limpa para acompanhar o upstream
 - Não inclua SDKs, DLLs, modelos ou binários proprietários no Git.
 - Isole código de plataforma e mantenha o diff pequeno para facilitar merges do upstream.
 - Não afirme desempenho ou qualidade sem medição no hardware real.
-- `AGENTS.md` descreve o fluxo do Windows. Caminhos `E:/` e regras exclusivas de Windows não se aplicam aqui.
+- `AGENTS.md` traz as regras do Silivid. As regras originais do Windows estão em `docs/history/rules/AGENTS_before_silivid_2026-11-23.md`, e seus caminhos `E:/` não se aplicam aqui.
 - Sem push, release ou PR para o upstream sem pedido explícito do usuário.

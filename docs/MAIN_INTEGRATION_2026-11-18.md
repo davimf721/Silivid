@@ -1,3 +1,8 @@
+<!-- silivid-inherited-notice -->
+> **Inherited Veyra document.** This file describes the original Veyra application for Windows. Its features, paths, builds and test results are not Silivid features on macOS. See the [current Silivid status](../README.md).
+>
+> **继承自 Veyra 的文档。** 本文描述原 Windows 版 Veyra，其中的功能、路径、构建和测试结果不代表 Silivid 在 macOS 上的功能。当前状态见 [Silivid 说明](../README.md)。
+
 # 2026-11-18 main整合与项目整理结果
 
 用户授权整理Claude/Codex各分支修复、功能并合main。原main `54aa357`，虚拟摄像机工作树基线`bf596e1`，完整原样产品快照`740534e`（72文件，含Codex接入及Claude节拍修复），已快进main，无代码冲突；3条已有README/发行说明文档提交一并保留。本轮单Agent自审，没有独立Reviewer验收，不push/新Release/关机。

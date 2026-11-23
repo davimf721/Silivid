@@ -1,3 +1,8 @@
+<!-- silivid-inherited-notice -->
+> **Inherited Veyra document.** This file describes the original Veyra application for Windows. Its features, paths, builds and test results are not Silivid features on macOS. See the [current Silivid status](../README.md).
+>
+> **继承自 Veyra 的文档。** 本文描述原 Windows 版 Veyra，其中的功能、路径、构建和测试结果不代表 Silivid 在 macOS 上的功能。当前状态见 [Silivid 说明](../README.md)。
+
 # 项目安全清理实际记录（2026-11-06）
 
 用户授权“做一下项目清理，现在硬盘又是要爆炸了”。清理前C盘剩余约104.5 GiB、E盘约876.0 GiB，并未接近满盘；项目仍存在大量旧产物。本轮不扩大到微信、游戏、个人下载和系统文件。

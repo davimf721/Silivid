@@ -1,3 +1,8 @@
+<!-- silivid-inherited-notice -->
+> **Inherited Veyra document.** This file describes the original Veyra application for Windows. Its features, paths, builds and test results are not Silivid features on macOS. See the [current Silivid status](../README.md).
+>
+> **继承自 Veyra 的文档。** 本文描述原 Windows 版 Veyra，其中的功能、路径、构建和测试结果不代表 Silivid 在 macOS 上的功能。当前状态见 [Silivid 说明](../README.md)。
+
 # Veyra 2.1.3 构建与对应源码
 
 产品源码 `7a2d15d9222a98fac69e5343c01b443e1d7060be`，PE2.1.3.0，EXE SHA256 `76c4a44ee582dcd4150152c4e32e5e45f61fee1a35a285818dc7ee1464940f7a`。沿用已验2.1.3重构建ZIP原程序，发布仅更新文档、对比原图和发行元数据，不改程序/QML/shader/DLL/模型。

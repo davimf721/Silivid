@@ -1,3 +1,8 @@
+<!-- silivid-inherited-notice -->
+> **Inherited Veyra document.** This file describes the original Veyra application for Windows. Its features, paths, builds and test results are not Silivid features on macOS. See the [current Silivid status](../README.md).
+>
+> **继承自 Veyra 的文档。** 本文描述原 Windows 版 Veyra，其中的功能、路径、构建和测试结果不代表 Silivid 在 macOS 上的功能。当前状态见 [Silivid 说明](../README.md)。
+
 # 三段式超分整机卡死：证据与防护（2026-10-28）
 
 > **已被同日用户纠偏取代**：以下4K强制限制已撤回，当前分支为`codex/dual-sr-20261028`，普通8K与真正双重SR见[当前方案](DUAL_SR_PLAN_2026-10-28.md)。本报告保留原卡死证据和当时防护测试事实，不作为当前产品规则或原故障已修复证明。

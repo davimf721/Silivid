@@ -1,3 +1,8 @@
+<!-- silivid-inherited-notice -->
+> **Inherited Veyra document.** This file describes the original Veyra application for Windows. Its features, paths, builds and test results are not Silivid features on macOS. See the [current Silivid status](../README.md).
+>
+> **继承自 Veyra 的文档。** 本文描述原 Windows 版 Veyra，其中的功能、路径、构建和测试结果不代表 Silivid 在 macOS 上的功能。当前状态见 [Silivid 说明](../README.md)。
+
 # 社区 PR 整合与 B 站功能移除
 
 用户从 20 个已审查 PR 中选出 9 个进入实施。隔离分支 `codex/community-prs-20261119` 从远端 main `0dac67a0` 创建。未选中的 11 个 PR 已关闭。本轮更新源码主线，版本号沿用 2.1.9。

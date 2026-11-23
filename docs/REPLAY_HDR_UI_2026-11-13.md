@@ -1,3 +1,8 @@
+<!-- silivid-inherited-notice -->
+> **Inherited Veyra document.** This file describes the original Veyra application for Windows. Its features, paths, builds and test results are not Silivid features on macOS. See the [current Silivid status](../README.md).
+>
+> **继承自 Veyra 的文档。** 本文描述原 Windows 版 Veyra，其中的功能、路径、构建和测试结果不代表 Silivid 在 macOS 上的功能。当前状态见 [Silivid 说明](../README.md)。
+
 # 即时回放开关与HDR高级区收纳
 
 用户要求把即时回放/F9开关放到录制旁，将截图中的HDR区域折叠。基线main2dcff36，codex/replay-controls-hdr-fold-20261113，源码仍worktrees/integrate-2.1.6-20261113。只改ProPage、SettingsPage及“展开”四语译文；打包脚本仅追加本次说明文件。默认回放仍关，回放时长、录制/保存/F9和HDR参数调用保持原接口。

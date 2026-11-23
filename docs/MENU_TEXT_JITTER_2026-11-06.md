@@ -1,3 +1,8 @@
+<!-- silivid-inherited-notice -->
+> **Inherited Veyra document.** This file describes the original Veyra application for Windows. Its features, paths, builds and test results are not Silivid features on macOS. See the [current Silivid status](../README.md).
+>
+> **继承自 Veyra 的文档。** 本文描述原 Windows 版 Veyra，其中的功能、路径、构建和测试结果不代表 Silivid 在 macOS 上的功能。当前状态见 [Silivid 说明](../README.md)。
+
 # 选框弹出时文字“抖两下”：软件绘制下弹簧到终点即停（2026-11-06）
 
 - **分支**：`claude/menu-jitter-20261106`，工作树 `E:/项目/Veyra/worktrees/claude-menu-jitter-20261106`。

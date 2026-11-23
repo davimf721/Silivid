@@ -1,3 +1,8 @@
+<!-- silivid-inherited-notice -->
+> **Inherited Veyra document.** This file describes the original Veyra application for Windows. Its features, paths, builds and test results are not Silivid features on macOS. See the [current Silivid status](../README.md).
+>
+> **继承自 Veyra 的文档。** 本文描述原 Windows 版 Veyra，其中的功能、路径、构建和测试结果不代表 Silivid 在 macOS 上的功能。当前状态见 [Silivid 说明](../README.md)。
+
 # 去除重复帧入口精简
 
 用户要求将“内容节奏”改名为“去除重复帧”，选项只保留 60→30、自动去除。基线 288772b，分支 codex/dedup-mode-simplify-20261111，包含此前未构建的软件修改。

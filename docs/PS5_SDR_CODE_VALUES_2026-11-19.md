@@ -1,3 +1,8 @@
+<!-- silivid-inherited-notice -->
+> **Inherited Veyra document.** This file describes the original Veyra application for Windows. Its features, paths, builds and test results are not Silivid features on macOS. See the [current Silivid status](../README.md).
+>
+> **继承自 Veyra 的文档。** 本文描述原 Windows 版 Veyra，其中的功能、路径、构建和测试结果不代表 Silivid 在 macOS 上的功能。当前状态见 [Silivid 说明](../README.md)。
+
 # PS5 SDR 暗部压暗：原因、修复与验证
 
 代码基线 main `33dfdf71`；其后远端仅 README 下载量更新（至 `f9e954ab`），本地整合保留这些更新；用户提供 2.1.9/current main 的 PS5 Remote Play SDR 偏暗反馈。截图中的建议经源码和本轮 GPU 测试核对后采用，未直接套用其全局 shader 替换实验。

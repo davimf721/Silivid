@@ -1,3 +1,8 @@
+<!-- silivid-inherited-notice -->
+> **Inherited Veyra document.** This file describes the original Veyra application for Windows. Its features, paths, builds and test results are not Silivid features on macOS. See the [current Silivid status](../README.md).
+>
+> **继承自 Veyra 的文档。** 本文描述原 Windows 版 Veyra，其中的功能、路径、构建和测试结果不代表 Silivid 在 macOS 上的功能。当前状态见 [Silivid 说明](../README.md)。
+
 # 自动识别、60→30 与间歇卡顿修复验收
 
 本轮完成本地修复与下述覆盖验证。分支 `codex/dedup-stutter-repair-20261112`，基线 `57c75cd`，检查点 `checkpoint/pre-dedup-stutter-repair-20261112`。活动树仍为 `E:/项目/Veyra/worktrees/screen-recording-fix-20261022`，桌面旧脏树未改。方案见 `docs/DEDUP_STUTTER_REPAIR_PLAN_2026-11-12.md`。本轮单Agent自审，没有独立Reviewer；没有merge、push、Release或关机。

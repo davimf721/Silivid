@@ -1,3 +1,8 @@
+<!-- silivid-inherited-notice -->
+> **Inherited Veyra document.** This file describes the original Veyra application for Windows. Its features, paths, builds and test results are not Silivid features on macOS. See the [current Silivid status](../README.md).
+>
+> **继承自 Veyra 的文档。** 本文描述原 Windows 版 Veyra，其中的功能、路径、构建和测试结果不代表 Silivid 在 macOS 上的功能。当前状态见 [Silivid 说明](../README.md)。
+
 # 采集稳定性与直播播放
 
 从本地 main af5ec15e 建立隔离工作树。修复范围为 #169、#164、#145、#121、#150、#170、#126。功能范围为 #131、#120、全屏 Home 耗时、#157、#49。

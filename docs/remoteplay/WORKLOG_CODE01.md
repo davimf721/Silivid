@@ -1,3 +1,8 @@
+<!-- silivid-inherited-notice -->
+> **Inherited Veyra document.** This file describes the original Veyra application for Windows. Its features, paths, builds and test results are not Silivid features on macOS. See the [current Silivid status](../../README.md).
+>
+> **继承自 Veyra 的文档。** 本文描述原 Windows 版 Veyra，其中的功能、路径、构建和测试结果不代表 Silivid 在 macOS 上的功能。当前状态见 [Silivid 说明](../../README.md)。
+
 # Remote Play 代码交付 01 — 实施记录
 
 > 历史阶段记录：本文保留 Code 01 交付当时的状态，其中“原生编译未执行”和 `BLOCKED_NATIVE_BUILD` 已过期。Windows x64/MSVC 原生 Chiaki probe 后续已完成 248/248 步并真实初始化成功。当前事实、必修缺陷和下一步只以 [`../REMOTEPLAY_INTEGRATION_HANDOFF_2026-09-11.md`](../history/reports/REMOTEPLAY_INTEGRATION_HANDOFF_2026-09-11.md) 为准。

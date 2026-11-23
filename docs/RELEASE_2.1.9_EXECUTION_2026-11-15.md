@@ -1,3 +1,8 @@
+<!-- silivid-inherited-notice -->
+> **Inherited Veyra document.** This file describes the original Veyra application for Windows. Its features, paths, builds and test results are not Silivid features on macOS. See the [current Silivid status](../README.md).
+>
+> **继承自 Veyra 的文档。** 本文描述原 Windows 版 Veyra，其中的功能、路径、构建和测试结果不代表 Silivid 在 macOS 上的功能。当前状态见 [Silivid 说明](../README.md)。
+
 # 2.1.9《迎接GTA6降临》发布执行记录
 
 用户确认测试正常并明确授权发布。应用：https://github.com/Likely7/Veyra-NRVideo/releases/tag/v2.1.9，GitHub发布时间2026-11-15T15:51:51Z，名称`Veyra 2.1.9 ·《迎接GTA6降临》`，正式非预发布并设Latest。对应源码：https://github.com/Likely7/Veyra-NRVideo/releases/tag/v2.1.9-sources，不抢Latest。两tag固定发行提交`d442b4e5ac5907fffd4c20e9e876a324708750f2`；实际产品`b430d986c2adace6eae6cd2893fbb7a491473aaa`，EXE `c8a53dc778331c696f5a488400885ef842adb849e1b22a9fbea07520a9ecb8f0`/PE2.1.9.0。发行仅改README/说明/12群原图和包元数据，没有重编译已验程序。

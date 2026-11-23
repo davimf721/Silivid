@@ -1,3 +1,8 @@
+<!-- silivid-inherited-notice -->
+> **Inherited Veyra document.** This file describes the original Veyra application for Windows. Its features, paths, builds and test results are not Silivid features on macOS. See the [current Silivid status](../README.md).
+>
+> **继承自 Veyra 的文档。** 本文描述原 Windows 版 Veyra，其中的功能、路径、构建和测试结果不代表 Silivid 在 macOS 上的功能。当前状态见 [Silivid 说明](../README.md)。
+
 # 补帧延迟预算：失败方向与终止记录
 
 **状态：已撤销，停止研究。** 2026-11-05 用户明确决定：删除独立功能分支，不继续推进，文档记为失败方向。未经用户重新明确授权，不恢复实现、测试入口或另开分支延续本实验。

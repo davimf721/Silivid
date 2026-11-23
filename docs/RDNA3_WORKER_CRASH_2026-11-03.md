@@ -1,3 +1,8 @@
+<!-- silivid-inherited-notice -->
+> **Inherited Veyra document.** This file describes the original Veyra application for Windows. Its features, paths, builds and test results are not Silivid features on macOS. See the [current Silivid status](../README.md).
+>
+> **继承自 Veyra 的文档。** 本文描述原 Windows 版 Veyra，其中的功能、路径、构建和测试结果不代表 Silivid 在 macOS 上的功能。当前状态见 [Silivid 说明](../README.md)。
+
 # RX7900 XTX NR：架构通过后的worker退出
 
 用户确认首个NVAPI更新后仍不可用，并提供veyra-qml(4).log与cache(1).zip。继续在codex/rdna3-nvapi-luid-20261103（已提交基线b27c0df）排查，不合main、不push/Release。此次先补足崩溃证据，不能把诊断更新说成第二处崩溃已修复。

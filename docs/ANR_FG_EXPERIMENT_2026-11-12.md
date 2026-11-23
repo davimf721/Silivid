@@ -1,3 +1,8 @@
+<!-- silivid-inherited-notice -->
+> **Inherited Veyra document.** This file describes the original Veyra application for Windows. Its features, paths, builds and test results are not Silivid features on macOS. See the [current Silivid status](../README.md).
+>
+> **继承自 Veyra 的文档。** 本文描述原 Windows 版 Veyra，其中的功能、路径、构建和测试结果不代表 Silivid 在 macOS 上的功能。当前状态见 [Silivid 说明](../README.md)。
+
 # ANR FG 本地完整接入（2026-11-12）
 
 本次实现上游现有 ANR FG 的完整本地接入：2X、3X、4X、5X、6X，SDR/HDR，列表/节点编辑，预设与会话恢复，NR/SR 共存，热切换、暂停恢复、尺寸/历史重置、错误回退，以及产品导出执行器。不是仅添加菜单或 SDR 2X 演示。ANR SR/RR 尚无可用组件，不放占位选项。节点模式沿用 Veyra 现有预览能力；所有后端的节点图导出当前都明确拒绝，本轮没有伪称支持它。

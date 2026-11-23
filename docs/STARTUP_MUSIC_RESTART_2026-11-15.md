@@ -1,3 +1,8 @@
+<!-- silivid-inherited-notice -->
+> **Inherited Veyra document.** This file describes the original Veyra application for Windows. Its features, paths, builds and test results are not Silivid features on macOS. See the [current Silivid status](../README.md).
+>
+> **继承自 Veyra 的文档。** 本文描述原 Windows 版 Veyra，其中的功能、路径、构建和测试结果不代表 Silivid 在 macOS 上的功能。当前状态见 [Silivid 说明](../README.md)。
+
 # 2.1.9 启动音乐第二次不播放
 
 用户首次启动后点击角落关闭声音，日志14:46:18先记录停止7.33秒，再写introMusic=false与stopped(button)。后续两次新进程无媒体打开，音乐初始化被保存的关闭偏好阻止。这是实现错误：临时停止与永久设置混用，不是“播放一次”应跨进程消耗。

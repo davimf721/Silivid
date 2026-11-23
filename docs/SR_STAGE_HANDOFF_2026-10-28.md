@@ -1,3 +1,8 @@
+<!-- silivid-inherited-notice -->
+> **Inherited Veyra document.** This file describes the original Veyra application for Windows. Its features, paths, builds and test results are not Silivid features on macOS. See the [current Silivid status](../README.md).
+>
+> **继承自 Veyra 的文档。** 本文描述原 Windows 版 Veyra，其中的功能、路径、构建和测试结果不代表 Silivid 在 macOS 上的功能。当前状态见 [Silivid 说明](../README.md)。
+
 # 单层三段式超分接手记录（2026-10-28）
 
 > **同日后续纠偏**：本文单层“先降→超分→再缩”现为历史。当前实现是基础SR→降低第一次AI结果→第二次SR，普通8K不做4K限制，见[真正双重SR](DUAL_SR_PLAN_2026-10-28.md)。旧验证只证明当时实现，不代表当前链已验。

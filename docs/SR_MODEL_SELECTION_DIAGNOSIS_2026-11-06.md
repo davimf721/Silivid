@@ -1,3 +1,8 @@
+<!-- silivid-inherited-notice -->
+> **Inherited Veyra document.** This file describes the original Veyra application for Windows. Its features, paths, builds and test results are not Silivid features on macOS. See the [current Silivid status](../README.md).
+>
+> **继承自 Veyra 的文档。** 本文描述原 Windows 版 Veyra，其中的功能、路径、构建和测试结果不代表 Silivid 在 macOS 上的功能。当前状态见 [Silivid 说明](../README.md)。
+
 > 后续更新：Claude已复现同路径、相同ZIP时间戳时Qt复用旧编译缓存，修复已并本地main。见[合并验收](CLAUDE_FIXES_MERGE_2026-11-06.md)与[缓存修复](QML_CACHE_PER_BUILD_2026-11-06.md)。下文保留本次初步排查过程。
 
 # 2.1.3 RTX三模型选择跳回DLSS：日志诊断

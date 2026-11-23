@@ -1,3 +1,8 @@
+<!-- silivid-inherited-notice -->
+> **Inherited Veyra document.** This file describes the original Veyra application for Windows. Its features, paths, builds and test results are not Silivid features on macOS. See the [current Silivid status](../README.md).
+>
+> **继承自 Veyra 的文档。** 本文描述原 Windows 版 Veyra，其中的功能、路径、构建和测试结果不代表 Silivid 在 macOS 上的功能。当前状态见 [Silivid 说明](../README.md)。
+
 # Claude／Codex／ANR 本地主线整合（2026-11-13）
 
 状态：组合产品2c278af的相关验收已通过，本轮已合入本地main。当前用户明确要求整理两边修复并合main，不包含推送、发布或关机。计划见[整合计划](MAIN_CLAUDE_ANR_INTEGRATION_PLAN_2026-11-13.md)。

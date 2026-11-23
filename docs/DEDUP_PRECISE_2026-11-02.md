@@ -1,3 +1,8 @@
+<!-- silivid-inherited-notice -->
+> **Inherited Veyra document.** This file describes the original Veyra application for Windows. Its features, paths, builds and test results are not Silivid features on macOS. See the [current Silivid status](../README.md).
+>
+> **继承自 Veyra 的文档。** 本文描述原 Windows 版 Veyra，其中的功能、路径、构建和测试结果不代表 Silivid 在 macOS 上的功能。当前状态见 [Silivid 说明](../README.md)。
+
 # 自动剔除重复帧：容忍零星噪点（2026-11-02）
 
 分支 `claude/dedup-precise-20261102`，基于 main `30337c8`，**未提交、未合并、未 push/Release**。用户要求：按排查结论重新修“自动剔除重复帧”，尽量精准；VFG 自动调控不要自动开启（不做原方案第 2 项）；PS5 保持开着，用同一个 30 帧游戏实测。

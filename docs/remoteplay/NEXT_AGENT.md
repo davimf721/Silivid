@@ -1,3 +1,8 @@
+<!-- silivid-inherited-notice -->
+> **Inherited Veyra document.** This file describes the original Veyra application for Windows. Its features, paths, builds and test results are not Silivid features on macOS. See the [current Silivid status](../../README.md).
+>
+> **继承自 Veyra 的文档。** 本文描述原 Windows 版 Veyra，其中的功能、路径、构建和测试结果不代表 Silivid 在 macOS 上的功能。当前状态见 [Silivid 说明](../../README.md)。
+
 # Remote Play 接续入口
 
 2026-09-12最新：[PS5颜色/UI/手柄修复记录](../history/reports/REMOTEPLAY_REPAIR_PROGRESS_2026-09-12.md)。真实PS5连接和基本增强已由用户确认；本轮修复后用户再次反馈“测试了没问题”。下方“下一步首次连接”是历史状态，不要重新当阻塞。保留蓝牙、多设备、仅观看账号共存等未逐项验证边界；本次不发布。
