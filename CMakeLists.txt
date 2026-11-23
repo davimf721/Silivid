@@ -19,6 +19,12 @@ if(NOT VEYRA_DISPLAY_VERSION MATCHES "^${PROJECT_VERSION}")
   set(VEYRA_DISPLAY_VERSION "${PROJECT_VERSION}" CACHE STRING "Human-readable version string" FORCE)
 endif()
 
+# macOS has its own target set; see cmake/VeyraMacOS.cmake.
+if(APPLE)
+  include(cmake/VeyraMacOS.cmake)
+  return()
+endif()
+
 # ---------------------------------------------------------------------------
 # Linux: the OBS filter module only. Every target below is COM / D3D11 / D3D12
 # / Win32 bound, so the portable part of the pipeline lives in linux/ instead

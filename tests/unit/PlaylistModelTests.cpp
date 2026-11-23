@@ -30,6 +30,7 @@ void make(const QString& path, int size, qint64 modified) {
     QDir().mkpath(QFileInfo(path).path());
     QFile file(path); check(file.open(QIODevice::WriteOnly), "fixture create");
     check(file.write(QByteArray(size, 'x')) == size, "fixture bytes");
+    check(file.flush(), "fixture flush"); // A later flush would reset the POSIX mtime.
     check(file.setFileTime(QDateTime::fromMSecsSinceEpoch(modified), QFileDevice::FileModificationTime), "fixture date");
 }
 QString name(PlaylistModel& model, int row) { return model.data(model.index(row), PlaylistModel::NameRole).toString(); }
@@ -104,12 +105,15 @@ int main(int argc, char** argv) {
     // Missing files remain visible after restart; playing one gives an error,
     // rather than silently deleting the user's list or opening a dead session.
     const QString missing = root + "/missing.json";
-    QFile out(missing); out.open(QIODevice::WriteOnly);
+    QFile out(missing);
+    if (!out.open(QIODevice::WriteOnly)) { std::fprintf(stderr, "FAIL fixture: cannot open %s\n", qPrintable(missing)); return 1; }
     out.write(QJsonDocument(QJsonObject{{"version", 1}, {"entries", QJsonArray{QJsonObject{{"path", root + "/gone.mp4"}}}}}).toJson()); out.close();
     PlaylistModel absent(missing);
     QObject::connect(&absent, &PlaylistModel::error, [&](const auto& text) { error = text; });
     check(absent.count() == 1 && !absent.play(0) && !error.isEmpty(), "missing media is explicit, retained, and never played");
-    QFile damaged(root + "/bad.json"); damaged.open(QIODevice::WriteOnly); damaged.write("{broken"); damaged.close();
+    QFile damaged(root + "/bad.json");
+    if (!damaged.open(QIODevice::WriteOnly)) { std::fprintf(stderr, "FAIL fixture: cannot open %s\n", qPrintable(damaged.fileName())); return 1; }
+    damaged.write("{broken"); damaged.close();
     PlaylistModel invalid(root + "/bad.json"); check(invalid.count() == 0 && !invalid.status().isEmpty(), "invalid JSON handled");
     check(!invalid.save(), "a playlist that did not load is never overwritten");
     QFile keptDamaged(root + "/bad.json");
