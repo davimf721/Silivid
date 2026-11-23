@@ -1,3 +1,8 @@
+<!-- silivid-inherited-notice -->
+> **Inherited Veyra document.** This file describes the original Veyra application for Windows. Its features, paths, builds and test results are not Silivid features on macOS. See the [current Silivid status](../README.md).
+>
+> **继承自 Veyra 的文档。** 本文描述原 Windows 版 Veyra，其中的功能、路径、构建和测试结果不代表 Silivid 在 macOS 上的功能。当前状态见 [Silivid 说明](../README.md)。
+
 # 升级到 2.1.3（定制版 + 作者版双切换）
 
 2026-11-07。用户说作者发布了 2.1.3，包在 `D:\下载\DLSS5\Veyra-2.1.3-NVIDIA-win64-portable`，要求更新成 2.1.3 并保留个人定制版 / 作者完整版双切换。

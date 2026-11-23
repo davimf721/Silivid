@@ -1,3 +1,8 @@
+<!-- silivid-inherited-notice -->
+> **Inherited Veyra document.** This file describes the original Veyra application for Windows. Its features, paths, builds and test results are not Silivid features on macOS. See the [current Silivid status](../README.md).
+>
+> **继承自 Veyra 的文档。** 本文描述原 Windows 版 Veyra，其中的功能、路径、构建和测试结果不代表 Silivid 在 macOS 上的功能。当前状态见 [Silivid 说明](../README.md)。
+
 # Veyra 2.2.0 构建与对应源码
 
 Windows x64 使用 MSVC 2022、CMake/Ninja Release、Qt 6.8.3 和 Inno Setup 7.1.1。NVIDIA 与 AMD 安装器和便携版共用同一套 Veyra 程序、QML 与着色器。产品源码快照为 `41d1aeb6`，其中 `ecbe0543` 是此次引擎和界面代码。发行标签补齐安装器 `7ecb5d1d` 和文档，生产源码与编译快照一致。实际文件身份见各包的 `package-manifest.json` 及发行页 SHA-256 清单。

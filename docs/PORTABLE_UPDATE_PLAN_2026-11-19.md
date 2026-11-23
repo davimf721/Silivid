@@ -1,3 +1,8 @@
+<!-- silivid-inherited-notice -->
+> **Inherited Veyra document.** This file describes the original Veyra application for Windows. Its features, paths, builds and test results are not Silivid features on macOS. See the [current Silivid status](../README.md).
+>
+> **继承自 Veyra 的文档。** 本文描述原 Windows 版 Veyra，其中的功能、路径、构建和测试结果不代表 Silivid 在 macOS 上的功能。当前状态见 [Silivid 说明](../README.md)。
+
 # 便携 ZIP 在线更新
 
 2026-11-19。用户确认继续使用 GitHub 的 NVIDIA 和 AMD 便携 ZIP。Windows 公开发布者签名另行接入。测试及发版验签使用独立的 Ed25519 密钥。

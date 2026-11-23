@@ -1,3 +1,8 @@
+<!-- silivid-inherited-notice -->
+> **Inherited Veyra document.** This file describes the original Veyra application for Windows. Its features, paths, builds and test results are not Silivid features on macOS. See the [current Silivid status](../README.md).
+>
+> **继承自 Veyra 的文档。** 本文描述原 Windows 版 Veyra，其中的功能、路径、构建和测试结果不代表 Silivid 在 macOS 上的功能。当前状态见 [Silivid 说明](../README.md)。
+
 # 虚拟摄像机 3X/4X 直播卡顿修复（2026-11-17，Claude）
 
 用户反馈：Codex 的虚拟摄像机在软件里用 3X、4X 或超过 60 帧时，OBS 里明显变卡；30 帧游戏 2X 正常，3X、4X 卡；把 OBS 的采集帧率改成 120 也没用。要求修好并构建带虚拟摄像机的 2.1.9 版本。在 Codex 未提交的同一工作树 `worktrees/virtual-camera-20261117`（分支 codex/virtual-camera-20261117，基线 bf596e1，含 2.1.9 发行 d442b4e）上继续，改动前快照在 `reports/claude-virtual-camera-cadence-20261117/codex-snapshot`。

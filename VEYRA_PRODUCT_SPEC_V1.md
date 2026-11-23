@@ -1,3 +1,8 @@
+<!-- silivid-inherited-notice -->
+> **Inherited Veyra document.** This file describes the original Veyra application for Windows. Its features, paths, builds and test results are not Silivid features on macOS. See the [current Silivid status](README.md).
+>
+> **继承自 Veyra 的文档。** 本文描述原 Windows 版 Veyra，其中的功能、路径、构建和测试结果不代表 Silivid 在 macOS 上的功能。当前状态见 [Silivid 说明](README.md)。
+
 # Veyra V1 产品与技术规格
 
 > **2026-10-04 项目对齐**：本文为V1历史技术合同，不能将下面旧Win32/2X/SDR/禁止分发等历史范围替代后续用户授权。当前公开版2.0.3为Qt/QML新界面，具备PC/Xbox/PS5串流、分层NR、最高VFG8X和AMD/NVIDIA分包；具体支持与未验边界见 `docs/CURRENT_STATUS.md` 和2.0.3验收文档。当前仅本地NR性能优化，执行记录 `docs/PERF_EXECUTION_NR_2026-10-04.md`；已有倍速/字幕/RTSS/UI/全屏修复保留，不擅自推进HDR/Dolby PR。共享图、真实PTS/源帧、reset、颜色、必要同步、源码/二进制隔离继续适用。

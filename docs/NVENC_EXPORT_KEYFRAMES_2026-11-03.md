@@ -1,3 +1,8 @@
+<!-- silivid-inherited-notice -->
+> **Inherited Veyra document.** This file describes the original Veyra application for Windows. Its features, paths, builds and test results are not Silivid features on macOS. See the [current Silivid status](../README.md).
+>
+> **继承自 Veyra 的文档。** 本文描述原 Windows 版 Veyra，其中的功能、路径、构建和测试结果不代表 Silivid 在 macOS 上的功能。当前状态见 [Silivid 说明](../README.md)。
+
 # NVENC导出关键帧审查与修复
 
 用户要求先审第三方诊断、再修，不盲改。分支`codex/nvenc-export-keyframes-20261103`，基线`edad6e9`；继承RTX30 VFG实验兼容与全屏进度条修复，不合main、不push/发布。不改用户配置、驱动、SDK、运行库、模型或实时录制。

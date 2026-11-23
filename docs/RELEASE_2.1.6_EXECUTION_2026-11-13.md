@@ -1,3 +1,8 @@
+<!-- silivid-inherited-notice -->
+> **Inherited Veyra document.** This file describes the original Veyra application for Windows. Its features, paths, builds and test results are not Silivid features on macOS. See the [current Silivid status](../README.md).
+>
+> **继承自 Veyra 的文档。** 本文描述原 Windows 版 Veyra，其中的功能、路径、构建和测试结果不代表 Silivid 在 macOS 上的功能。当前状态见 [Silivid 说明](../README.md)。
+
 # Veyra 2.1.6 发布执行记录
 
 用户明确要求整理2.1.5以来全部更新与数据并发布GitHub。应用Release：https://github.com/Likely7/Veyra-NRVideo/releases/tag/v2.1.6，publishedAt 2026-11-14T05:50:21Z；对应源码：https://github.com/Likely7/Veyra-NRVideo/releases/tag/v2.1.6-sources。应用设为Latest、sources不抢Latest。发行tag v2.1.6/v2.1.6-sources均固定 `7244307b7930a8e742831ee59d5512d512b825e2`；精确应用源码 `f46df7f7cec4e8d2df3b8fc7bcbc9b2e9d7ad54e`，EXE `bf27ebed5d81a79814441671e933c7a8ef6be584c784f75b8ec80493642c10f3`/PE2.1.6.0。后续只追加本验收文档，不改tag/二进制。

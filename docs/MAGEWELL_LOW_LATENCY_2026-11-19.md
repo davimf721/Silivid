@@ -1,3 +1,8 @@
+<!-- silivid-inherited-notice -->
+> **Inherited Veyra document.** This file describes the original Veyra application for Windows. Its features, paths, builds and test results are not Silivid features on macOS. See the [current Silivid status](../README.md).
+>
+> **继承自 Veyra 的文档。** 本文描述原 Windows 版 Veyra，其中的功能、路径、构建和测试结果不代表 Silivid 在 macOS 上的功能。当前状态见 [Silivid 说明](../README.md)。
+
 # 美乐威低延迟采集掉帧修复（2026-11-19）
 
 用户提供的 `logs(3).rar` 含 11 月 17 日和 18 日的现场记录。复现设备是 Pro Capture HDMI 4K Plus，Veyra 2.1.9，3840×2160、P010、协商 59.94 FPS，独立 WASAPI 音频。

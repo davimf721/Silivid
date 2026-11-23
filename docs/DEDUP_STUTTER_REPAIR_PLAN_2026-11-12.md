@@ -1,3 +1,8 @@
+<!-- silivid-inherited-notice -->
+> **Inherited Veyra document.** This file describes the original Veyra application for Windows. Its features, paths, builds and test results are not Silivid features on macOS. See the [current Silivid status](../README.md).
+>
+> **继承自 Veyra 的文档。** 本文描述原 Windows 版 Veyra，其中的功能、路径、构建和测试结果不代表 Silivid 在 macOS 上的功能。当前状态见 [Silivid 说明](../README.md)。
+
 # 自动去重、60→30 与间歇卡顿修复
 
 用户要求一起修复自动识别仅稳定帧率有效、60→30 异常以及前轮附件的间歇卡顿，完成适配与验证。基线 `57c75cd`（含上一轮只读诊断），检查点 `checkpoint/pre-dedup-stutter-repair-20261112`，隔离分支 `codex/dedup-stutter-repair-20261112`。单 Agent，沿用活动施工树与共享 build；产物放 `E:/项目/Veyra/{reports,logs,tmp,tests}/codex-dedup-stutter-20261112`。

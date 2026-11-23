@@ -1,3 +1,8 @@
+<!-- silivid-inherited-notice -->
+> **Inherited Veyra document.** This file describes the original Veyra application for Windows. Its features, paths, builds and test results are not Silivid features on macOS. See the [current Silivid status](../README.md).
+>
+> **继承自 Veyra 的文档。** 本文描述原 Windows 版 Veyra，其中的功能、路径、构建和测试结果不代表 Silivid 在 macOS 上的功能。当前状态见 [Silivid 说明](../README.md)。
+
 # 全效果剔除与独立 NR 节点
 
 用户要求暂缓构建和打包，先完成代码。基线 37f13a0 含已完成的 Patreon 入口修改。Patreon Qt Quick 175/0/0、界面合同和多语言检查已通过，实际窗口检查尚未执行。

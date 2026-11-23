@@ -1,3 +1,8 @@
+<!-- silivid-inherited-notice -->
+> **Inherited Veyra document.** This file describes the original Veyra application for Windows. Its features, paths, builds and test results are not Silivid features on macOS. See the [current Silivid status](../README.md).
+>
+> **继承自 Veyra 的文档。** 本文描述原 Windows 版 Veyra，其中的功能、路径、构建和测试结果不代表 Silivid 在 macOS 上的功能。当前状态见 [Silivid 说明](../README.md)。
+
 # 2.1.3 发布方案与执行
 
 用户2026-11-06明确授权发布GitHub，详细汇总2.1.2以来更新并公开所提供超分对比原图。目标Likely7/Veyra-NRVideo，两个显卡运行ZIP与对应源码Release，保留交流群8/赞助两图各width220。沿用已验重构建不可变ZIP作供体；不读取用户运行目录，产品字节不改。

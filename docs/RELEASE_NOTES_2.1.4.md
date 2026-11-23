@@ -1,3 +1,8 @@
+<!-- silivid-inherited-notice -->
+> **Inherited Veyra document.** This file describes the original Veyra application for Windows. Its features, paths, builds and test results are not Silivid features on macOS. See the [current Silivid status](../README.md).
+>
+> **继承自 Veyra 的文档。** 本文描述原 Windows 版 Veyra，其中的功能、路径、构建和测试结果不代表 Silivid 在 macOS 上的功能。当前状态见 [Silivid 说明](../README.md)。
+
 # Veyra 2.1.4 更新说明
 
 本次更新从 2.1.3 开始汇总。新增采集卡音频转接、NVIDIA DLAA 和 NR 推理复用，扩展双重超分的算法组合，并修复音量记忆、录制快捷键、RTX 超分选项和 AMD NR 初始化。

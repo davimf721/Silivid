@@ -1,3 +1,8 @@
+<!-- silivid-inherited-notice -->
+> **Inherited Veyra document.** This file describes the original Veyra application for Windows. Its features, paths, builds and test results are not Silivid features on macOS. See the [current Silivid status](../README.md).
+>
+> **继承自 Veyra 的文档。** 本文描述原 Windows 版 Veyra，其中的功能、路径、构建和测试结果不代表 Silivid 在 macOS 上的功能。当前状态见 [Silivid 说明](../README.md)。
+
 # DLSS / FSR / ANR 补帧接入精修光流（2026-11-13，Claude）
 
 - **背景**：用户反映高速运动下补帧容易把 UI 糊掉、UI 闪烁、屏幕边缘闪烁，选了"先接个精修光流"。

@@ -1,3 +1,8 @@
+<!-- silivid-inherited-notice -->
+> **Inherited Veyra document.** This file describes the original Veyra application for Windows. Its features, paths, builds and test results are not Silivid features on macOS. See the [current Silivid status](../README.md).
+>
+> **继承自 Veyra 的文档。** 本文描述原 Windows 版 Veyra，其中的功能、路径、构建和测试结果不代表 Silivid 在 macOS 上的功能。当前状态见 [Silivid 说明](../README.md)。
+
 # Claude最新补帧修复合入本地main
 
 用户2026-11-01授权“刚刚Claude那边做了一些修复，你给合并到Main”。本轮范围是`claude/fg-no-latency-growth-20261101`在main `13016a8`上的37个未提交文件；其余此前整合内容main已有，不再次搬运，Lecram暂停线不动。没有push或Release授权。

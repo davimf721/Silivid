@@ -1,3 +1,8 @@
+<!-- silivid-inherited-notice -->
+> **Inherited Veyra document.** This file describes the original Veyra application for Windows. Its features, paths, builds and test results are not Silivid features on macOS. See the [current Silivid status](../README.md).
+>
+> **继承自 Veyra 的文档。** 本文描述原 Windows 版 Veyra，其中的功能、路径、构建和测试结果不代表 Silivid 在 macOS 上的功能。当前状态见 [Silivid 说明](../README.md)。
+
 # 2.1.6 本地整合与交付计划
 
 用户要求接手Claude未完成的修复/功能、整理分支合入main并构建2.1.6。仅本地构建交付，不push/Release，不关机。起点main3682f8a，checkpoint/pre-main-2.1.6-20261113；隔离codex/integrate-2.1.6-20261113，源码worktrees/integrate-2.1.6-20261113。

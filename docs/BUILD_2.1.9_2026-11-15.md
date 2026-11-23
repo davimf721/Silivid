@@ -1,3 +1,8 @@
+<!-- silivid-inherited-notice -->
+> **Inherited Veyra document.** This file describes the original Veyra application for Windows. Its features, paths, builds and test results are not Silivid features on macOS. See the [current Silivid status](../README.md).
+>
+> **继承自 Veyra 的文档。** 本文描述原 Windows 版 Veyra，其中的功能、路径、构建和测试结果不代表 Silivid 在 macOS 上的功能。当前状态见 [Silivid 说明](../README.md)。
+
 # Veyra 2.1.9 本地测试包
 
 按用户要求由2.1.6直接跳到2.1.9。此为本地整合测试交付，没有推送或GitHub发布，不关机。最终源码提交、EXE/ZIP摘要与实际main合并状态见E:/项目/Veyra/reports/codex-build-2.1.9-20261115/FINAL.json。

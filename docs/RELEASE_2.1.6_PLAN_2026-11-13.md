@@ -1,3 +1,8 @@
+<!-- silivid-inherited-notice -->
+> **Inherited Veyra document.** This file describes the original Veyra application for Windows. Its features, paths, builds and test results are not Silivid features on macOS. See the [current Silivid status](../README.md).
+>
+> **继承自 Veyra 的文档。** 本文描述原 Windows 版 Veyra，其中的功能、路径、构建和测试结果不代表 Silivid 在 macOS 上的功能。当前状态见 [Silivid 说明](../README.md)。
+
 # 2.1.6公开发布计划
 
 用户明确要求整理2.1.5至今全部更新，尽量附数据并发布GitHub。本条覆盖此前本地构建的无push/Release限制；不包含关机或群聊代发。基线main6cb960b，隔离codex/release-2.1.6-20261113，源码沿用integrate-2.1.6-20261113，不动旧脏树与用户配置。

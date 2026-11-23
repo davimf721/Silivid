@@ -1,3 +1,8 @@
+<!-- silivid-inherited-notice -->
+> **Inherited Veyra document.** This file describes the original Veyra application for Windows. Its features, paths, builds and test results are not Silivid features on macOS. See the [current Silivid status](../README.md).
+>
+> **继承自 Veyra 的文档。** 本文描述原 Windows 版 Veyra，其中的功能、路径、构建和测试结果不代表 Silivid 在 macOS 上的功能。当前状态见 [Silivid 说明](../README.md)。
+
 # 补帧 60 Hz 修复返工：延迟不增长（2026-11-01）
 
 > 后续：用户于2026-11-01授权合并，本文对应改动已原样提交为`6e79a5e`并快进本地main。合并检查及续接见[MAIN_INTEGRATION_2026-11-01.md](MAIN_INTEGRATION_2026-11-01.md)。下方“未merge/未提交”等为当时施工状态；性能及未验边界仍按原证据理解，未push/Release。

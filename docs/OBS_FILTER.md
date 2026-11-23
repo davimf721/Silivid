@@ -1,3 +1,8 @@
+<!-- silivid-inherited-notice -->
+> **Inherited Veyra document.** This file describes the Linux OBS filter from the original Veyra project. It is not part of the Silivid macOS port. See the [current Silivid status](../README.md).
+>
+> **继承自 Veyra 的文档。** 本文描述原 Veyra 项目的 Linux OBS 滤镜，它不属于 Silivid 的 macOS 移植。当前状态见 [Silivid 说明](../README.md)。
+
 # Veyra enhancement as an OBS filter
 
 Veyra's Windows runtime is a D3D12 application whose headline features are

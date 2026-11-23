@@ -1,3 +1,8 @@
+<!-- silivid-inherited-notice -->
+> **Inherited Veyra document.** This file describes the original Veyra application for Windows. Its features, paths, builds and test results are not Silivid features on macOS. See the [current Silivid status](../README.md).
+>
+> **继承自 Veyra 的文档。** 本文描述原 Windows 版 Veyra，其中的功能、路径、构建和测试结果不代表 Silivid 在 macOS 上的功能。当前状态见 [Silivid 说明](../README.md)。
+
 # 2.1.1最终整合、重建与发布记录
 
 用户要求合并Claude软件绘制分支，将默认超分模型改为RTX视频超分，重新构建2.1.1并发布GitHub。主Release保留两完整运行包，应用及依赖对应源码另页；群公告只拟稿。准确资产URL/状态/服务端摘要见reports/codex-release-2.1.1-final-20261027/FINAL.json，发布前此记录不推断发布完成。

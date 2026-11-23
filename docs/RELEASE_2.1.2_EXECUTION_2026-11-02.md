@@ -1,3 +1,8 @@
+<!-- silivid-inherited-notice -->
+> **Inherited Veyra document.** This file describes the original Veyra application for Windows. Its features, paths, builds and test results are not Silivid features on macOS. See the [current Silivid status](../README.md).
+>
+> **继承自 Veyra 的文档。** 本文描述原 Windows 版 Veyra，其中的功能、路径、构建和测试结果不代表 Silivid 在 macOS 上的功能。当前状态见 [Silivid 说明](../README.md)。
+
 # 2.1.2 发布执行记录 — 2026-11-02
 
 用户明确授权将 Claude 最新去重修复包公开发布到 Likely7/Veyra-NRVideo，更新群码并整理2.1.1以来全部更新。未授权代发群消息；群公告作为文字交付。

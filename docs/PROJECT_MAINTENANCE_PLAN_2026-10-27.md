@@ -1,3 +1,8 @@
+<!-- silivid-inherited-notice -->
+> **Inherited Veyra document.** This file describes the original Veyra application for Windows. Its features, paths, builds and test results are not Silivid features on macOS. See the [current Silivid status](../README.md).
+>
+> **继承自 Veyra 的文档。** 本文描述原 Windows 版 Veyra，其中的功能、路径、构建和测试结果不代表 Silivid 在 macOS 上的功能。当前状态见 [Silivid 说明](../README.md)。
+
 # Veyra 2.1.1 基线核对与项目整理方案
 
 > 本文数字是执行前快照。用户随后已授权全部实施；现在的完成状态、保留项与回收量看[执行记录](PROJECT_MAINTENANCE_EXECUTION_2026-10-27.md)，不把下文132分支/101工作树误读为当前剩余规模。

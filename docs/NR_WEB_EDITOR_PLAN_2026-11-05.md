@@ -1,3 +1,8 @@
+<!-- silivid-inherited-notice -->
+> **Inherited Veyra document.** This file describes the original Veyra application for Windows. Its features, paths, builds and test results are not Silivid features on macOS. See the [current Silivid status](../README.md).
+>
+> **继承自 Veyra 的文档。** 本文描述原 Windows 版 Veyra，其中的功能、路径、构建和测试结果不代表 Silivid 在 macOS 上的功能。当前状态见 [Silivid 说明](../README.md)。
+
 # NR 网状调节器施工与验收
 
 > 最新用户纠偏：独立块已撤销，改为两组内各选“网状／列表”，手动画面调控改为九轴全参数。当前按[分组内修订与验收](NR_INLINE_EDITOR_2026-11-05.md)执行；下文是684d906时的第一版历史，不再恢复全局接管布局。

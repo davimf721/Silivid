@@ -9,25 +9,58 @@
 
 Silivid 是 [Veyra](https://github.com/Likely7/Veyra-NRVideo) 的分支。Veyra 是一款 Windows 实时 GPU 视频增强软件。本项目的目标是使用 Apple 原生框架，在 Apple Silicon Mac 上实现视频播放与增强处理链。
 
-## 项目状态
+## 目前可用的部分
 
-本仓库目前仍包含继承自 Veyra 的代码，其目标平台为 Windows、Direct3D 12 以及 NVIDIA 或 AMD 显卡。除非文档另有说明，`docs/` 中继承的文档所描述的功能都属于原 Windows 软件，不代表 Silivid 已在 macOS 上实现这些功能。
+在 `macos/port` 分支上，macOS 目前只能构建并运行代码中的可移植部分：
 
-现阶段不对 macOS 上的性能、画质或硬件兼容性作任何承诺。
+- 三个静态库，包含不依赖 Windows 的代码。
+- 一个构建探针，用于链接这些库并检查 FFmpeg、Qt 版本和 QML 引擎。它不播放视频。
+- 一套包含 23 个条目的 CTest 测试：19 个测试程序、构建探针和 3 个清理步骤。
 
-## 开发目标
+## macOS 上尚不存在的功能
 
-以下是开发目标，并非已完成的功能：
+- 应用程序或窗口。
+- 视频播放或音频。
+- GPU 处理、超分辨率、降噪或补帧。
+- 采集、串流、导出或虚拟摄像头。
 
-- **Metal**：用于 GPU 处理和视频呈现。
-- **MetalFX**：用于超分辨率，并评估其帧插值是否适用于视频。
-- **VideoToolbox**：用于硬件视频解码和编码。
+大部分代码仍继承自 Veyra，其目标平台为 Windows、Direct3D 12 以及 NVIDIA 或 AMD 显卡。标记为继承的文档描述的是原软件，而不是 Silivid。现阶段不对 macOS 上的性能、画质或硬件兼容性作任何承诺。
 
-**macOS 上没有 NVIDIA DLSS。** Silivid 不会提供 DLSS，也不应期待 MetalFX 达到与其模型相同的效果。
+## 在 macOS 上构建和测试
 
-## 安装
+需要 Apple Silicon Mac、Xcode，以及安装在 `/opt/homebrew` 的 [Homebrew](https://brew.sh)。
 
-目前没有可安装的内容。Veyra 的 Windows 下载和安装步骤不适用于 macOS。待移植版本可以构建并完成验证后，再补充 macOS 构建说明。
+```sh
+brew install cmake ninja pkgconf qt ffmpeg
+git clone --branch macos/port https://github.com/davimf721/Silivid.git
+cd Silivid
+cmake --preset macos-arm64-debug
+cmake --build --preset macos-arm64-debug
+ctest --preset macos-arm64-debug
+```
+
+构建 Release 时，将 `debug` 替换为 `release`。输出位于 `build-macos/debug` 或 `build-macos/release`。构建不会生成应用程序。
+
+最近一次验证于 2026-11-23，环境为 macOS 27.2.1、Apple clang 21、CMake 4.5.1、Ninja 1.13.2、Qt 6.12.0 和 FFmpeg 9.0.2。两个预设的 23 项测试全部通过。详情和已知阻塞项见 [`docs/macos/PHASE1.md`](docs/macos/PHASE1.md)。
+
+## 路线图
+
+| 阶段 | 范围 | 状态 |
+| --- | --- | --- |
+| 1. 构建 | 可移植代码的原生 arm64 构建与测试 | 已完成 |
+| 2. 核心 | GPU 抽象层，以及显示解码视频的 Metal 窗口 | 尚不可用 |
+| 3. 播放 | VideoToolbox、音频、同步和色彩（SDR/HDR） | 尚不可用 |
+| 4. 增强 | MetalFX 和降噪，并在真实硬件上测量 | 尚不可用 |
+| 5. 采集 | 采集设备和虚拟摄像头 | 尚不可用 |
+| 6. 分发 | 面向 Apple Silicon 的已签名并公证的应用 | 尚不可用 |
+
+**macOS 上没有 NVIDIA DLSS。** Silivid 不会提供 DLSS，也不应期待 MetalFX 达到与其模型相同的效果。技术对照见 [`docs/macos/PORTING.md`](docs/macos/PORTING.md)。
+
+## 参与贡献
+
+本仓库已关闭 GitHub Issues，Silivid 目前也没有社区或支持渠道。请不要将 Silivid 的问题反馈给原 Veyra 项目。
+
+修改代码时，请基于 `macos/port`，隔离平台相关代码，并运行上述构建和测试。不要提交专有 SDK、DLL、模型或二进制文件。项目规则见 [`AGENTS.md`](AGENTS.md)，文档索引见 [`docs/README.md`](docs/README.md)。
 
 ## 致谢
 
@@ -37,11 +70,11 @@ Silivid 基于 **Likely7** 及其贡献者创建的 **Veyra**。
 - 原作者：[X · @likely2002](https://x.com/likely2002)、[YouTube · @Likely7Ai](https://www.youtube.com/@Likely7Ai)
 - 原 Windows 版教程：[YouTube（英文）](https://www.youtube.com/watch?v=ZJ42jzNAbik)、[哔哩哔哩（中文）](https://www.bilibili.com/video/BV1KvsE6bEPw/)
 
-Silivid 是独立分支，与 Veyra 项目没有隶属或背书关系。请不要将 Silivid 的问题反馈给原项目。Veyra 的社区、赞助和支持渠道属于其作者，并非 Silivid 的渠道。
+Silivid 是独立分支，与 Veyra 项目没有隶属或背书关系。Veyra 的社区、赞助和支持渠道属于其作者，并非 Silivid 的渠道。
 
 ## 许可证
 
-Silivid 是 **Veyra 的修改版本**，依据 [GNU 通用公共许可证第 3 版](LICENSE) 分发。本分支基于 Veyra 提交 `c6633121`，本文档修改于 2026-11-23。原作品的版权仍归 Veyra 的作者和贡献者所有。
+Silivid 是 **Veyra 的修改版本**，依据 [GNU 通用公共许可证第 3 版](LICENSE) 分发。本分支基于 Veyra 提交 `c6633121`，自 2026-11-23 起的修改记录在本仓库的 Git 历史中。原作品的版权仍归 Veyra 的作者和贡献者所有。
 
 继承自 Veyra 的 Chiaki 串流组合程序同时适用 AGPL-3.0 及其 OpenSSL 例外，见 [`licenses/remoteplay`](licenses/remoteplay)。其他组件保留各自的许可证，见 [`THIRD_PARTY_NOTICES.md`](THIRD_PARTY_NOTICES.md) 和 [`licenses/`](licenses)。
 

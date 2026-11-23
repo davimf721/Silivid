@@ -1,3 +1,8 @@
+<!-- silivid-inherited-notice -->
+> **Inherited Veyra document.** This file describes the original Veyra application for Windows. Its features, paths, builds and test results are not Silivid features on macOS. See the [current Silivid status](../README.md).
+>
+> **继承自 Veyra 的文档。** 本文描述原 Windows 版 Veyra，其中的功能、路径、构建和测试结果不代表 Silivid 在 macOS 上的功能。当前状态见 [Silivid 说明](../README.md)。
+
 # Veyra 2.1.6 本地完整测试包 / Local build
 
 本包未发布到GitHub。解压至新目录，运行veyra_qml_ui.exe；不要直接覆盖正在运行的旧目录。NVIDIA与AMD包按显卡选择，配置不随包附带；应用默认效果关闭，GPU优先级默认高，VFG自动调控默认关闭，已保存的设置保留。

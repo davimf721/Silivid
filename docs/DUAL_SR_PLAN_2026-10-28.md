@@ -1,3 +1,8 @@
+<!-- silivid-inherited-notice -->
+> **Inherited Veyra document.** This file describes the original Veyra application for Windows. Its features, paths, builds and test results are not Silivid features on macOS. See the [current Silivid status](../README.md).
+>
+> **继承自 Veyra 的文档。** 本文描述原 Windows 版 Veyra，其中的功能、路径、构建和测试结果不代表 Silivid 在 macOS 上的功能。当前状态见 [Silivid 说明](../README.md)。
+
 # 真正的双重超分：纠偏与交付（2026-10-28）
 
 > 2026-11-08 扩展：独立分支 `claude/volume-dual-sr-20261108` 已加入 DLSS SR／FSR 作为第一或第二算法。最新实现、适用限制与本机验收见 [VOLUME_DUAL_SR_2026-11-08.md](VOLUME_DUAL_SR_2026-11-08.md)。下文 RTX-only 是首次交付的历史范围，不能覆盖后续扩展；新分支尚未合 main。

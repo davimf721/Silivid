@@ -1,3 +1,8 @@
+<!-- silivid-inherited-notice -->
+> **Inherited Veyra document.** This file describes the original Veyra application for Windows. Its features, paths, builds and test results are not Silivid features on macOS. See the [current Silivid status](../README.md).
+>
+> **继承自 Veyra 的文档。** 本文描述原 Windows 版 Veyra，其中的功能、路径、构建和测试结果不代表 Silivid 在 macOS 上的功能。当前状态见 [Silivid 说明](../README.md)。
+
 # PushFPS 推荐功能移植（2026-11-19）
 
 来源：PushFPS（https://github.com/DosukaSOL/PushFPS，GPL-3.0-or-later），它带着 Veyra 完整历史，从 Veyra main `8a690f5d`（2026-11-15）分出。审查与取舍见 `reports/claude-pushfps-review-20261119/FINDINGS.md`；用户要求把“建议直接移植”的全部并入。

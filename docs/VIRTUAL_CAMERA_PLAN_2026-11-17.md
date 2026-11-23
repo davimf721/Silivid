@@ -1,3 +1,8 @@
+<!-- silivid-inherited-notice -->
+> **Inherited Veyra document.** This file describes the original Veyra application for Windows. Its features, paths, builds and test results are not Silivid features on macOS. See the [current Silivid status](../README.md).
+>
+> **继承自 Veyra 的文档。** 本文描述原 Windows 版 Veyra，其中的功能、路径、构建和测试结果不代表 Silivid 在 macOS 上的功能。当前状态见 [Silivid 说明](../README.md)。
+
 # 虚拟摄像机：处理后画面直出
 
 > 2026-11-18主线状态：Codex原接入与Claude后续节奏修复已合main740534e，实际本轮验证见[整合记录](MAIN_INTEGRATION_2026-11-18.md)。现为4槽GPU异步读回、6帧协议2共享环，默认自动跟随消费者；此状态覆盖下文原3槽/固定60的早期实现描述。系统旧协议组件需本人更新，旧“本轮未授权合main”保留为当时记录，不覆盖11月18日明确授权。本轮没有新的push/Release授权。

@@ -1,3 +1,8 @@
+<!-- silivid-inherited-notice -->
+> **Inherited Veyra document.** This file describes the original Veyra application for Windows. Its features, paths, builds and test results are not Silivid features on macOS. See the [current Silivid status](../README.md).
+>
+> **继承自 Veyra 的文档。** 本文描述原 Windows 版 Veyra，其中的功能、路径、构建和测试结果不代表 Silivid 在 macOS 上的功能。当前状态见 [Silivid 说明](../README.md)。
+
 # NVIDIA 低延迟增强档移除与全屏排查
 
 用户要求移除“开＋增强”（口述“高＋增强”），并排查 DLSS/VFG 全屏后 1% low 下降；随后明确要求本机实测，覆盖此前暂缓应用构建的限制。用户已取消关机，不关机。

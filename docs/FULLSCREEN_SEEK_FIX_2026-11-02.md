@@ -1,3 +1,8 @@
+<!-- silivid-inherited-notice -->
+> **Inherited Veyra document.** This file describes the original Veyra application for Windows. Its features, paths, builds and test results are not Silivid features on macOS. See the [current Silivid status](../README.md).
+>
+> **继承自 Veyra 的文档。** 本文描述原 Windows 版 Veyra，其中的功能、路径、构建和测试结果不代表 Silivid 在 macOS 上的功能。当前状态见 [Silivid 说明](../README.md)。
+
 # 全屏进度条拖动修复
 
 用户2026-11-02反馈全屏不能拖动进度条。隔离分支 `codex/fullscreen-seek-20261102`，基线 `fedd7fc`，仅修共享播放条和全屏隐藏条件；不推送、合并或替换GitHub发布资产。

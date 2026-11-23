@@ -1,3 +1,8 @@
+<!-- silivid-inherited-notice -->
+> **Inherited Veyra document.** This file describes the original Veyra application for Windows. Its features, paths, builds and test results are not Silivid features on macOS. See the [current Silivid status](../README.md).
+>
+> **继承自 Veyra 的文档。** 本文描述原 Windows 版 Veyra，其中的功能、路径、构建和测试结果不代表 Silivid 在 macOS 上的功能。当前状态见 [Silivid 说明](../README.md)。
+
 # 屏幕捕获帧率、采集对白与后续方向（2026-10-27）
 
 Claude，任务 `claude-capture-fps-audio-20261027`。分支 `claude/capture-fps-audio-20261027` 从 main `7b0b64b` 开出，提交 `6376564`（屏幕捕获）、`75444b3`（采集音频）和本文档。没有合入 main，没有 push、Release 或打包。用户自己的 Veyra 一直在运行，没有停止它，也没有占用采集卡。证据在 `E:/项目/Veyra/reports/claude-capture-fps-audio-20261027`，日志在 `logs/claude-capture-fps-audio-20261027`。
