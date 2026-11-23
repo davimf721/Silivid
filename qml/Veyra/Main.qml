@@ -46,11 +46,6 @@ Window {
     // node configuration is active, so the dock never drops into the list UI.
     function goPageTarget(p) { return p === "pro" && veyra.nodeMode === 1 ? "node" : p }
     function goPage(p) { page = goPageTarget(p) }
-    // 设置 → 赞助作者, from the home page's coffee line.
-    function showSponsor() {
-        settingsPage.section = "sponsor"
-        goPage("set")
-    }
     // Test switches from the command line (main.cpp, G0.3); empty in normal use.
     readonly property var test: typeof vyTest !== "undefined" ? vyTest : ({})
     readonly property real testAspect: test.aspect !== undefined ? test.aspect : 0
@@ -267,7 +262,6 @@ Window {
             pageId: "home"
             home: pages
             onRequestPage: p => root.goPage(p)
-            onRequestSponsor: root.showSponsor()
             onRequestOnboarding: if (root.page === "home" && dialogs.dialog === "") onboarding.start()
         }
         MinimalPage {

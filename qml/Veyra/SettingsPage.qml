@@ -1,7 +1,7 @@
 // 设置, rebuilt from the design (pages-b.js PAGES.set + pages.css .set).
 //
 // Design: a 220px nav column (外观 / 启动与窗口 / 播放 / 音频 / 性能 / 兼容 /
-// PS5 串流 / 快捷键 / 组件与许可 / 关于 / 赞助作者; split 2026-10-05 because one page held
+// PS5 串流 / 快捷键 / 组件与许可 / 关于; split 2026-10-05 because one page held
 // almost every setting) and a large body. The design deliberately has NO
 // capture-card section here: capture settings live in the capture dialog.
 //
@@ -27,7 +27,7 @@ VPage {
         // render(true): 480 ms, i*40 ms, y 12).
         Qt.callLater(() => stagger(sectionColumns[section] || null))
     }
-    readonly property var sectionColumns: ({ look: secLook, window: secWindow, play: secPlay, audio: secAudio, perf: secPerf, compat: secCompat, ps5: secPs5, keys: secKeys, comp: secComp, about: secAbout, sponsor: secSponsor })
+    readonly property var sectionColumns: ({ look: secLook, window: secWindow, play: secPlay, audio: secAudio, perf: secPerf, compat: secCompat, ps5: secPs5, keys: secKeys, comp: secComp, about: secAbout })
     readonly property var portableUpdate: veyra.updates.portable
     Component { id: staggerComp; VRise.Stagger {} }
     function stagger(col) {
@@ -1462,7 +1462,7 @@ VPage {
                         }
                         VRow {
                             label: qsTr("诊断信息")
-                            hint: qsTr("复制后附在反馈里")
+                            hint: qsTr("复制后可用于排查问题")
                             VButton { text: qsTr("复制"); onClicked: veyra.copyDiagnostics() }
                         }
                         VRow {
@@ -1500,15 +1500,6 @@ VPage {
                             }
                         }
                     }
-                }
-
-                // --- 赞助作者 ------------------------------------------------
-                SponsorPanel {
-                    id: secSponsor
-                    objectName: "set-sponsor"
-                    Layout.fillWidth: true
-                    visible: root.section === "sponsor"
-                    onOpenLink: id => veyra.openSponsorLink(id)
                 }
 
                 Item { Layout.preferredHeight: 12 }

@@ -7,6 +7,7 @@ These documents describe Silivid as it is today.
 - [Project overview, build, roadmap and contributing](../README.md) ([简体中文](../README_CN.md))
 - [Phase 1 results: what builds, what is disabled and what blocks Phase 2](macos/PHASE1.md)
 - [macOS porting plan and technology map](macos/PORTING.md)
+- [Release notifier: how it works and what is still unverified](macos/UPDATES.md)
 - [Project rules](../AGENTS.md)
 - [License](../LICENSE), [third-party notices](../THIRD_PARTY_NOTICES.md) and [component licenses](../licenses)
 

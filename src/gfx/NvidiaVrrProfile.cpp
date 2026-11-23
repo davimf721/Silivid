@@ -145,7 +145,7 @@ public:
         if (plan.createProfile) {
             auto info = versioned<Profile>(); copy(info.name, state.profileName);
             checked(call<Handle, Profile*, Handle*>(0xCC176068, session, &info, &profile));
-            auto app = versioned<Application>(); copy(app.name, state.executable); copy(app.friendly, L"Veyra");
+            auto app = versioned<Application>(); copy(app.name, state.executable); copy(app.friendly, L"Silivid");
             checked(call<Handle, Handle, Application*>(0x4347A9DE, session, profile, &app));
         }
         if (plan.removeProfile) checked(call<Handle, Handle>(0x17093206, session, profile));

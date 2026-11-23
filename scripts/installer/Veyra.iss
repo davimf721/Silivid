@@ -9,10 +9,11 @@
 AppId={#InstallId}
 AppName={#DisplayName}
 AppVersion={#AppVersion}
-AppPublisher=Veyra
-AppPublisherURL=https://github.com/Likely7/Veyra-NRVideo
-AppSupportURL=https://github.com/Likely7/Veyra-NRVideo/issues
-AppUpdatesURL=https://github.com/Likely7/Veyra-NRVideo/releases
+AppPublisher=Silivid
+AppPublisherURL=https://github.com/davimf721/Silivid
+AppSupportURL=https://github.com/davimf721/Silivid
+AppUpdatesURL=https://github.com/davimf721/Silivid/releases
+AppComments=Silivid is a fork of Veyra (https://github.com/Likely7/Veyra-NRVideo). GPL-3.0.
 DefaultDirName={localappdata}\Programs\{#DisplayName}
 DefaultGroupName={#DisplayName}
 PrivilegesRequired=lowest

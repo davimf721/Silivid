@@ -381,7 +381,8 @@ foreach($f in $lock.files) {
                     worktreeDirty=bool(changed), releaseReady=args.release, files=records)
     if args.release:
         manifest['correspondingSource'] = dict(
-            application='https://github.com/Likely7/Veyra-NRVideo/archive/refs/tags/v' + version + '.zip',
+            application='https://github.com/davimf721/Silivid/archive/refs/tags/silivid-v' + version + '.zip',
+            upstream='https://github.com/Likely7/Veyra-NRVideo',
             dependencies='https://github.com/Likely7/Veyra-NRVideo/releases/download/v' + version + '/Veyra-' + version + '-dependency-source.zip' if version == '2.0.3' else 'https://github.com/Likely7/Veyra-NRVideo/releases/download/v2.0.0/Veyra-2.0.0-dependency-source.zip',
             instructions='docs/BUILD_' + version + '.md')
     if not args.no_archive:

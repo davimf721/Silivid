@@ -5,7 +5,7 @@
 [English](README.md) | 简体中文
 
 > [!WARNING]
-> Silivid 目前没有可用版本，也没有可下载的 macOS 应用、发行版或安装包。
+> Silivid 目前没有可用版本，也没有可下载的 macOS 应用或安装包。Silivid 的预发布版本（如有）仅包含源代码。
 
 Silivid 是 [Veyra](https://github.com/Likely7/Veyra-NRVideo) 的分支。Veyra 是一款 Windows 实时 GPU 视频增强软件。本项目的目标是使用 Apple 原生框架，在 Apple Silicon Mac 上实现视频播放与增强处理链。
 
@@ -13,7 +13,7 @@ Silivid 是 [Veyra](https://github.com/Likely7/Veyra-NRVideo) 的分支。Veyra 
 
 在 `macos/port` 分支上，macOS 目前只能构建并运行代码中的可移植部分：
 
-- 三个静态库，包含不依赖 Windows 的代码。
+- 四个静态库，包含不依赖 Windows 的代码和版本检查。
 - 一个构建探针，用于链接这些库并检查 FFmpeg、Qt 版本和 QML 引擎。它不播放视频。
 - 一套包含 24 个条目的 CTest 测试：20 个测试程序、构建探针和 3 个清理步骤。
 

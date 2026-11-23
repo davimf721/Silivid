@@ -5,7 +5,7 @@
 [English](README.md) | [简体中文](README_CN.md)
 
 > [!WARNING]
-> Silivid has no usable version yet. There is no macOS app, release or installer to download.
+> Silivid has no usable version yet. There is no macOS app or installer to download. Any Silivid pre-release contains source code only.
 
 Silivid is a fork of [Veyra](https://github.com/Likely7/Veyra-NRVideo), a real-time GPU video enhancement application for Windows. The goal is to bring a video player and enhancement pipeline to Apple Silicon Macs using Apple's native frameworks.
 
@@ -13,7 +13,7 @@ Silivid is a fork of [Veyra](https://github.com/Likely7/Veyra-NRVideo), a real-t
 
 Only the portable part of the code builds and runs on macOS, on the `macos/port` branch:
 
-- Three static libraries with the code that does not depend on Windows.
+- Four static libraries with the code that does not depend on Windows, including the release check.
 - A build probe that links those libraries and checks the FFmpeg and Qt versions and the QML engine. It does not play video.
 - A CTest suite of 24 entries: 20 test programs, the build probe and 3 cleanup steps.
 

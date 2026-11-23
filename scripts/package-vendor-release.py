@@ -195,7 +195,8 @@ def finalize(args):
             if f.is_file(): assert pkg.digest(f) == pkg.digest(stage / 'qml/Veyra' / f.relative_to(ROOT / 'qml/Veyra')), f
         check_vendor(stage, flavor)
         manifest.update(baseCommit=commit, sourceArchiveCommit=commit, worktreeDirty=False, releaseReady=True,
-                        correspondingSource=dict(application=f'https://github.com/Likely7/Veyra-NRVideo/archive/refs/tags/v{args.version}.zip',
+                        correspondingSource=dict(application=f'https://github.com/davimf721/Silivid/archive/refs/tags/silivid-v{args.version}.zip',
+                                                 upstream='https://github.com/Likely7/Veyra-NRVideo',
                                                  dependencies=f'https://github.com/Likely7/Veyra-NRVideo/releases/download/v{args.version}/Veyra-{args.version}-dependency-source.zip',
                                                  instructions=f'docs/BUILD_{args.version}.md'))
         manifest.pop('sourceSnapshot', None)

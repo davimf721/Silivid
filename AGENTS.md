@@ -4,7 +4,7 @@ Atualizado em 2026-11-23. Silivid é um fork GPL-3.0 do [Veyra](https://github.c
 
 ## Estado real
 
-- No macOS funcionam apenas o build portável, a sonda de build e os 23 itens do CTest.
+- No macOS funcionam apenas o build portável, a sonda de build e os 24 itens do CTest.
 - Não há app, janela, reprodução, GPU, áudio ou captura no macOS.
 - O atualizador só pode notificar e abrir a página da release em `davimf721/Silivid`, com tags `silivid-v<versão>`. Não adicione download, instalação automática ou mirrors. O interruptor de canal e a ponte QML ainda não foram compilados nem executados, e nenhuma release real foi lida. Não o descreva como funcionando no app. Detalhes em `docs/macos/UPDATES.md`.
 - Antes de trabalhar, leia [`docs/macos/PHASE1.md`](docs/macos/PHASE1.md) e [`docs/macos/PORTING.md`](docs/macos/PORTING.md). O índice está em [`docs/README.md`](docs/README.md).

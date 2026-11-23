@@ -13,9 +13,9 @@ BEGIN
  BEGIN
   BLOCK "040904B0"
   BEGIN
-   VALUE "FileDescription", "Veyra Video Player"
+   VALUE "FileDescription", "Silivid Video Player"
    VALUE "FileVersion", "@SILIVID_VERSION@"
-   VALUE "ProductName", "Veyra"
+   VALUE "ProductName", "Silivid"
    VALUE "ProductVersion", "@SILIVID_VERSION@"
    VALUE "OriginalFilename", "@VEYRA_RESOURCE_FILENAME@"
    VALUE "LegalCopyright", "Veyra contributors. GPL-3.0."

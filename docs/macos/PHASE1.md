@@ -17,7 +17,7 @@ Para Release, troque `debug` por `release`. A saída fica em `build-macos/debug`
 - Os dois presets configuram e compilam do zero (74 passos cada, já com o atualizador).
 - O CTest passa 24 de 24 entradas nos dois presets, em cinco execuções seguidas. São 20 executáveis de teste, o `veyra_macos_build_probe` e 3 passos que limpam diretórios temporários.
 - O app Veyra **ainda não existe no macOS**. Não há janela, reprodução, GPU, áudio nem captura.
-- A configuração Windows e o ramo Linux/OBS **não foram executados** nesta máquina. Os presets `x64-*` foram comparados com o `HEAD` e estão idênticos, e o `CMakeLists.txt` só ganhou um desvio `if(APPLE)` antes do ramo existente.
+- A configuração Windows e o ramo Linux/OBS **não foram executados** nesta máquina. Os presets `x64-*` foram comparados com a base `c6633121` e estão idênticos. O `CMakeLists.txt` mudou em relação a essa base: inclui `cmake/SilividVersion.cmake` e um desvio `if(APPLE)` antes do ramo existente; gera erro de configuração se `VEYRA_UPDATE_PUBLIC_KEY` ou `VEYRA_UPDATE_TEST_PORT` forem definidas; em `veyra_update_checker`, troca `PortableUpdate.cpp` por `PortableUpdateDisabled.cpp`, adiciona `SemVer.cpp` e define `VEYRA_SILIVID_VERSION`; e `veyra_qml_bridge` recebe `SILIVID_VERSION` em `VEYRA_DISPLAY_VERSION`. Essas mudanças no ramo Windows não foram compiladas.
 
 ## O que compila
 

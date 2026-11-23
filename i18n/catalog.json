@@ -4200,32 +4200,6 @@
    "ru": "Учётная запись PSN"
   },
   {
-   "zh": "Patreon 主页",
-   "src": "qml/SponsorPanel.qml",
-   "zh-TW": "Patreon 主頁",
-   "en": "Patreon home",
-   "ja": "Patreon ホーム",
-   "ko": "패트리온 홈",
-   "es": "Página de Patreon",
-   "fr": "Page Patreon",
-   "de": "Patreon-Seite",
-   "pt-BR": "Página do Patreon",
-   "ru": "Страница Patreon"
-  },
-  {
-   "zh": "Patreon 主页查看作者动态，咖啡赞助为 US$5。",
-   "src": "qml/SponsorPanel.qml",
-   "zh-TW": "Patreon 主頁查看作者動態，咖啡贊助為 US$5。",
-   "en": "Visit Patreon for creator updates, or buy me a coffee for US$5.",
-   "ja": "Patreon で作者の近況をチェック。コーヒー支援は US$5 です。",
-   "ko": "Patreon에서 개발 소식을 확인하거나 US$5로 커피 한 잔을 후원해 주세요.",
-   "es": "Visita Patreon para actualizaciones de creadores, o cómprame un café por US$5.",
-   "fr": "Visitez Patreon pour les mises à jour du créateur, ou achetez-moi un café pour US$5.",
-   "de": "Besuchen Sie Patreon für Creator-Updates oder kaufen Sie mir einen Kaffee für 5 US-Dollar.",
-   "pt-BR": "Visite Patreon para atualizações do criador, ou me pague um café por US$5.",
-   "ru": "Посетите Patreon для обновления создателя или купите мне кофе за 5 долларов США."
-  },
-  {
    "zh": "Profile 5 的亮度信息在 RPU 里（不是 HDR10 元数据），推荐无法自动选档；下面的「跟随动态元数据」仍然可用",
    "src": "qml/ProDisplayPanel.qml",
    "zh-TW": "Profile 5 的亮度信息在 RPU 里（不是 HDR10 元數據），推薦無法自動選檔；下面的「跟隨動態元數據」仍然可用",
@@ -4850,19 +4824,6 @@
    "ru": "Veyra получает уже отрисованное изображение, поэтому эффект от DLSS SR здесь ограничен. На GPU NVIDIA я предпочитаю **RTX Video Super Resolution · Стандарт · Среднее**. Картинка становится чётче при умеренной нагрузке."
   },
   {
-   "zh": "Veyra 开源免费，也需要你的支持",
-   "src": "qml/SponsorPanel.qml",
-   "zh-TW": "Veyra 開源免費，也需要你的支持",
-   "en": "Veyra is free and open source, and it runs on your support",
-   "ja": "Veyra は無料のオープンソース。皆さんの支援が支えです",
-   "ko": "Veyra는 무료 오픈 소스 프로그램입니다. 여러분의 후원이 개발을 이어가는 힘이 됩니다.",
-   "es": "Veyra es libre y de código abierto, y funciona con su apoyo",
-   "fr": "Veyra est libre et open source, et il fonctionne sur votre support",
-   "de": "Veyra ist kostenlos und Open Source, und es läuft auf Ihre Unterstützung",
-   "pt-BR": "Veyra é livre e de código aberto, e é executado em seu suporte",
-   "ru": "Veyra является бесплатным и открытым исходным кодом, и он работает на вашей поддержке."
-  },
-  {
    "zh": "VobSub 需要同名 .idx 和 .sub 文件，请加载 .idx",
    "src": "src/engine/Subtitles.cpp",
    "zh-TW": "VobSub 需要同名 .idx 和 .sub 檔案，請載入 .idx",
@@ -5472,19 +5433,6 @@
    "de": "{}GPU-Reset {} time(s); exportiert in {} parts und verbunden ohne erneute Kodierung",
    "pt-BR": "{} GPU reset {} time(s); exportado em {} partes e ligado sem recodificação",
    "ru": "{} GPU перезагрузить {} время(ы); экспортировать в {} части и соединить без повторного кодирования"
-  },
-  {
-   "zh": "☕ 请作者喝杯咖啡 · US$5",
-   "src": "qml/SponsorPanel.qml",
-   "zh-TW": "☕ 請作者喝杯咖啡 · US$5",
-   "en": "☕ Buy me a coffee · US$5",
-   "ja": "☕ コーヒーで支援 · US$5",
-   "ko": "☕ 커피 한 잔 후원 · US$5",
-   "es": "☕ Invítame a un café · 5 US$",
-   "fr": "☕ Offrez-moi un café · 5 $ US",
-   "de": "☕ Spendier mir einen Kaffee · 5 US$",
-   "pt-BR": "☕ Me pague um café · US$ 5",
-   "ru": "☕ Угостите меня кофе · 5 $"
   },
   {
    "zh": "。RTX Video HDR 未能启动：可在设置里关闭该效果，或更新 NVIDIA 驱动",
@@ -6343,19 +6291,6 @@
    "de": "Mittel+Niedrig",
    "pt-BR": "Médio+Baixo",
    "ru": "Среднее+Низкое"
-  },
-  {
-   "zh": "中国大陆用户",
-   "src": "qml/SponsorPanel.qml",
-   "zh-TW": "中國大陸用戶",
-   "en": "Users in mainland China",
-   "ja": "中国本土の方",
-   "ko": "중국 본토 사용자",
-   "es": "Usuarios en China continental",
-   "fr": "Utilisateurs en Chine continentale",
-   "de": "Nutzer in Festlandchina",
-   "pt-BR": "Usuários na China continental",
-   "ru": "Пользователи в материковом Китае"
   },
   {
    "zh": "中延迟",
@@ -7500,6 +7435,19 @@
    "de": "Mit der Capture-Karte beginnen",
    "pt-BR": "Comece com a placa de captura",
    "ru": "Начните с карты захвата"
+  },
+  {
+   "zh": "以下是 Veyra 原作者的经验，文中的“我”指原作者。玩 GTA 6 这类 30 帧主机游戏，我会用下面这套设置。如果你之前用 OBS 或 PotPlayer 预览觉得有延迟，可以拿同一张卡、同一个档位对照试一下。",
+   "src": "qml/CaptureGuideDialog.qml",
+   "zh-TW": "以下是 Veyra 原作者的經驗，文中的「我」指原作者。玩 GTA 6 這類 30 幀主機遊戲，我會用下面這套設定。如果你用 OBS 或 PotPlayer 預覽時覺得有延遲，可以拿同一張卡、同一個模式對照試試。",
+   "en": "These notes come from the original author of Veyra, and “I” below means that author. Here's what I'd use for GTA 6 or another console game running at 30 fps. If previewing in OBS or PotPlayer felt laggy, compare using the same card and capture mode.",
+   "ja": "以下は Veyra の原作者による記録で、文中の「私」は原作者を指します。GTA 6 のような 30 fps の家庭用ゲームなら、私はこの設定で遊びます。OBS や PotPlayer のプレビューで遅延が気になったら、同じカードとモードで比べてみてください。",
+   "ko": "아래 내용은 Veyra 원작자의 경험이며, 글의 “저”는 원작자를 뜻합니다. GTA 6처럼 30 fps로 돌아가는 콘솔 게임에는 아래 설정을 씁니다. OBS나 PotPlayer의 미리보기가 느리게 느껴졌다면 같은 카드와 캡처 모드로 비교해 보세요.",
+   "es": "Estas notas son del autor original de Veyra, y el «yo» del texto se refiere a esa persona. Estos son los ajustes que usaría en GTA 6 u otro juego de consola a 30 FPS. Si la vista previa de OBS o PotPlayer te parecía lenta, compara con la misma capturadora y el mismo modo.",
+   "fr": "Ces notes viennent de l’auteur d’origine de Veyra, et le « je » du texte le désigne. Voici les réglages que j’utiliserais pour GTA 6 ou un autre jeu sur console à 30 i/s. Si l’aperçu d’OBS ou de PotPlayer vous paraissait lent, comparez avec la même carte et le même mode.",
+   "de": "Diese Hinweise stammen vom ursprünglichen Veyra-Entwickler, und „ich“ meint im Text diese Person. Für GTA 6 und andere Konsolenspiele bei 30 FPS würde ich diese Einstellungen verwenden. Wenn sich die Vorschau in OBS oder PotPlayer verzögert angefühlt hat, vergleiche mit derselben Karte im selben Modus.",
+   "pt-BR": "Estas notas são do autor original do Veyra, e o “eu” do texto se refere a essa pessoa. Estas são as configurações que eu usaria para GTA 6 ou outro jogo de console a 30 FPS. Se a prévia do OBS ou do PotPlayer parecia atrasada, compare com a mesma placa e o mesmo modo.",
+   "ru": "Эти заметки написал автор оригинального Veyra, и «я» в тексте означает этого автора. Для GTA 6 и других консольных игр с 30 FPS я бы использовал эти настройки. Если предпросмотр в OBS или PotPlayer казался медленным, сравните с той же картой и в том же режиме."
   },
   {
    "zh": "以下轨道当前封装无法保留，导出时跳过",
@@ -8748,19 +8696,6 @@
    "de": "Aus",
    "pt-BR": "Desligado",
    "ru": "Выкл."
-  },
-  {
-   "zh": "关注作者",
-   "src": "qml/SponsorPanel.qml",
-   "zh-TW": "追蹤作者",
-   "en": "Follow the author",
-   "ja": "作者をフォロー",
-   "ko": "개발자 소식",
-   "es": "Seguir al autor",
-   "fr": "Suivre l'auteur",
-   "de": "Dem Entwickler folgen",
-   "pt-BR": "Seguir o autor",
-   "ru": "Подписаться на автора"
   },
   {
    "zh": "关闭",
@@ -10075,19 +10010,6 @@
    "de": "Geräte aktualisieren",
    "pt-BR": "Atualizar dispositivos",
    "ru": "Обновить устройства"
-  },
-  {
-   "zh": "前往主页",
-   "src": "qml/SponsorPanel.qml",
-   "zh-TW": "前往主頁",
-   "en": "Visit page",
-   "ja": "ページを開く",
-   "ko": "홈페이지 열기",
-   "es": "Visitar página",
-   "fr": "Visiter la page",
-   "de": "Seite besuchen",
-   "pt-BR": "Visitar página",
-   "ru": "Открыть страницу"
   },
   {
    "zh": "剪辑入点已超过源视频时长",
@@ -11505,19 +11427,6 @@
    "de": "Kann gespeichert werden",
    "pt-BR": "Pode ser salvo",
    "ru": "Можно сохранить"
-  },
-  {
-   "zh": "可以用微信或支付宝扫码",
-   "src": "qml/SponsorPanel.qml",
-   "zh-TW": "可以用微信或支付寶掃碼",
-   "en": "Scan with WeChat or Alipay",
-   "ja": "WeChat または Alipay でスキャンできます",
-   "ko": "WeChat 또는 Alipay로 스캔",
-   "es": "Escanea con WeChat o Alipay",
-   "fr": "Scannez avec WeChat ou Alipay",
-   "de": "Mit WeChat oder Alipay scannen",
-   "pt-BR": "Escaneie com WeChat ou Alipay",
-   "ru": "Отсканируйте в WeChat или Alipay"
   },
   {
    "zh": "可变刷新",
@@ -13457,17 +13366,17 @@
    "ru": "Не удалось скопировать в папку Luts"
   },
   {
-   "zh": "复制后附在反馈里",
+   "zh": "复制后可用于排查问题",
    "src": "qml/SettingsPage.qml",
-   "zh-TW": "複製後附在反饋裡",
-   "en": "Copy, then attach to your report",
-   "ja": "コピーして報告に添付してください",
-   "ko": "복사한 후 보고서에 첨부하세요.",
-   "es": "Cópialo y adjúntalo a tu informe",
-   "fr": "Copiez, puis joignez à votre rapport",
-   "de": "Kopieren und an deinen Bericht anhängen",
-   "pt-BR": "Copie e anexe ao seu relatório",
-   "ru": "Скопируйте и приложите к отчёту"
+   "zh-TW": "複製後可用於排查問題",
+   "en": "Copy it to help troubleshoot problems",
+   "ja": "コピーしてトラブルシューティングに使えます",
+   "ko": "복사해서 문제 해결에 사용할 수 있습니다.",
+   "es": "Cópialo para diagnosticar problemas",
+   "fr": "Copiez-les pour diagnostiquer un problème",
+   "de": "Kopieren, um Probleme einzugrenzen",
+   "pt-BR": "Copie para ajudar a diagnosticar problemas",
+   "ru": "Скопируйте для диагностики проблем"
   },
   {
    "zh": "复制失败：预设数量可能已达上限",
@@ -15941,7 +15850,7 @@
   },
   {
    "zh": "已关闭当前硬件或包不支持的效果，参数仍保留：",
-   "src": "src/ui/bridge/Preferences.cpp",
+   "src": "src/ui/QmlPlayerBridge.cpp",
    "zh-TW": "已關閉目前硬體或套件不支援的效果，參數仍保留：",
    "en": "Unavailable effects have been disabled; their parameters are preserved: ",
    "ja": "非対応の効果を無効にしました。設定値は保持されています：",
@@ -17396,19 +17305,6 @@
    "ru": "Переключатели, прогресс, выбранное состояние"
   },
   {
-   "zh": "开发和测试设备的开销一直由作者自己承担。如果 Veyra 对你有帮助，欢迎请作者喝杯咖啡，你的支持就是持续更新的动力。",
-   "src": "qml/SponsorPanel.qml",
-   "zh-TW": "開發和測試設備的開銷一直由作者自己承擔。如果 Veyra 對你有幫助，歡迎請作者喝杯咖啡，你的支持就是持續更新的動力。",
-   "en": "The author has always paid for development and test hardware out of pocket. If Veyra helps you, consider buying the author a coffee: your support is what keeps the updates coming.",
-   "ja": "開発とテスト機材の費用は、これまで作者が自分で負担してきました。Veyra が役に立ったら、作者にコーヒーを一杯おごってください。皆さんの支援が更新を続ける力になります。",
-   "ko": "Veyra의 개발과 테스트 장비 비용은 개발자가 직접 부담하고 있습니다. 프로그램이 도움이 되었다면 커피 한 잔을 후원해 주세요. 여러분의 후원이 꾸준한 업데이트에 큰 힘이 됩니다.",
-   "es": "El autor siempre ha pagado por el desarrollo y la prueba de hardware fuera del bolsillo. Si Veyra te ayuda, considera comprar al autor un café: tu apoyo es lo que mantiene las actualizaciones viniendo.",
-   "fr": "L'auteur a toujours payé pour le développement et l'essai du matériel hors de poche. Si Veyra vous aide, envisagez d'acheter un café à l'auteur: votre soutien est ce qui maintient les mises à jour à venir.",
-   "de": "Der Autor hat immer für die Entwicklung und den Test von Hardware aus eigener Tasche bezahlt. Wenn Veyra Ihnen hilft, überlegen Sie, dem Autor einen Kaffee zu kaufen: Ihre Unterstützung ist es, die die Updates immer weiter bringt.",
-   "pt-BR": "O autor sempre pagou pelo desenvolvimento e teste de hardware do bolso. Se Veyra o ajudar, considere comprar um café ao autor: seu suporte é o que mantém as atualizações chegando.",
-   "ru": "Автор всегда платил за разработку и тестирование аппаратного обеспечения из своего кармана. Если Veyra поможет вам, подумайте о том, чтобы купить автору кофе: ваша поддержка - это то, что поддерживает обновления."
-  },
-  {
    "zh": "开启使用 Small 模型；关闭使用原模型。每层独立选择，切换会重建 NR，画面可能有所不同。",
    "src": "qml/NrLayerEditor.qml",
    "zh-TW": "開啟使用 Small 模型；關閉使用原模型。每層獨立選擇，切換會重建 NR，畫面可能有所不同。",
@@ -18839,19 +18735,6 @@
    "ru": "Если важнее всего отзывчивость, я выбираю **захват в 1440p60 NV12 с последующим масштабированием**. Для эффекта HDR при меньших затратах попробуйте **RTX Video HDR** после захвата SDR. Для исходного 4K60 HDR я бы смотрел на карты PCIe."
   },
   {
-   "zh": "微信扫码",
-   "src": "qml/SponsorPanel.qml",
-   "zh-TW": "微信掃碼",
-   "en": "WeChat Pay",
-   "ja": "WeChat Pay",
-   "ko": "위챗페이",
-   "es": "Nosotros pagamos",
-   "fr": "Paiement WeChat",
-   "de": "WeChat Pay",
-   "pt-BR": "WeChat Pay",
-   "ru": "WeChat Pay"
-  },
-  {
    "zh": "心理视觉调优",
    "src": "qml/SettingsPage.qml",
    "zh-TW": "心理視覺調校",
@@ -19058,19 +18941,6 @@
    "de": "Ich achte vor allem auf 1440p60 und 4K30 in SDR. Beispiele aus dem Beitrag",
    "pt-BR": "Eu olho principalmente os modos SDR de 1440p60 e 4K30. Exemplos do post",
    "ru": "В первую очередь смотрю режимы 1440p60 и 4K30 в SDR. Примеры из поста"
-  },
-  {
-   "zh": "我是 Veyra 的开发者。玩 GTA 6 这类 30 帧主机游戏，我会用下面这套设置。感谢大家一直在用，也把各种设备的实际效果告诉我。如果你之前用 OBS 或 PotPlayer 预览觉得有延迟，可以拿同一张卡、同一个档位在 Veyra 里试一下。",
-   "src": "qml/CaptureGuideDialog.qml",
-   "zh-TW": "我是 Veyra 的開發者。玩 GTA 6 這類 30 幀主機遊戲，我會用下面這套設定。謝謝大家一直使用，也回報各種裝置的實際效果。如果你用 OBS 或 PotPlayer 預覽時覺得有延遲，可以拿同一張卡、同一個模式在 Veyra 裡試試。",
-   "en": "I develop Veyra. Here's what I'd use for GTA 6 or another console game running at 30 fps. Thanks for using it and telling me how it runs on your gear. If previewing in OBS or PotPlayer felt laggy, try the same card and capture mode in Veyra.",
-   "ja": "Veyra の開発者です。GTA 6 のような 30 fps の家庭用ゲームなら、私はこの設定で遊びます。使ってくれて、いろいろな機材での結果を教えてくれてありがとう。OBS や PotPlayer のプレビューで遅延が気になったら、同じカードとモードで Veyra を試してみてください。",
-   "ko": "Veyra를 만든 개발자입니다. GTA 6처럼 30 fps로 돌아가는 콘솔 게임에는 아래 설정을 씁니다. 사용해 주시고 여러 장비에서 어떤지 알려 주셔서 감사합니다. OBS나 PotPlayer의 미리보기가 느리게 느껴졌다면 같은 카드와 캡처 모드를 Veyra에서 써 보세요.",
-   "es": "Soy el desarrollador de Veyra. Estos son los ajustes que usaría en GTA 6 u otro juego de consola a 30 FPS. Gracias por usarlo y contarme cómo va con vuestros equipos. Si la vista previa de OBS o PotPlayer te parecía lenta, compara con la misma capturadora y el mismo modo en Veyra.",
-   "fr": "Je développe Veyra. Voici les réglages que j’utiliserais pour GTA 6 ou un autre jeu sur console à 30 i/s. Merci de l’utiliser et de partager vos résultats avec différents matériels. Si l’aperçu d’OBS ou de PotPlayer vous paraissait lent, essayez la même carte et le même mode dans Veyra.",
-   "de": "Ich entwickle Veyra. Für GTA 6 und andere Konsolenspiele bei 30 FPS würde ich diese Einstellungen verwenden. Danke, dass ihr es nutzt und von euren Erfahrungen mit unterschiedlicher Hardware berichtet. Wenn sich die Vorschau in OBS oder PotPlayer verzögert angefühlt hat, probiere dieselbe Karte im selben Modus in Veyra.",
-   "pt-BR": "Sou o desenvolvedor do Veyra. Estas são as configurações que eu usaria para GTA 6 ou outro jogo de console a 30 FPS. Valeu por usar o programa e compartilhar os resultados no equipamento de vocês. Se a prévia do OBS ou do PotPlayer parecia atrasada, experimente o Veyra com a mesma placa e o mesmo modo.",
-   "ru": "Я разработчик Veyra. Для GTA 6 и других консольных игр с 30 FPS я бы использовал эти настройки. Спасибо, что пользуетесь программой и делитесь результатами на разном оборудовании. Если предпросмотр в OBS или PotPlayer казался медленным, попробуйте ту же карту и тот же режим в Veyra."
   },
   {
    "zh": "我测过的同规格卡，延迟差通常在 5 ms 左右以内。先看你的分辨率、帧率和色彩模式能不能跑稳，再选牌子。祝你玩得开心！",
@@ -19955,19 +19825,6 @@
    "de": "Unterdrücken Sie zusätzliche Tönung an weißen Wänden, Wolken und grauen Bereichen",
    "pt-BR": "Suprimir o tom adicionado em paredes brancas, nuvens e áreas cinzentas",
    "ru": "Супресс добавил оттенок на белые стены, облака и серые зоны"
-  },
-  {
-   "zh": "抖音",
-   "src": "qml/SponsorPanel.qml",
-   "zh-TW": "抖音",
-   "en": "Douyin",
-   "ja": "Douyin",
-   "ko": "Douyin",
-   "es": "Douyin",
-   "fr": "Douyin",
-   "de": "Douyin",
-   "pt-BR": "Douyin",
-   "ru": "Дуйин"
   },
   {
    "zh": "抗锯齿",
@@ -20892,19 +20749,6 @@
    "de": "Das Ergebnis wurde nicht bestätigt. Überprüfen Sie noch einmal. Das Backup wird beibehalten; Writes werden nicht automatisch wiederholt.",
    "pt-BR": "O resultado não foi confirmado. Verifica outra vez. A cópia de segurança é retida; as gravações não serão automaticamente tentadas.",
    "ru": "Результат не подтвердился. Проверь еще раз. Резервная копия сохраняется; записи не будут перепроверены автоматически."
-  },
-  {
-   "zh": "支付宝扫码",
-   "src": "qml/SponsorPanel.qml",
-   "zh-TW": "支付寶掃碼",
-   "en": "Alipay",
-   "ja": "Alipay",
-   "ko": "알리페이",
-   "es": "Alipay",
-   "fr": "Alipay",
-   "de": "Alipay",
-   "pt-BR": "Alipay",
-   "ru": "Alipay"
   },
   {
    "zh": "收 ",
@@ -24545,19 +24389,6 @@
    "de": "Zu diesem Zeitpunkt wurde ein Monitoring-Overlay erkannt, so dass die Schnittstelle noch in Software gezeichnet ist (Monitoring-Overlay-Kompatibilität: Auto)",
    "pt-BR": "Uma sobreposição de monitoramento foi detectada neste início, então a interface ainda é desenhada em software (acompanhando compatibilidade de sobreposição: Auto)",
    "ru": "На этом старте было обнаружено наложение мониторинга, поэтому интерфейс по-прежнему рисуется в программном обеспечении (мониторинг совместимости наложения: Авто)."
-  },
-  {
-   "zh": "本软件开源免费，如果对你有帮助，你可以 →",
-   "src": "qml/HomePage.qml",
-   "zh-TW": "本軟體開源免費，如果對你有幫助，你可以 →",
-   "en": "This software is free and open source. If it helps you, you can →",
-   "ja": "本ソフトは無料のオープンソースです。役に立ったら →",
-   "ko": "무료 오픈 소스 프로그램입니다. 도움이 되었다면 →",
-   "es": "Este software es gratuito y de código abierto. Si te ayuda, puedes →",
-   "fr": "Ce logiciel est libre et open source. Si cela vous aide, vous pouvez →",
-   "de": "Diese Software ist kostenlos und Open Source. Wenn es Ihnen hilft, können Sie",
-   "pt-BR": "Este software é gratuito e de código aberto. Se ele ajuda, você pode →",
-   "ru": "Это программное обеспечение бесплатное и с открытым исходным кодом. Если это поможет вам, вы можете"
   },
   {
    "zh": "杜比视界 / HDR10+ 设置",
@@ -33361,19 +33192,6 @@
    "ru": "Запустите это приложение в качестве администратора и попробуйте снова. После установки вы можете начать его нормально."
   },
   {
-   "zh": "请作者喝杯咖啡",
-   "src": "qml/HomePage.qml",
-   "zh-TW": "請作者喝杯咖啡",
-   "en": "Buy the author a coffee",
-   "ja": "作者にコーヒーをおごる",
-   "ko": "개발자에게 커피 후원",
-   "es": "Invita un café al autor",
-   "fr": "Offrir un café à l'auteur",
-   "de": "Spendiere dem Entwickler einen Kaffee",
-   "pt-BR": "Pague um café ao autor",
-   "ru": "Угостить автора кофе"
-  },
-  {
    "zh": "请使用直接媒体地址。RTP 和 UDP 的 MPEG-TS 地址需要包含端口。",
    "src": "qml/NetworkSourceDialog.qml",
    "zh-TW": "請使用直接媒體網址。RTP 和 UDP 的 MPEG-TS 網址需要包含連接埠。",
@@ -34360,32 +34178,6 @@
    "de": "nicht genug Ressourcen",
    "pt-BR": "recursos insuficientes",
    "ru": "недостаточно ресурсов"
-  },
-  {
-   "zh": "赞助作者",
-   "src": "qml/SettingsPage.qml",
-   "zh-TW": "贊助作者",
-   "en": "Support the author",
-   "ja": "作者を支援",
-   "ko": "개발자 후원",
-   "es": "Apoya al autor",
-   "fr": "Soutenir l'auteur",
-   "de": "Entwickler unterstützen",
-   "pt-BR": "Apoie o autor",
-   "ru": "Поддержать автора"
-  },
-  {
-   "zh": "赞助完全自愿，不影响任何功能。谢谢你的支持！",
-   "src": "qml/SponsorPanel.qml",
-   "zh-TW": "贊助完全自願，不影響任何功能。謝謝你的支持！",
-   "en": "Sponsoring is entirely voluntary and doesn't affect any feature. Thank you for your support!",
-   "ja": "支援は任意で、機能には一切影響しません。ご支援ありがとうございます！",
-   "ko": "후원은 자율이며 기능 이용에는 영향을 주지 않습니다. 도움을 주셔서 감사합니다!",
-   "es": "El patrocinio es totalmente voluntario y no afecta ninguna característica. ¡Gracias por su apoyo!",
-   "fr": "Le parrainage est entièrement volontaire et n'affecte aucune fonctionnalité. Merci de votre soutien!",
-   "de": "Sponsoring ist völlig freiwillig und beeinflusst keine Funktion. Vielen Dank für Ihre Unterstützung!",
-   "pt-BR": "O patrocínio é totalmente voluntário e não afeta nenhum recurso. Obrigado pelo seu apoio!",
-   "ru": "Спонсорство является полностью добровольным и не влияет на какие-либо функции. Спасибо за поддержку!"
   },
   {
    "zh": "起播预缓冲",

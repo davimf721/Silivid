@@ -907,7 +907,6 @@ public:
     Q_INVOKABLE void openReleasesPage();
     // 设置 → 赞助作者: opens the author's page for `id` (douyin, x, github,
     // youtube, kofi) in the browser. The addresses live here; any other id does nothing.
-    Q_INVOKABLE bool openSponsorLink(const QString& id);
     QObject* updates() const;
     QVariantList audioDevices() const;
     QVariantList gpuMonitorChoices() const;

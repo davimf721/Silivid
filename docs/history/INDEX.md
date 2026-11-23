@@ -1,3 +1,8 @@
+<!-- silivid-inherited-notice -->
+> **Inherited Veyra document.** This file describes the original Veyra application for Windows. Its features, paths, builds and test results are not Silivid features on macOS. See the [current Silivid status](../../README.md).
+>
+> **继承自 Veyra 的文档。** 本文描述原 Windows 版 Veyra，其中的功能、路径、构建和测试结果不代表 Silivid 在 macOS 上的功能。当前状态见 [Silivid 说明](../../README.md)。
+
 # 历史资料索引
 
 2026-11-18入口收拢：[旧AGENTS全文](rules/AGENTS_before_main_2026-11-18.md)、[旧当前状态](reports/CURRENT_STATUS_before_main_2026-11-18.md)、[旧开发入口](reports/DEVELOPMENT_before_main_2026-11-18.md)。归档原文中的相对路径按归档前项目根理解；本轮结果见[main整合](../MAIN_INTEGRATION_2026-11-18.md)。
