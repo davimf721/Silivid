@@ -308,7 +308,7 @@ VPage {
                         }
                         VRow {
                             label: qsTr("界面语言")
-                            hint: qsTr("立即生效；日志保持中文，方便反馈问题")
+                            hint: qsTr("立即生效；日志保持中文")
                             VSelect {
                                 objectName: "set-language"
                                 implicitWidth: 170

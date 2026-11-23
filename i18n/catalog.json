@@ -28798,17 +28798,17 @@
    "ru": "Сведение в стерео"
   },
   {
-   "zh": "立即生效；日志保持中文，方便反馈问题",
+   "zh": "立即生效；日志保持中文",
    "src": "qml/SettingsPage.qml",
-   "zh-TW": "立即生效；日誌保持中文，方便反饋問題",
-   "en": "Takes effect immediately; logs stay in Chinese so problem reports stay readable",
-   "ja": "すぐに反映されます。問題報告のため、ログは中国語のままです",
-   "ko": "즉시 적용됩니다. 문제 분석을 위한 로그는 중국어로 유지됩니다.",
-   "es": "Efectúa inmediatamente; los registros permanecen en chino para que los informes de problemas permanezcan legibles",
-   "fr": "prend effet immédiatement; les journaux restent en chinois pour que les rapports de problèmes restent lisibles",
-   "de": "Tritt sofort in Kraft; Protokolle bleiben auf Chinesisch, so dass Problemberichte lesbar bleiben",
-   "pt-BR": "Faz efeito imediatamente; logs ficar em chinês para relatórios de problemas permanecer legível",
-   "ru": "Вступает в силу немедленно; журналы остаются на китайском языке, поэтому отчеты о проблемах остаются читаемыми."
+   "zh-TW": "立即生效；日誌保持中文",
+   "en": "Takes effect immediately; logs stay in Chinese",
+   "ja": "すぐに反映されます。ログは中国語のままです",
+   "ko": "즉시 적용됩니다. 로그는 중국어로 유지됩니다.",
+   "es": "Se aplica de inmediato; los registros siguen en chino",
+   "fr": "Prend effet immédiatement ; les journaux restent en chinois",
+   "de": "Wird sofort wirksam; Protokolle bleiben auf Chinesisch",
+   "pt-BR": "Entra em vigor imediatamente; os logs continuam em chinês",
+   "ru": "Применяется сразу; журналы остаются на китайском"
   },
   {
    "zh": "端点已打开",

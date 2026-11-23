@@ -100,3 +100,17 @@ echo "total=$(wc -l < "$R") passam=$(grep -c '^OK' "$R") windows=$W d3d12=$D out
 5. **App QML não compilado.** A ponte `src/ui/bridge/*` e `QmlPlayerBridge` dependem do engine e de Win32, e `apps/veyra-qml/main.cpp` ainda não entra no build.
 6. **Erro do clang em `SceneCadenceAnalyzer.h`.** O argumento padrão `const Config& config = {}` usa uma struct aninhada com inicializadores de membro, o que o MSVC aceita e o clang rejeita. Bloqueia a análise de cena e seu teste.
 7. **Pontos de entrada `wmain`.** 119 arquivos de `tests/` usam `wmain` (`git grep -lw wmain -- tests | wc -l`) e precisam de um `main` portável. Desses, 8 já passam na análise de sintaxe e são os listados em "Testes que passam na sintaxe, mas não linkam".
+
+## Decisão: pastas padrão sem migração
+
+As pastas padrão de capturas e gravações passaram de `Veyra` para `Silivid`. Não há migração de arquivos porque o Silivid não tem instalações existentes. A pasta escolhida pelo usuário continua tendo prioridade.
+
+## Pendências do binário Windows
+
+Estas pendências bloqueiam um binário Windows, mas não uma pré-release só de código-fonte. O código Windows, o instalador e os empacotadores não foram compilados nem executados nesta máquina.
+
+1. **Empacotadores.** `scripts/package-qml-release.py` só aceita versões `2.0.x` e `scripts/package-vendor-release.py` usa `2.0.3` como padrão, então a URL `silivid-v<versão>` da fonte correspondente ainda não representa uma versão real do Silivid. As URLs de dependências continuam no Veyra e precisam de uma fonte publicada para a versão empacotada.
+2. **`scripts/installer/Veyra.iss`.** `DisplayName`, os campos `VersionInfo` e o nome do arquivo de saída ainda usam Veyra. `AppId` e `InstallId` foram mantidos e mudá-los é uma decisão, porque afeta upgrade e desinstalação. A montagem `{#AppVersion}.0` não foi verificada com uma versão alpha.
+3. **`scripts/package-remoteplay-source.py:66`.** O texto do pacote ainda indica a fonte da aplicação na tag `v<versão>` de `Likely7/Veyra-NRVideo`.
+4. **Perfil NVIDIA.** `src/gfx/NvidiaVrrProfile.cpp:120` ainda cria perfis chamados `Veyra VRR - <executável>`.
+5. **Ícones em `qml/Veyra/sponsor/`.** Os 8 SVGs não têm mais uso em QML e foram mantidos porque `THIRD_PARTY_NOTICES.md` os credita. É preciso decidir sobre eles e sobre esses créditos antes de empacotar o app.
